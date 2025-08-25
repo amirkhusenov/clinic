@@ -1,0 +1,8 @@
+.social-banner {
+    margin: 0;
+    display: block !important;
+}
+
+.social-banner__phone {
+    display: none;
+}
