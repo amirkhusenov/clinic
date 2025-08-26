@@ -608,3 +608,105 @@
         display: block;
     }
 }
+
+@media (hover: hover) {
+    .doctor__btn--primary:hover {
+        background: #1F7A84;
+    }
+
+    .doctor__btn--secondary:hover {
+        background: #F5F7FA;
+        color: #27929E;
+    }
+
+    .doctor__btn--secondary:hover img {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+    }
+
+    .doctor-videos__all-link:hover {
+        color: #27929E;
+    }
+
+    .doctor-video-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .doctor-video-card:hover .doctor-video-card__image img {
+        transform: scale(1.05);
+    }
+
+    .doctor-video-card:hover .doctor-video-card__play-btn {
+        background: #27929E;
+    }
+
+    .doctors__button-load:hover {
+        background: #F5F7FA;
+        color: #27929E;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-text {
+        color: #27929E;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-icon {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+    }
+
+    .appointment-form__submit:hover {
+        background: transparent;
+        border: 1px solid #007a7a;
+        color: #007a7a;
+    }
+}
+
+@media (hover: none) {
+    .doctor__btn--primary:hover {
+        background: inherit;
+    }
+
+    .doctor__btn--secondary:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .doctor__btn--secondary:hover img {
+        filter: none;
+    }
+
+    .doctor-videos__all-link:hover {
+        color: inherit;
+    }
+
+    .doctor-video-card:hover {
+        transform: none;
+        box-shadow: inherit;
+    }
+
+    .doctor-video-card:hover .doctor-video-card__image img {
+        transform: none;
+    }
+
+    .doctor-video-card:hover .doctor-video-card__play-btn {
+        background: inherit;
+    }
+
+    .doctors__button-load:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-text {
+        color: inherit;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-icon {
+        filter: none;
+    }
+
+    .appointment-form__submit:hover {
+        background: inherit;
+        border: inherit;
+        color: inherit;
+    }
+}

@@ -1300,22 +1300,6 @@
         font-size: 32px;
     }
 
-    .doctors .splide__arrow {
-        width: 40px;
-        height: 40px;
-    }
-
-    .doctors .splide__pagination__page {
-        width: 10px;
-        height: 10px;
-        border-width: 1px;
-    }
-
-    .doctors .splide__pagination {
-        gap: 10px;
-    }
-
-
     .doctors__pagination-container {
         margin-top: 24px;
     }
@@ -1338,45 +1322,6 @@
         max-width: 90%;
     }
 }
-
-.doctors .splide__pagination {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    list-style: none;
-    position: static;
-}
-
-.doctors .splide__pagination__page {
-    width: 12px;
-    height: 12px;
-    border: 2px solid #D1D5DB;
-    background: transparent;
-    border-radius: 50%;
-    opacity: 1;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-}
-
-.doctors .splide__pagination__page.is-active {
-    background: #7C8799;
-    border-color: #7C8799;
-}
-
-.doctors .splide__arrows {
-    display: flex;
-    align-items: center;
-}
-
-.doctors .splide__arrow {
-    background: transparent;
-    cursor: pointer;
-}
-
-
-
-
 
 .useful-info__slider.splide {
     visibility: visible;
@@ -2213,7 +2158,96 @@
     .promotions__container {
         padding: 0;
     }
+}
 
+@media (hover: hover) {
+    .unique-operations__appointment-btn:hover {
+        background: #1F7A84;
+    }
 
+    .unique-operations__all-btn:hover {
+        background: #F5F7FA;
+        color: #27929E;
+    }
 
+    .unique-operations__all-btn:hover .unique-operations__all-icon img {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+    }
+
+    .clinic-services__search-btn:hover {
+        background: #27929E;
+        color: white;
+    }
+
+    .clinic-services__search-btn:hover .clinic-services__search-text {
+        color: white;
+    }
+
+    .clinic-services__search-btn:hover .clinic-services__search-icon img {
+        filter: brightness(0) invert(1);
+    }
+
+    .clinic-services__service:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .clinic-services__banner-btn:hover {
+        background: #1F7A84;
+    }
+
+    .promotions__button:hover {
+        background: #27929E;
+        color: white;
+    }
+
+    .promotions__button:hover img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media (hover: none) {
+    .unique-operations__appointment-btn:hover {
+        background: inherit;
+    }
+
+    .unique-operations__all-btn:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .unique-operations__all-btn:hover .unique-operations__all-icon img {
+        filter: none;
+    }
+
+    .clinic-services__search-btn:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .clinic-services__search-btn:hover .clinic-services__search-text {
+        color: inherit;
+    }
+
+    .clinic-services__search-btn:hover .clinic-services__search-icon img {
+        filter: none;
+    }
+
+    .clinic-services__service:hover {
+        transform: none;
+        box-shadow: inherit;
+    }
+
+    .clinic-services__banner-btn:hover {
+        background: inherit;
+    }
+
+    .promotions__button:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .promotions__button:hover img {
+        filter: none;
+    }
 }

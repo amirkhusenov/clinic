@@ -415,3 +415,25 @@
         display: block;
     }
 }
+
+@media (hover: hover) {
+    .promotions__button:hover {
+        background: #27929E;
+        color: #fff;
+    }
+
+    .promotions__button:hover img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media (hover: none) {
+    .promotions__button:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .promotions__button:hover img {
+        filter: none;
+    }
+}

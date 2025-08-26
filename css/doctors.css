@@ -221,3 +221,19 @@
         margin: 24px 0;
     }
 }
+
+@media (hover: hover) {
+    .appointment-form__submit:hover {
+        background: transparent;
+        border: 1px solid #007a7a;
+        color: #007a7a;
+    }
+}
+
+@media (hover: none) {
+    .appointment-form__submit:hover {
+        background: inherit;
+        border: inherit;
+        color: inherit;
+    }
+}

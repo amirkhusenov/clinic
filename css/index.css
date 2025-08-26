@@ -127,17 +127,7 @@ input[type='file'] {
     margin: 27px 108px 48px 108px;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        margin: 20px 61px 36px 61px;
-    }
-}
 
-@media (max-width: 480px) {
-    .container {
-        margin: 14px 14px 14px 14px;
-    }
-}
 
 .header__mobile-header {
     display: none;
@@ -148,20 +138,7 @@ input[type='file'] {
     border-bottom: 1px solid #e5e7eb;
 }
 
-@media (max-width: 1425px) {
 
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }
-
-    body {
-        padding-top: 140px;
-    }
-}
 
 .header__container {
     margin: 0 auto;
@@ -699,110 +676,9 @@ input[type='file'] {
     height: 1.5rem;
 }
 
-@media (max-width: 1425px) {
 
 
-    .header__container {
-        padding: 0 1rem;
-    }
 
-    .header__top {
-        padding: 20px 0;
-    }
-
-    .header__top-content {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0;
-    }
-
-    .header__info {
-        display: none;
-    }
-
-    .header__contact {
-        display: none;
-    }
-
-    .header__bottom {
-        display: none;
-    }
-
-    .header__utilities {
-        display: none;
-    }
-
-    .header__dropdown-content {
-        display: none;
-    }
-
-    .header__mega-menu {
-        display: none;
-    }
-
-    .header__mobile-header-top {
-        display: flex;
-        gap: 12px;
-    }
-
-    .header__mobile-header {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .header__mobile-icons {
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .header__mobile-icon {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        transition: opacity 0.2s;
-        overflow: hidden;
-    }
-
-    .header__mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2rem;
-        height: 2rem;
-        background: none;
-        border: none;
-        color: #374151;
-        cursor: pointer;
-        padding: 0;
-    }
-
-    .header__mobile-menu-icon {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .header__phone-number {
-        font-size: 1rem;
-    }
-
-    .header__cta {
-        padding: 10px 20px;
-        font-size: 0.875rem;
-    }
-
-    .header__logo {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-}
 
 .header-contact-block {
     display: none;
@@ -842,12 +718,6 @@ input[type='file'] {
     color: var(--color-btn);
 }
 
-@media (max-width: 1425px) {
-    .header-contact-block {
-        display: block;
-        padding: 10px 15px;
-    }
-}
 
 
 .doctors-filter {
@@ -933,55 +803,11 @@ input[type='file'] {
     padding-right: 2.5rem;
 }
 
-@media (max-width: 480px) {
-    .doctors-filter {
-        margin-bottom: 24px;
-    }
 
-    .doctors-filter__input,
-    .doctors-filter__select,
-    .doctors-filter__submit {
-        font-size: 16px;
-    }
 
-}
 
-@media (max-width: 1024px) {
 
-    .doctors-filter {
-        background: transparent;
-        padding: 0;
-    }
 
-    .doctors-filter__row {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .doctors-filter__field {
-        min-width: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .doctors-filter__submit {
-        display: none;
-    }
-
-    .doctors-filter__submit--mobile {
-        display: block;
-        padding: 11px 25px;
-        background: #007a7a;
-        color: white;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-    .doctors-filter__submit--mobile img {
-        width: 15px;
-        height: 14px;
-    }
-}
 
 .custom-select {
     position: relative;
@@ -1184,6 +1010,8 @@ input[type='file'] {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 1px solid #fff;
+    position: relative;
+    z-index: 10;
 }
 
 .hero__button:hover {
@@ -1195,6 +1023,8 @@ input[type='file'] {
     display: flex;
     align-items: center;
     gap: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .hero__carousel-arrow {
@@ -1241,11 +1071,7 @@ input[type='file'] {
     gap: 4px;
 }
 
-@media (max-width: 430px) {
-    .breadcrumb__items {
-        font-size: 12px;
-    }
-}
+
 
 .breadcrumb__item,
 .breadcrumb__item a {
@@ -1276,17 +1102,7 @@ input[type='file'] {
     justify-self: end;
 }
 
-@media(max-width: 1425px) {
-    .doctors__all-link {
-        display: none;
-    }
 
-    .doctors__header {
-        display: flex;
-        justify-content: center;
-    }
-
-}
 
 .doctor-card {
     background: #fff;
@@ -1432,23 +1248,54 @@ input[type='file'] {
     filter: brightness(0) invert(1);
 }
 
-@media (max-width: 480px) {
-    .doctor-card__price {
-        margin-top: 32px;
-    }
 
-    .doctor-card__experience {
-        margin-top: 29px;
-    }
-}
 
-.reviews__pagination {
+.reviews__pagination,
+.doctors__pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     max-width: 20%;
     margin: 10px auto 0 auto;
+}
+
+
+
+.doctors .splide__pagination {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    list-style: none;
+    position: static;
+}
+
+.doctors .splide__pagination__page {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #D1D5DB;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.doctors .splide__pagination__page.is-active {
+    background: #7C8799;
+    border-color: #7C8799;
+
+}
+
+.doctors .splide__arrows {
+    display: flex;
+    align-items: center;
+}
+
+.doctors .splide__arrow {
+    background: transparent;
+    cursor: pointer;
 }
 
 .reviews__container {
@@ -1570,8 +1417,6 @@ input[type='file'] {
     gap: 12px;
 }
 
-
-
 .reviews .splide__pagination__page {
     width: 12px;
     height: 12px;
@@ -1609,111 +1454,7 @@ input[type='file'] {
     justify-content: center;
 }
 
-@media (max-width: 1400px) {
-    .reviews__pagination {
-        max-width: 25%;
-    }
 
-    .reviews__all-link {
-        display: none;
-    }
-
-    .reviews__header {
-        display: flex;
-        justify-content: center;
-    }
-
-    .reviews__title {
-        grid-column: auto;
-    }
-}
-
-@media (max-width: 1300px) {
-
-    .reviews__title {
-        font-size: 36px;
-    }
-
-    .reviews__header {
-        margin-bottom: 24px;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .reviews__title {
-        font-size: 32px;
-        margin: 0 auto;
-        grid-column: auto;
-    }
-
-    .reviews__header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        margin-bottom: 24px;
-    }
-}
-
-@media (max-width: 900px) {
-    .reviews__pagination {
-        max-width: 30%;
-    }
-}
-
-@media (max-width: 768px) {
-    .doctors__title {
-        font-size: 1.75rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .reviews__title {
-        font-size: 24px;
-    }
-
-    .reviews__controls {
-        gap: 24px;
-        margin-top: 24px;
-    }
-
-    .reviews .splide__arrow {
-        width: 40px;
-        height: 40px;
-    }
-
-    .reviews .splide__arrow::before {
-        width: 18px;
-        height: 18px;
-    }
-
-    .review-card {
-        padding: 20px;
-    }
-
-    .review-card__content p {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 756px) {
-    .reviews__pagination {
-        max-width: 40%;
-    }
-}
-
-@media (max-width: 600px) {
-    .reviews__pagination {
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 485px) {
-    .reviews__pagination {
-        max-width: 65%;
-    }
-}
 
 .licenses__container {
     max-width: 100%;
@@ -1772,100 +1513,6 @@ input[type='file'] {
     border-radius: 10px;
     width: 0%;
     transition: width 0.3s ease;
-}
-
-@media (max-width: 1400px) {
-
-    .licenses__title {
-        font-size: 36px;
-        margin-bottom: 40px;
-    }
-
-    .licenses__grid {
-        gap: 24px;
-    }
-
-    .license-card__image {
-        height: 350px;
-    }
-
-}
-
-@media (max-width: 1024px) {
-
-    .licenses__title {
-        font-size: 32px;
-        margin-bottom: 32px;
-    }
-
-    .licenses__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .license-card__image {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-    }
-
-    .license-card__image img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .licenses__slider .splide__slide {
-        display: flex;
-        justify-content: center;
-    }
-
-    .licenses__slider .license-card {
-        display: flex;
-        justify-content: center;
-    }
-
-    .license-card__image {
-        margin: 0 auto;
-    }
-
-    .my-carousel-progress {
-        margin-top: 24px;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-    .licenses__grid {
-        display: none !important;
-    }
-
-    .licenses__slider.splide {
-        display: block;
-        visibility: visible;
-    }
-
-    .licenses__title {
-        font-size: 24px;
-        margin-bottom: 24px;
-    }
-
-    .licenses__grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .license-card__image {
-        height: 350px;
-    }
-
-    .my-carousel-progress {
-        margin-top: 20px;
-        height: 3px;
-    }
-
 }
 
 .social-banner {
@@ -1976,55 +1623,7 @@ input[type='file'] {
     filter: brightness(0) invert(1);
 }
 
-@media (max-width: 1400px) {
 
-    .useful-info {
-        margin: 60px 80px;
-    }
-
-    .useful-info__title {
-        font-size: 36px;
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .useful-info {
-        margin: 48px 40px;
-    }
-
-    .useful-info__title {
-        font-size: 32px;
-        margin-bottom: 32px;
-    }
-
-    .useful-info__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .useful-info {
-        margin: 20px 14px;
-    }
-
-    .useful-info__title {
-        font-size: 24px;
-        margin-bottom: 24px;
-    }
-
-    .useful-info__grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .useful-info__view-all {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-}
 
 .info-card {
     text-decoration: none;
@@ -2072,27 +1671,7 @@ input[type='file'] {
     line-height: 1.5;
 }
 
-@media (max-width: 1024px) {
 
-    .info-card__image {
-        height: 180px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .info-card__image {
-        height: 160px;
-    }
-
-    .info-card__content {
-        padding: 20px;
-    }
-
-    .info-card__title {
-        font-size: 16px;
-    }
-}
 
 .blogs__grid {
     display: grid;
@@ -2215,67 +1794,6 @@ input[type='file'] {
     color: #7C8799;
 }
 
-@media (max-width: 768px) {
-    .doctor-education__content {
-        padding: 24px;
-    }
-
-    .doctor-education__title {
-        font-size: 20px;
-    }
-
-    .doctor-education__item {
-        gap: 12px;
-        margin-bottom: 20px;
-    }
-
-    .doctor-education__institution {
-        font-size: 14px;
-    }
-
-    .doctor-education__specialty,
-    .doctor-education__period {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 480px) {
-    .doctor-education {
-        margin: 0;
-    }
-
-    .doctor-education__container {
-        gap: 14px;
-    }
-
-    .doctor-education__content {
-        padding: 20px;
-    }
-
-    .doctor-education__title {
-        font-size: 18px;
-    }
-
-    .doctor-education__toggle {
-        width: 28px;
-        height: 28px;
-    }
-
-    .doctor-education__item {
-        gap: 10px;
-        margin-bottom: 16px;
-    }
-
-    .doctor-education__institution {
-        font-size: 13px;
-    }
-
-    .doctor-education__specialty,
-    .doctor-education__period {
-        font-size: 12px;
-    }
-}
-
 .form-appointment {
     margin-top: 48px;
     background: #fff;
@@ -2330,190 +1848,6 @@ input[type='file'] {
 
 .form-appointment__form {
     padding: 36px 80px 54px 36px;
-}
-
-@media (max-width: 1024px) {
-    .form-appointment {}
-
-    .form-appointment__info {
-        width: 100%;
-    }
-
-    .appointment-form__submit {
-        width: 100%;
-    }
-
-    .form-appointment__info-content {
-        text-align: center;
-    }
-
-    .form-appointment__title {
-        text-align: center;
-        width: 100%;
-    }
-
-    .form-appointment__content {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .form-appointment__image {
-        display: none;
-    }
-
-    .form-appointment__form {
-        width: 100%;
-        padding: 0 36px 36px 36px;
-    }
-
-    .form-appointment__image {
-        position: static;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .form-appointment__image img {
-        width: 150px;
-    }
-
-    .form-appointment__description {
-        margin: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .form-appointment {
-        padding: 10px 0 40px 0;
-    }
-
-    .form-appointment__title {
-        font-size: 28px;
-    }
-
-    .form-appointment__form {
-        padding: 30px 20px;
-    }
-
-    .appointment-form {
-        gap: 20px;
-    }
-
-    .appointment-form__checkbox-text {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .form-appointment__form {
-        padding: 20px 16px;
-    }
-
-    .form-appointment__info-content {
-        text-align: left;
-        padding: 14px 14px 0 14px;
-    }
-
-    .form-appointment__title {
-        text-align: left;
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .appointment-form__input {
-        font-size: 14px;
-    }
-
-    .appointment-form__submit {
-        padding: 14px 24px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 1400px) {
-
-
-    .social-banner {
-        margin: 40px 80px;
-    }
-
-    .social-banner__container {
-        padding: 46px 40px;
-    }
-
-    .social-banner__title {
-        font-size: 28px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .social-banner__left {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    .social-banner__phone {
-        display: none;
-    }
-
-}
-
-@media (max-width: 1124px) {
-    .useful-info__footer {
-        display: none;
-    }
-}
-
-@media (max-width: 1024px) {
-    .social-banner {
-        margin: 32px 40px;
-    }
-
-    .social-banner__container {
-        padding: 28px 32px;
-    }
-
-    .social-banner__content {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        text-align: center;
-    }
-
-    .social-banner__phone {
-        display: none;
-    }
-
-    .social-banner__title {
-        font-size: 24px;
-        margin-bottom: 16px;
-    }
-
-    .social-banner__icons {
-        justify-content: center;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .social-banner {
-        margin: 20px 14px;
-    }
-
-    .social-banner__container {
-        padding: 24px 20px;
-    }
-
-    .social-banner__title {
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-
-    .social-banner__icons {
-        gap: 12px;
-    }
-
 }
 
 .footer {
@@ -2684,152 +2018,6 @@ input[type='file'] {
     background-color: #DAE2EF;
 }
 
-@media (max-width: 1024px) {
-    .footer__container {
-        padding: 24px;
-    }
-
-    .footer__columns {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    .footer__payment {
-        padding-top: 35px;
-    }
-
-    .footer__legal-link {
-        margin: 0 auto;
-    }
-
-    .footer__disclaimer {
-        text-transform: none;
-        letter-spacing: normal;
-        font-size: 19px;
-
-    }
-}
-
-@media (max-width: 768px) {
-    .footer {
-        padding-top: 24px;
-    }
-
-    .footer__bottom {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer__payment {
-        margin: 0;
-    }
-
-    .footer__legal {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: flex-start;
-    }
-}
-
-@media (max-width: 759px) {
-    .footer__divider {
-        bottom: 14% !important;
-    }
-}
-
-@media (max-width: 640px) {
-    .footer__columns {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    .footer__payment {
-        flex-direction: column;
-    }
-
-    .footer__payment-methods {
-        gap: 0.5rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .footer__columns {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .footer__content {
-        gap: 1.5rem;
-    }
-
-    .footer__title {
-        font-size: 1rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .footer__link,
-    .footer__contact-item {
-        font-size: 0.8rem;
-    }
-
-    .footer__payment-title {
-        font-size: 0.8rem;
-    }
-
-    .footer__license {
-        font-size: 11px;
-        line-height: 1.2;
-    }
-
-    .footer__disclaimer {
-        padding: 15px 0;
-        font-size: 14px;
-    }
-
-    .footer__social {
-        gap: 6px;
-    }
-
-    .footer__divider {
-        bottom: 15% !important;
-    }
-}
-
-@media (max-width: 375px) {
-
-    .footer__contact-item {
-        font-size: 0.75rem;
-    }
-
-    .footer__payment {
-        padding-bottom: 15px;
-    }
-
-    .footer__payment-methods {
-        flex-wrap: wrap;
-    }
-
-    .footer__social-link {
-        width: 1.75rem;
-        height: 1.75rem;
-    }
-
-    .footer__social-icon {
-        width: 1.25rem;
-        height: 1.25rem;
-    }
-
-    .footer__disclaimer {
-        font-size: 14px;
-        text-transform: none;
-        letter-spacing: normal;
-    }
-}
-
 .footer__container--mobile {
     display: none;
 }
@@ -2872,38 +2060,6 @@ input[type='file'] {
     background: #EDF0F5;
     bottom: 20%;
     position: absolute;
-}
-
-@media (max-width: 1024px) {
-    .footer__container {
-        display: none;
-    }
-
-    .footer__container--mobile {
-        display: block;
-        padding: 0 24px;
-    }
-
-    .footer__columns {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .footer__social-section {
-        gap: 1rem;
-    }
-
-    .footer__social {
-        padding-top: 0;
-    }
-
-    .footer__payment-section {
-        align-items: flex-start;
-    }
-
-    .footer__divider {
-        bottom: 11%;
-    }
 }
 
 .mobile-menu {
@@ -3384,126 +2540,6 @@ details summary.mobile-menu__nav-header svg {
     border-radius: 0 16px 16px 0;
 }
 
-@media (max-width: 1400px) {
-    .map__title {
-        font-size: 36px;
-        margin-bottom: 24px;
-    }
-
-    .map__content {
-        height: 142px;
-    }
-
-    .map__placeholder-icon img {
-        width: 44px;
-        height: 44px;
-    }
-
-    .map__open-btn {
-        padding: 10px 18px;
-        font-size: 13px;
-    }
-
-    .map-modal__content {
-        grid-template-columns: 1fr;
-        max-height: 85vh;
-    }
-
-    .map-modal__iframe {
-        border-radius: 16px 16px 0 0;
-        height: 400px;
-    }
-
-    .map-modal__info {
-        border-radius: 0 0 16px 16px;
-        padding: 24px 20px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .map__title {
-        font-size: 32px;
-        margin-bottom: 24px;
-    }
-
-    .map__content {
-        height: 142px;
-    }
-
-    .map__placeholder-icon img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .map__open-btn {
-        padding: 9px 16px;
-        font-size: 12px;
-    }
-
-    .map-modal__overlay {
-        padding: 16px;
-    }
-
-    .map-modal__content {
-        grid-template-columns: 1fr;
-        max-height: 90vh;
-    }
-
-    .map-modal__iframe {
-        height: 350px;
-    }
-
-    .map-modal__info {
-        padding: 20px 16px;
-    }
-}
-
-@media(max-width: 768px) {
-    .map__title {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    .map__content {
-        height: 142px;
-    }
-
-    .map__placeholder-icon img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .map__open-btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .map-modal__overlay {
-        padding: 12px;
-    }
-
-    .map-modal__content {
-        min-height: auto;
-    }
-
-    .map-modal__iframe {
-        height: 300px;
-    }
-
-    .map-modal__close {
-        width: 36px;
-        height: 36px;
-        top: 12px;
-        left: 12px;
-    }
-
-    .map-modal__close img {
-        width: 18px;
-        height: 18px;
-    }
-
-}
-
 .clinic-info__header {
     display: flex;
     align-items: center;
@@ -3593,15 +2629,7 @@ details summary.mobile-menu__nav-header svg {
     background: #1F7A84;
 }
 
-@media (max-width: 768px) {
-    .clinic-info__name {
-        font-size: 20px;
-    }
 
-    .clinic-info__phone {
-        font-size: 16px;
-    }
-}
 
 .gallery__pagination {
     display: flex;
@@ -3670,37 +2698,248 @@ details summary.mobile-menu__nav-header svg {
     cursor: pointer;
 }
 
-@media(max-width: 1300px) {
-    .gallery__pagination {
-        max-width: 30%;
+@media (max-width: 1425px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    body {
+        padding-top: 140px;
+    }
+
+    .header__container {
+        padding: 0 1rem;
+    }
+
+    .header__top {
+        padding: 20px 0;
+    }
+
+    .header__top-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .header__info {
+        display: none;
+    }
+
+    .header__contact {
+        display: none;
+    }
+
+    .header__bottom {
+        display: none;
+    }
+
+    .header__utilities {
+        display: none;
+    }
+
+    .header__dropdown-content {
+        display: none;
+    }
+
+    .header__mega-menu {
+        display: none;
+    }
+
+    .header__mobile-header-top {
+        display: flex;
+        gap: 12px;
+    }
+
+    .header__mobile-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__mobile-icons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .header__mobile-icon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        overflow: hidden;
+    }
+
+    .header__mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        background: none;
+        border: none;
+        color: #374151;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .header__mobile-menu-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .header-contact-block {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .doctors__all-link {
+        display: none;
+    }
+
+    .doctors__header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__man {
+        z-index: 1;
     }
 }
 
-@media(max-width: 950px) {
-    .gallery__pagination {
-        max-width: 40%;
+@media (max-width: 1400px) {
+    .reviews__pagination {
+        max-width: 25%;
     }
-}
 
-@media(max-width: 800px) {
-    .gallery__pagination {
-        max-width: 70%;
+    .reviews__all-link {
+        display: none;
     }
-}
 
-@media(max-width: 520px) {
-    .gallery__pagination {
-        max-width: 90%;
+    .reviews__header {
+        display: flex;
+        justify-content: center;
     }
-}
 
-@media(max-width: 420px) {
-    .gallery__pagination {
-        max-width: 100%;
+    .reviews__title {
+        grid-column: auto;
+    }
+
+    .reviews__title {
+        font-size: 36px;
+    }
+
+    .reviews__header {
+        margin-bottom: 24px;
+    }
+
+    .licenses__title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .licenses__grid {
+        gap: 24px;
+    }
+
+    .license-card__image {
+        height: 350px;
+    }
+
+    .useful-info {
+        margin: 60px 80px;
+    }
+
+    .useful-info__title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .social-banner {
+        margin: 40px 80px;
+    }
+
+    .social-banner__container {
+        padding: 46px 40px;
+    }
+
+    .social-banner__title {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-banner__left {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .social-banner__phone {
+        display: none;
+    }
+
+    .map__title {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    .map__content {
+        height: 142px;
+    }
+
+    .map__placeholder-icon img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .map__open-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+
+    .map-modal__content {
+        grid-template-columns: 1fr;
+        max-height: 85vh;
+    }
+
+    .map-modal__iframe {
+        border-radius: 16px 16px 0 0;
+        height: 400px;
+    }
+
+    .map-modal__info {
+        border-radius: 0 0 16px 16px;
+        padding: 24px 20px;
     }
 }
 
 @media (max-width: 1300px) {
+    .doctors__pagination {
+        max-width: 30%;
+    }
+
+    .reviews__title {
+        font-size: 36px;
+    }
+
+    .reviews__header {
+        margin-bottom: 24px;
+    }
+
+    .gallery__pagination {
+        max-width: 30%;
+    }
+
     .gallery {
         margin: 48px 68px;
     }
@@ -3711,7 +2950,266 @@ details summary.mobile-menu__nav-header svg {
     }
 }
 
+@media (max-width: 1124px) {
+    .useful-info__footer {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
+    .container {
+        margin: 20px 61px 36px 61px;
+    }
+
+    .doctors-filter {
+        background: transparent;
+        padding: 0;
+    }
+
+    .doctors-filter__row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .doctors-filter__field {
+        min-width: auto;
+    }
+
+    .reviews__title {
+        font-size: 32px;
+        margin: 0 auto;
+        grid-column: auto;
+    }
+
+    .reviews__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .reviews__pagination {
+        max-width: 30%;
+    }
+
+    .licenses__title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .licenses__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .license-card__image {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .license-card__image img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .licenses__slider .splide__slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .licenses__slider .license-card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .license-card__image {
+        margin: 0 auto;
+    }
+
+    .my-carousel-progress {
+        margin-top: 24px;
+    }
+
+    .useful-info {
+        margin: 48px 40px;
+    }
+
+    .useful-info__title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .useful-info__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .social-banner {
+        margin: 32px 40px;
+    }
+
+    .social-banner__container {
+        padding: 28px 32px;
+    }
+
+    .social-banner__content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .social-banner__phone {
+        display: none;
+    }
+
+    .social-banner__title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .social-banner__icons {
+        justify-content: center;
+    }
+
+    .form-appointment__info {
+        width: 100%;
+    }
+
+    .appointment-form__submit {
+        width: 100%;
+    }
+
+    .form-appointment__info-content {
+        text-align: center;
+    }
+
+    .form-appointment__title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-appointment__content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-appointment__image {
+        display: none;
+    }
+
+    .form-appointment__form {
+        width: 100%;
+        padding: 0 36px 36px 36px;
+    }
+
+    .form-appointment__image {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .form-appointment__image img {
+        width: 150px;
+    }
+
+    .form-appointment__description {
+        margin: 0;
+    }
+
+    .footer__container {
+        padding: 24px;
+    }
+
+    .footer__columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .footer__payment {
+        padding-top: 35px;
+    }
+
+    .footer__legal-link {
+        margin: 0 auto;
+    }
+
+    .footer__disclaimer {
+        text-transform: none;
+        letter-spacing: normal;
+        font-size: 19px;
+    }
+
+    .footer__container {
+        display: none;
+    }
+
+    .footer__container--mobile {
+        display: block;
+        padding: 0 24px;
+    }
+
+    .footer__columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer__social-section {
+        gap: 1rem;
+    }
+
+    .footer__social {
+        padding-top: 0;
+    }
+
+    .footer__payment-section {
+        align-items: flex-start;
+    }
+
+    .footer__divider {
+        bottom: 11%;
+    }
+
+    .map__title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .map__content {
+        height: 142px;
+    }
+
+    .map__placeholder-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map__open-btn {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+    .map-modal__overlay {
+        padding: 16px;
+    }
+
+    .map-modal__content {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+    }
+
+    .map-modal__iframe {
+        height: 350px;
+    }
+
+    .map-modal__info {
+        padding: 20px 16px;
+    }
+
     .gallery {
         margin: 32px 40px;
     }
@@ -3721,10 +3219,219 @@ details summary.mobile-menu__nav-header svg {
         margin-bottom: 32px;
     }
 
-    .gallery__item img {}
+    .info-card__image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 950px) {
+    .doctors__pagination {
+        max-width: 40%;
+    }
+
+    .gallery__pagination {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+    .reviews__pagination {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 856px) {
+    .doctor-education__container {
+        gap: 7px;
+    }
+}
+
+@media (max-width: 800px) {
+    .gallery__pagination {
+        max-width: 70%;
+    }
 }
 
 @media (max-width: 768px) {
+    .doctors__title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .reviews__title {
+        font-size: 24px;
+    }
+
+    .reviews__controls {
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .reviews .splide__arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviews .splide__arrow::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-card__content p {
+        font-size: 13px;
+    }
+
+    .licenses__grid {
+        display: none !important;
+    }
+
+    .licenses__slider.splide {
+        display: block;
+        visibility: visible;
+    }
+
+    .licenses__title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .licenses__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .license-card__image {
+        height: 350px;
+    }
+
+    .my-carousel-progress {
+        margin-top: 20px;
+        height: 3px;
+    }
+
+    .useful-info {
+        margin: 20px 14px;
+    }
+
+    .useful-info__title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .useful-info__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .useful-info__view-all {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .form-appointment {
+        padding: 10px 0 40px 0;
+    }
+
+    .form-appointment__title {
+        font-size: 28px;
+    }
+
+    .form-appointment__form {
+        padding: 30px 20px;
+    }
+
+    .appointment-form {
+        gap: 20px;
+    }
+
+    .appointment-form__checkbox-text {
+        font-size: 12px;
+    }
+
+    .social-banner {
+        margin: 20px 14px;
+    }
+
+    .social-banner__container {
+        padding: 24px 20px;
+    }
+
+    .social-banner__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .social-banner__icons {
+        gap: 12px;
+    }
+
+    .footer {
+        padding-top: 24px;
+    }
+
+    .footer__bottom {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__payment {
+        margin: 0;
+    }
+
+    .footer__legal {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .map__title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .map__content {
+        height: 142px;
+    }
+
+    .map__placeholder-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map__open-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .map-modal__overlay {
+        padding: 12px;
+    }
+
+    .map-modal__content {
+        min-height: auto;
+    }
+
+    .map-modal__iframe {
+        height: 300px;
+    }
+
+    .map-modal__close {
+        width: 36px;
+        height: 36px;
+        top: 12px;
+        left: 12px;
+    }
+
+    .map-modal__close img {
+        width: 18px;
+        height: 18px;
+    }
+
     .gallery {
         margin: 24px 20px;
     }
@@ -3752,10 +3459,592 @@ details summary.mobile-menu__nav-header svg {
         width: 18px;
         height: 18px;
     }
+
+    .info-card__image {
+        height: 160px;
+    }
+
+    .info-card__content {
+        padding: 20px;
+    }
+
+    .info-card__title {
+        font-size: 16px;
+    }
+
+    .doctor-education__content {
+        padding: 24px;
+    }
+
+    .doctor-education__title {
+        font-size: 20px;
+    }
+
+    .doctor-education__item {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .doctor-education__institution {
+        font-size: 14px;
+    }
+
+    .doctor-education__specialty,
+    .doctor-education__period {
+        font-size: 13px;
+    }
+
+    .clinic-info__name {
+        font-size: 20px;
+    }
+
+    .clinic-info__phone {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 759px) {
+    .footer__divider {
+        bottom: 14% !important;
+    }
+}
+
+@media (max-width: 756px) {
+    .reviews__pagination {
+        max-width: 40%;
+    }
+
+    .doctors .splide__pagination__page {
+        width: 10px;
+        height: 10px;
+        border-width: 1px;
+    }
+
+    .doctors .splide__pagination {
+        gap: 10px;
+    }
+
+    .doctors .splide__arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer__columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .footer__payment {
+        flex-direction: column;
+    }
+
+    .footer__payment-methods {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviews__pagination {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery__pagination {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 485px) {
+    .reviews__pagination {
+        max-width: 65%;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        margin: 14px 14px 14px 14px;
+    }
+
+    .header__phone-number {
+        font-size: 1rem;
+    }
+
+    .header__cta {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+
+    .header__logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .doctors-filter {
+        margin-bottom: 24px;
+    }
+
+    .doctors-filter__input,
+    .doctors-filter__select,
+    .doctors-filter__submit {
+        font-size: 16px;
+    }
+
+    .doctors-filter__submit {
+        display: none;
+    }
+
+    .doctors-filter__submit--mobile {
+        display: block;
+        padding: 11px 25px;
+        background: #007a7a;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .doctors-filter__submit--mobile img {
+        width: 15px;
+        height: 14px;
+    }
+
+    .breadcrumb__items {
+        font-size: 12px;
+    }
+
+    .doctor-card__price {
+        margin-top: 32px;
+    }
+
+    .doctor-card__experience {
+        margin-top: 29px;
+    }
+
+    .form-appointment__form {
+        padding: 20px 16px;
+    }
+
+    .form-appointment__info-content {
+        text-align: left;
+        padding: 14px 14px 0 14px;
+    }
+
+    .form-appointment__title {
+        text-align: left;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .appointment-form__input {
+        font-size: 14px;
+    }
+
+    .appointment-form__submit {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+
+    .footer__content {
+        gap: 1.5rem;
+    }
+
+    .footer__title {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer__link,
+    .footer__contact-item {
+        font-size: 0.8rem;
+    }
+
+    .footer__payment-title {
+        font-size: 0.8rem;
+    }
+
+    .footer__license {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    .footer__disclaimer {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .footer__social {
+        gap: 6px;
+    }
+
+    .footer__divider {
+        bottom: 15% !important;
+    }
+
     .gallery {
         margin: 24px 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .gallery__pagination {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer__columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .footer__contact-item {
+        font-size: 0.75rem;
+    }
+
+    .footer__payment {
+        padding-bottom: 15px;
+    }
+
+    .footer__payment-methods {
+        flex-wrap: wrap;
+    }
+
+    .footer__social-link {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .footer__social-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .footer__disclaimer {
+        font-size: 14px;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    .doctor-education {
+        margin: 0;
+    }
+
+    .doctor-education__container {
+        gap: 14px;
+    }
+
+    .doctor-education__content {
+        padding: 20px;
+    }
+
+    .doctor-education__title {
+        font-size: 18px;
+    }
+
+    .doctor-education__toggle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .doctor-education__item {
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .doctor-education__institution {
+        font-size: 13px;
+    }
+
+    .doctor-education__specialty,
+    .doctor-education__period {
+        font-size: 12px;
+    }
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: #27929E;
+    }
+
+    .header__phone-callback:hover {
+        color: #27929E;
+    }
+
+    .header__cta:hover {
+        background: #1F7A84;
+    }
+
+    .header__nav-link:hover {
+        color: #27929E;
+    }
+
+    .header__services-dropdown:hover .header__services-trigger svg {
+        transform: rotate(180deg);
+    }
+
+    .header__services-dropdown:hover .header__mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .header__mega-menu-all-btn:hover {
+        background: #27929E;
+        color: white;
+    }
+
+    .header__mega-menu-all-btn:hover span {
+        color: white;
+    }
+
+    .header__mega-menu-all-btn:hover img {
+        filter: brightness(0) invert(1);
+    }
+
+    .header__mega-menu-item a:hover {
+        color: #27929E;
+    }
+
+    .header__mega-menu-banner-btn:hover {
+        background: #27929E;
+        color: white;
+    }
+
+    .header__dropdown:hover .header__dropdown-content {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .header__dropdown-item:hover {
+        background: #F5F7FA;
+    }
+
+    .header__dropdown:hover .header__nav-link svg {
+        transform: rotate(180deg);
+    }
+
+    .header__accessibility:hover {
+        background: #F5F7FA;
+    }
+
+    .header-contact-block__appointment-btn:hover {
+        background: #1F7A84;
+    }
+
+    .custom-select__header:hover {
+        border-color: #27929E;
+    }
+
+    .custom-select__option:hover {
+        background: #F5F7FA;
+    }
+
+    .hero__button:hover {
+        background: #1F7A84;
+    }
+
+    .hero__carousel-dot:hover {
+        background: #27929E;
+    }
+
+    .doctor-card__btn--primary:hover {
+        background: #1F7A84;
+    }
+
+    .doctor-card__btn--secondary:hover {
+        background: #F5F7FA;
+        color: #27929E;
+    }
+
+    .doctor-card__btn--secondary:hover img {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+    }
+
+    .doctors__button-load:hover {
+        background: #F5F7FA;
+        color: #27929E;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-text {
+        color: #27929E;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-icon {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+    }
+
+    .useful-info__view-all:hover {
+        background: #27929E;
+        color: white;
+    }
+
+    .useful-info__view-all:hover img {
+        filter: brightness(0) invert(1);
+    }
+
+    .footer__legal-link:hover {
+        color: #27929E;
+    }
+
+    .mobile-menu__appointment-btn:hover {
+        background: #1F7A84;
+    }
+
+    .map__open-btn:hover {
+        background: #1F7A84;
+    }
+
+    .map-modal__close:hover {
+        background: #F5F7FA;
+    }
+
+    .clinic-info__route-btn:hover {
+        background: #1F7A84;
+    }
+}
+
+@media (hover: none) {
+    a:hover {
+        color: inherit;
+    }
+
+    .header__phone-callback:hover {
+        color: inherit;
+    }
+
+    .header__cta:hover {
+        background: inherit;
+    }
+
+    .header__nav-link:hover {
+        color: inherit;
+    }
+
+    .header__services-dropdown:hover .header__services-trigger svg {
+        transform: none;
+    }
+
+    .header__services-dropdown:hover .header__mega-menu {
+        opacity: inherit;
+        visibility: inherit;
+        transform: none;
+    }
+
+    .header__mega-menu-all-btn:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .header__mega-menu-all-btn:hover span {
+        color: inherit;
+    }
+
+    .header__mega-menu-all-btn:hover img {
+        filter: none;
+    }
+
+    .header__mega-menu-item a:hover {
+        color: inherit;
+    }
+
+    .header__mega-menu-banner-btn:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .header__dropdown:hover .header__dropdown-content {
+        opacity: inherit;
+        visibility: inherit;
+        transform: none;
+    }
+
+    .header__dropdown-item:hover {
+        background: inherit;
+    }
+
+    .header__dropdown:hover .header__nav-link svg {
+        transform: none;
+    }
+
+    .header__accessibility:hover {
+        background: inherit;
+    }
+
+    .header-contact-block__appointment-btn:hover {
+        background: inherit;
+    }
+
+    .custom-select__header:hover {
+        border-color: inherit;
+    }
+
+    .custom-select__option:hover {
+        background: inherit;
+    }
+
+    .hero__button:hover {
+        background: inherit;
+    }
+
+    .hero__carousel-dot:hover {
+        background: inherit;
+    }
+
+    .doctor-card__btn--primary:hover {
+        background: inherit;
+    }
+
+    .doctor-card__btn--secondary:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .doctor-card__btn--secondary:hover img {
+        filter: none;
+    }
+
+    .doctors__button-load:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-text {
+        color: inherit;
+    }
+
+    .doctors__button-load:hover .doctors__button-load-icon {
+        filter: none;
+    }
+
+    .useful-info__view-all:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .useful-info__view-all:hover img {
+        filter: none;
+    }
+
+    .footer__legal-link:hover {
+        color: inherit;
+    }
+
+    .mobile-menu__appointment-btn:hover {
+        background: inherit;
+    }
+
+    .map__open-btn:hover {
+        background: inherit;
+    }
+
+    .map-modal__close:hover {
+        background: inherit;
+    }
+
+    .clinic-info__route-btn:hover {
+        background: inherit;
     }
 }

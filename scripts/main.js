@@ -251,22 +251,82 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (targetServiceContent) {
                     targetServiceContent.classList.add('direction-services-tab-content--active');
                 }
+
+                const showAllButton = document.getElementById('showAllServices');
+                if (showAllButton) {
+                    const buttonText = showAllButton.querySelector('span');
+                    if (buttonText) {
+                        buttonText.textContent = 'Показать все';
+                    }
+                    showAllButton.classList.remove('direction-services-show-all--active');
+
+                    const allServiceGrids = document.querySelectorAll('.direction-services-grid');
+                    allServiceGrids.forEach(grid => {
+                        const hiddenColumn = grid.querySelector('.direction-services-column:nth-child(2)');
+                        if (hiddenColumn) {
+                            hiddenColumn.classList.remove('show');
+                            hiddenColumn.style.display = 'none';
+                        }
+                    });
+                }
             });
         });
 
         const showAllButton = document.getElementById('showAllServices');
         if (showAllButton) {
             showAllButton.addEventListener('click', function () {
-                const servicesContent = this.closest('.direction-tab-content').querySelector('.direction-services-content');
-                const servicesGrid = servicesContent.querySelector('.direction-services-grid');
+                const servicesContent = this.closest('.direction-services');
+                const activeTabContent = servicesContent.querySelector('.direction-services-tab-content--active');
+                const servicesGrid = activeTabContent.querySelector('.direction-services-grid');
+                const buttonText = this.querySelector('span') || this;
 
                 if (servicesGrid) {
-                    const columns = servicesGrid.querySelectorAll('.direction-services-column');
-                    columns.forEach(column => {
-                        column.style.display = 'block';
-                    });
+                    const hiddenColumn = servicesGrid.querySelector('.direction-services-column:nth-child(2)');
+                    const isExpanded = this.classList.contains('direction-services-show-all--active');
 
-                    this.style.display = 'none';
+                    if (hiddenColumn && !isExpanded) {
+                        hiddenColumn.style.display = 'block';
+                        setTimeout(() => {
+                            hiddenColumn.classList.add('show');
+                        }, 10);
+                        buttonText.textContent = 'Скрыть';
+                        this.classList.add('direction-services-show-all--active');
+                    } else if (hiddenColumn && isExpanded) {
+                        hiddenColumn.classList.remove('show');
+                        setTimeout(() => {
+                            hiddenColumn.style.display = 'none';
+                        }, 300);
+                        buttonText.textContent = 'Показать все';
+                        this.classList.remove('direction-services-show-all--active');
+                    }
+                }
+            });
+        }
+    }
+
+    function initializeIllnessesShowAll() {
+        const showAllIllnessesButton = document.getElementById('showAllIllnesses');
+        if (showAllIllnessesButton) {
+            showAllIllnessesButton.addEventListener('click', function () {
+                const illnessesGrid = this.closest('.direction-illnesses').querySelector('.direction-illnesses__grid');
+                const hiddenColumn = illnessesGrid.querySelector('.direction-illnesses__column:nth-child(2)');
+                const buttonText = this.querySelector('span') || this;
+                const isExpanded = this.classList.contains('direction-illnesses__show-all--active');
+
+                if (hiddenColumn && !isExpanded) {
+                    hiddenColumn.style.display = 'block';
+                    setTimeout(() => {
+                        hiddenColumn.classList.add('show');
+                    }, 10);
+                    buttonText.textContent = 'Скрыть';
+                    this.classList.add('direction-illnesses__show-all--active');
+                } else if (hiddenColumn && isExpanded) {
+                    hiddenColumn.classList.remove('show');
+                    setTimeout(() => {
+                        hiddenColumn.style.display = 'none';
+                    }, 300);
+                    buttonText.textContent = 'Показать все';
+                    this.classList.remove('direction-illnesses__show-all--active');
                 }
             });
         }
@@ -531,4 +591,5 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeReadMoreButtonMobile();
     initializeCustomSelects();
     initializeEducationAccordion();
+    initializeIllnessesShowAll();
 });

@@ -455,7 +455,6 @@
                 </ul>
             </nav>
         </nav>
-
         <section class="traumatology-banner container">
             <div class="traumatology-banner__container">
                 <div class="traumatology-banner__content ">
@@ -495,19 +494,21 @@
                 </div>
             </div>
         </section>
+        <section class="direction-nav container">
+            <nav class="direction-nav__container">
+                <div class="direction-nav__tabs">
+                    <button class="direction-nav__tab direction-nav__tab--active" data-tab="about">О
+                        направлении</button>
+                    <button class="direction-nav__tab" data-tab="services">Услуги</button>
+                    <button class="direction-nav__tab" data-tab="prices">Цены</button>
+                    <button class="direction-nav__tab" data-tab="treatment">Что мы лечим</button>
+                    <button class="direction-nav__tab" data-tab="promotions">Акции</button>
+                    <button class="direction-nav__tab" data-tab="reviews">Отзывы</button>
+                </div>
+            </nav>
+        </section>
         <section class="direction-section container">
             <div class="direction-container">
-                <nav class="direction-nav">
-                    <div class="direction-nav__tabs">
-                        <button class="direction-nav__tab direction-nav__tab--active" data-tab="about">О
-                            направлении</button>
-                        <button class="direction-nav__tab" data-tab="services">Услуги</button>
-                        <button class="direction-nav__tab" data-tab="prices">Цены</button>
-                        <button class="direction-nav__tab" data-tab="treatment">Что мы лечим</button>
-                        <button class="direction-nav__tab" data-tab="promotions">Акции</button>
-                        <button class="direction-nav__tab" data-tab="reviews">Отзывы</button>
-                    </div>
-                </nav>
                 <div class="direction-content">
                     <div class="direction-main">
                         <div class="direction-main__tabs">
@@ -683,7 +684,7 @@
 
                             <button class="direction-services-show-all" id="showAllServices">
                                 <img src="./img/icon/arrow.clockwise.svg" alt="">
-                                Показать все
+                                <span>Показать все</span>
                             </button>
                         </div>
                         <div class="direction-price">
@@ -791,6 +792,11 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <button class="direction-illnesses__show-all" id="showAllIllnesses">
+                                <img src="./img/icon/arrow.clockwise.svg" alt="">
+                                <span>Показать все</span>
+                            </button>
                         </div>
                         <div class="direction-promotions">
                             <div class="direction-promotions__header">
@@ -1021,7 +1027,7 @@
                                 </details>
                             </div>
                         </div>
-                        <div class="direction-doctors">
+                        <div class="doctors">
                             <div class="direction-doctors__header">Врачи-ортопеды и травматологи</div>
                             <div class="doctors__cards">
                                 <div class="doctors__grid">
@@ -1106,6 +1112,203 @@
                                             alt="">
                                         <p class="doctors__button-load-text">Загрузить ещё 3 из 9</p>
                                     </button>
+                                </div>
+                            </div>
+                            <div class="doctors__slider splide direction-doctors__slider" aria-label="Врачи клиники">
+                                <div class="splide__track track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="doctor-card">
+                                                <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png"
+                                                    alt="">
+                                                <div class="doctor-card__content">
+                                                    <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                                    <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                                    <p class="doctor-card__category">Врач высшей категории</p>
+                                                    <p class="doctor-card__specialty">Генеральный директор клиники,
+                                                        главный врач.
+                                                        Акушер-гинеколог-эндокринолог.</p>
+                                                    <div class="doctor-card__price">
+                                                        <p class="doctor-card__price-title">Первичная <br> консультация:
+                                                        </p>
+                                                        <p class="doctor-card__price-value">3500 ₽</p>
+                                                    </div>
+                                                    <div class="doctor-card__buttons">
+                                                        <button
+                                                            class="doctor-card__btn doctor-card__btn--primary">Записаться
+                                                            на
+                                                            приём</button>
+                                                        <a href="./doctor.html"
+                                                            class="doctor-card__btn doctor-card__btn--secondary">
+                                                            <span>Подробнее</span>
+                                                            <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="doctor-card">
+                                                <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png"
+                                                    alt="">
+                                                <div class="doctor-card__content">
+                                                    <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                                    <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                                    <p class="doctor-card__category">Врач высшей категории</p>
+                                                    <p class="doctor-card__specialty">Генеральный директор клиники,
+                                                        главный врач.
+                                                        Акушер-гинеколог-эндокринолог.</p>
+                                                    <div class="doctor-card__price">
+                                                        <p class="doctor-card__price-title">Первичная <br> консультация:
+                                                        </p>
+                                                        <p class="doctor-card__price-value">3500 ₽</p>
+                                                    </div>
+                                                    <div class="doctor-card__buttons">
+                                                        <button
+                                                            class="doctor-card__btn doctor-card__btn--primary">Записаться
+                                                            на
+                                                            приём</button>
+                                                        <a href="./doctor.html"
+                                                            class="doctor-card__btn doctor-card__btn--secondary">
+                                                            <span>Подробнее</span>
+                                                            <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="doctor-card">
+                                                <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png"
+                                                    alt="">
+                                                <div class="doctor-card__content">
+                                                    <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                                    <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                                    <p class="doctor-card__category">Врач высшей категории</p>
+                                                    <p class="doctor-card__specialty">Генеральный директор клиники,
+                                                        главный врач.
+                                                        Акушер-гинеколог-эндокринолог.</p>
+                                                    <div class="doctor-card__price">
+                                                        <p class="doctor-card__price-title">Первичная <br> консультация:
+                                                        </p>
+                                                        <p class="doctor-card__price-value">3500 ₽</p>
+                                                    </div>
+                                                    <div class="doctor-card__buttons">
+                                                        <button
+                                                            class="doctor-card__btn doctor-card__btn--primary">Записаться
+                                                            на
+                                                            приём</button>
+                                                        <a href="./doctor.html"
+                                                            class="doctor-card__btn doctor-card__btn--secondary">
+                                                            <span>Подробнее</span>
+                                                            <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="doctor-card">
+                                                <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png"
+                                                    alt="">
+                                                <div class="doctor-card__content">
+                                                    <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                                    <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                                    <p class="doctor-card__category">Врач высшей категории</p>
+                                                    <p class="doctor-card__specialty">Генеральный директор клиники,
+                                                        главный врач.
+                                                        Акушер-гинеколог-эндокринолог.</p>
+                                                    <div class="doctor-card__price">
+                                                        <p class="doctor-card__price-title">Первичная <br> консультация:
+                                                        </p>
+                                                        <p class="doctor-card__price-value">3500 ₽</p>
+                                                    </div>
+                                                    <div class="doctor-card__buttons">
+                                                        <button
+                                                            class="doctor-card__btn doctor-card__btn--primary">Записаться
+                                                            на
+                                                            приём</button>
+                                                        <a href="./doctor.html"
+                                                            class="doctor-card__btn doctor-card__btn--secondary">
+                                                            <span>Подробнее</span>
+                                                            <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="doctor-card">
+                                                <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png"
+                                                    alt="">
+                                                <div class="doctor-card__content">
+                                                    <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                                    <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                                    <p class="doctor-card__category">Врач высшей категории</p>
+                                                    <p class="doctor-card__specialty">Генеральный директор клиники,
+                                                        главный врач.
+                                                        Акушер-гинеколог-эндокринолог.</p>
+                                                    <div class="doctor-card__price">
+                                                        <p class="doctor-card__price-title">Первичная <br> консультация:
+                                                        </p>
+                                                        <p class="doctor-card__price-value">3500 ₽</p>
+                                                    </div>
+                                                    <div class="doctor-card__buttons">
+                                                        <button
+                                                            class="doctor-card__btn doctor-card__btn--primary">Записаться
+                                                            на
+                                                            приём</button>
+                                                        <a href="./doctor.html"
+                                                            class="doctor-card__btn doctor-card__btn--secondary">
+                                                            <span>Подробнее</span>
+                                                            <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="doctor-card">
+                                                <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png"
+                                                    alt="">
+                                                <div class="doctor-card__content">
+                                                    <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                                    <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                                    <p class="doctor-card__category">Врач высшей категории</p>
+                                                    <p class="doctor-card__specialty">Генеральный директор клиники,
+                                                        главный врач.
+                                                        Акушер-гинеколог-эндокринолог.</p>
+                                                    <div class="doctor-card__price">
+                                                        <p class="doctor-card__price-title">Первичная <br> консультация:
+                                                        </p>
+                                                        <p class="doctor-card__price-value">3500 ₽</p>
+                                                    </div>
+                                                    <div class="doctor-card__buttons">
+                                                        <button
+                                                            class="doctor-card__btn doctor-card__btn--primary">Записаться
+                                                            на
+                                                            приём</button>
+                                                        <a href="./doctor.html"
+                                                            class="doctor-card__btn doctor-card__btn--secondary">
+                                                            <span>Подробнее</span>
+                                                            <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="doctors__pagination">
+                                    <div class="splide__arrows">
+                                        <button class="splide__arrow splide__arrow--prev">
+                                            <img src="./img/icon/arrow.left-gray.svg" alt="">
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next">
+                                            <img src="./img/icon/arrow.right-gray.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <ul class="splide__pagination"></ul>
                                 </div>
                             </div>
                         </div>
