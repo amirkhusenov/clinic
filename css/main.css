@@ -1283,11 +1283,25 @@
     .doctors__pagination {
         max-width: 30%;
     }
+
+    .gallery__pagination {
+        max-width: 30%;
+    }
 }
 
 @media(max-width: 950px) {
     .doctors__pagination {
         max-width: 40%;
+    }
+
+    .gallery__pagination {
+        max-width: 40%;
+    }
+}
+
+@media(max-width: 800px) {
+    .gallery__pagination {
+        max-width: 70%;
     }
 }
 
@@ -1309,6 +1323,10 @@
     .doctors__pagination {
         max-width: 70%;
     }
+
+    .gallery__pagination {
+        max-width: 70%;
+    }
 }
 
 @media(max-width: 486px) {
@@ -1320,6 +1338,16 @@
 @media(max-width: 440px) {
     .doctors__pagination {
         max-width: 90%;
+    }
+
+    .gallery__pagination {
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 420px) {
+    .gallery__pagination {
+        max-width: 100%;
     }
 }
 
@@ -2185,11 +2213,6 @@
 
     .clinic-services__search-btn:hover .clinic-services__search-icon img {
         filter: brightness(0) invert(1);
-    }
-
-    .clinic-services__service:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
 
     .clinic-services__banner-btn:hover {
