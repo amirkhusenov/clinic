@@ -1,3 +1,7 @@
+.direction-content {
+    margin-top: 0;
+}
+
 .vacancies__title {
     font-size: 40px;
     font-weight: 600;
@@ -118,7 +122,6 @@
     margin-bottom: 0;
 }
 
-/* Responsive adjustments for job requirements */
 @media (max-width: 768px) {
     .vacancies__grid {
         grid-template-columns: 1fr;
@@ -170,13 +173,6 @@
 }
 
 @media (max-width: 480px) {
-    .vacancies {
-        padding: 40px 0;
-    }
-
-    .vacancies__container {
-        padding: 0 15px;
-    }
 
     .vacancy-card {
         padding: 20px;
