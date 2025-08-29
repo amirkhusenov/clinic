@@ -401,9 +401,7 @@
     z-index: 2;
 }
 
-.doctor-video-card:hover .doctor-video-card__play-btn {
-    transform: translate(-50%, -50%) scale(1.1);
-}
+
 
 .doctor-video-card__title {
     padding: 24px 24px 30px 24px;
@@ -610,17 +608,13 @@
 }
 
 @media (hover: hover) {
-    .doctor__btn--primary:hover {
-        background: #1F7A84;
-    }
 
     .doctor__btn--secondary:hover {
-        background: #F5F7FA;
-        color: #27929E;
+        color: #fff;
     }
 
     .doctor__btn--secondary:hover img {
-        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+        filter: brightness(0) invert(1);
     }
 
     .doctor-videos__all-link:hover {
@@ -636,21 +630,9 @@
         transform: scale(1.05);
     }
 
-    .doctor-video-card:hover .doctor-video-card__play-btn {
-        background: #27929E;
-    }
-
-    .doctors__button-load:hover {
-        background: #F5F7FA;
-        color: #27929E;
-    }
-
-    .doctors__button-load:hover .doctors__button-load-text {
-        color: #27929E;
-    }
 
     .doctors__button-load:hover .doctors__button-load-icon {
-        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
+        filter: brightness(0) invert(1);
     }
 
     .appointment-form__submit:hover {

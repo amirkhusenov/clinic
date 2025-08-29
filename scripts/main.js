@@ -259,15 +259,56 @@ document.addEventListener('DOMContentLoaded', function () {
                         buttonText.textContent = 'Показать все';
                     }
                     showAllButton.classList.remove('direction-services-show-all--active');
+                }
+            });
+        });
 
-                    const allServiceGrids = document.querySelectorAll('.direction-services-grid');
-                    allServiceGrids.forEach(grid => {
-                        const hiddenColumn = grid.querySelector('.direction-services-column:nth-child(2)');
-                        if (hiddenColumn) {
-                            hiddenColumn.classList.remove('show');
-                            hiddenColumn.style.display = 'none';
-                        }
-                    });
+        const videoTabs = document.querySelectorAll('.video-tabs__tab');
+
+        videoTabs.forEach(tab => {
+            tab.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const targetTab = this.getAttribute('data-tab');
+
+                videoTabs.forEach(t => t.classList.remove('video-tabs__tab--active'));
+
+                this.classList.add('video-tabs__tab--active');
+
+                const allContent = document.querySelectorAll('.video-content');
+                const targetContent = document.querySelector(`.video-content[data-tab="${targetTab}"]`);
+
+                allContent.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                if (targetContent) {
+                    targetContent.style.display = 'block';
+                }
+            });
+        });
+
+        const servicesTabs = document.querySelectorAll('.doctors-tabs__tab');
+
+        servicesTabs.forEach(tab => {
+            tab.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const targetTab = this.textContent.trim();
+
+                servicesTabs.forEach(t => t.classList.remove('doctors-tabs__tab--active'));
+
+                this.classList.add('doctors-tabs__tab--active');
+
+                const allContent = document.querySelectorAll('.services-content');
+                const targetContent = document.querySelector(`.services-content[data-tab="${targetTab}"]`);
+
+                allContent.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                if (targetContent) {
+                    targetContent.style.display = 'block';
                 }
             });
         });
@@ -580,6 +621,163 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function initializeReviewForm() {
+        const reviewTypeBtns = document.querySelectorAll('.review-form__type-btn');
+        const showFormBtn = document.querySelector('.doctors-filter__show-form-btn');
+        const reviewFormModal = document.querySelector('.review-form-modal');
+        const closeModalBtn = document.querySelector('.review-form-modal__close');
+
+        reviewTypeBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                reviewTypeBtns.forEach(b => b.classList.remove('review-form__type-btn--active'));
+
+                this.classList.add('review-form__type-btn--active');
+            });
+        });
+
+        if (showFormBtn && reviewFormModal) {
+            showFormBtn.addEventListener('click', function () {
+                reviewFormModal.classList.add('review-form-modal--active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        if (closeModalBtn && reviewFormModal) {
+            closeModalBtn.addEventListener('click', function () {
+                reviewFormModal.classList.remove('review-form-modal--active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        if (reviewFormModal) {
+            reviewFormModal.addEventListener('click', function (e) {
+                if (e.target === this) {
+                    this.classList.remove('review-form-modal--active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+    }
+
+    function initializeHandbookAlphabet() {
+        const alphabetLetters = document.querySelectorAll('.alphabet-letter');
+        const handbookContents = document.querySelectorAll('.handbook-content');
+
+        alphabetLetters.forEach(letter => {
+            letter.addEventListener('click', function () {
+                const selectedLetter = this.getAttribute('data-letter');
+
+                alphabetLetters.forEach(l => l.classList.remove('active'));
+
+                this.classList.add('active');
+
+                handbookContents.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                if (selectedLetter === 'ВСЕ') {
+                    handbookContents.forEach(content => {
+                        content.style.display = 'block';
+                    });
+                } else {
+                    const targetContent = document.querySelector(`.handbook-content[data-letter="${selectedLetter}"]`);
+                    if (targetContent) {
+                        targetContent.style.display = 'block';
+                    }
+                }
+            });
+        });
+
+    }
+
+    function initializeUniversalPagination() {
+        const paginationContainers = document.querySelectorAll('.blogs__pagination');
+
+        paginationContainers.forEach(container => {
+            const paginationPages = container.querySelectorAll('.blogs__pagination-page');
+            const paginationPrev = container.querySelector('.blogs__pagination-btn--prev');
+            const paginationNext = container.querySelector('.blogs__pagination-btn--next');
+
+            const parentSection = container.closest('section');
+            let contentPages = [];
+
+            const newsPages = parentSection.querySelectorAll('.blogs__grid-item[data-page]');
+            const promotionPages = parentSection.querySelectorAll('.promotions__grid-items[data-page]');
+            const videoPages = parentSection.querySelectorAll('.video-grid[data-page]');
+
+            if (newsPages.length > 0) {
+                contentPages = newsPages;
+            } else if (promotionPages.length > 0) {
+                contentPages = promotionPages;
+            } else if (videoPages.length > 0) {
+                contentPages = videoPages;
+            }
+
+            if (contentPages.length === 0 || paginationPages.length === 0) return;
+
+            let currentPage = 1;
+            const totalPages = paginationPages.length;
+
+            function showPage(pageNumber) {
+                contentPages.forEach(page => {
+                    page.style.display = 'none';
+                });
+
+                const targetPage = parentSection.querySelector(`[data-page="${pageNumber}"]`);
+                if (targetPage) {
+                    targetPage.style.display = 'grid';
+                }
+
+                paginationPages.forEach(btn => {
+                    btn.classList.remove('blogs__pagination-page--active');
+                });
+
+                const activeBtn = container.querySelector(`.blogs__pagination-page[data-page="${pageNumber}"]`);
+                if (activeBtn) {
+                    activeBtn.classList.add('blogs__pagination-page--active');
+                }
+
+                if (paginationPrev) {
+                    paginationPrev.disabled = pageNumber === 1;
+                    paginationPrev.style.opacity = pageNumber === 1 ? '0.5' : '1';
+                }
+
+                if (paginationNext) {
+                    paginationNext.disabled = pageNumber === totalPages;
+                    paginationNext.style.opacity = pageNumber === totalPages ? '0.5' : '1';
+                }
+
+                currentPage = pageNumber;
+            }
+
+            paginationPages.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const pageNumber = parseInt(this.getAttribute('data-page'));
+                    showPage(pageNumber);
+                });
+            });
+
+            if (paginationPrev) {
+                paginationPrev.addEventListener('click', function () {
+                    if (currentPage > 1) {
+                        showPage(currentPage - 1);
+                    }
+                });
+            }
+
+            if (paginationNext) {
+                paginationNext.addEventListener('click', function () {
+                    if (currentPage < totalPages) {
+                        showPage(currentPage + 1);
+                    }
+                });
+            }
+
+            showPage(1);
+        });
+    }
+
+
     initializeTabs();
     initializeShowMoreButtons();
     initializeDropdowns();
@@ -591,5 +789,8 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeReadMoreButtonMobile();
     initializeCustomSelects();
     initializeEducationAccordion();
+    initializeReviewForm();
     initializeIllnessesShowAll();
+    initializeHandbookAlphabet();
+    initializeUniversalPagination();
 });

@@ -1,6 +1,139 @@
-.splide__track {
-    margin-bottom: 20px !important;
-    padding-bottom: 8px !important;
+.hero {
+    margin: 60px 108px 0 108px;
+
+    overflow: hidden;
+}
+
+.hero__container {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(105, 163, 255, 1) 0%, rgba(59, 232, 242, 1) 100%);
+    border-radius: 16px;
+    transition: background 0.8s ease-in-out;
+}
+
+.hero__slides-container {
+    position: relative;
+}
+
+.hero__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+}
+
+.hero__slide--active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.hero__man {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.hero__content {
+    padding: 0 56px 14px 56px;
+
+}
+
+.hero__text {
+    flex: 1;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.hero__title {
+    font-size: 40px;
+    max-width: 700px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 52px 0 12px 0;
+    color: var(--color-text);
+}
+
+.hero__subtitle {
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.hero__button {
+    margin: 47px 0 74px 0;
+    background: #fff;
+    color: var(--color-text);
+    border: none;
+    padding: 11.5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.hero__button:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.hero__carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.hero__carousel-arrow {
+    cursor: pointer;
+}
+
+.hero__carousel-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.hero__carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero__carousel-dot--active {
+    background: #fff;
+}
+
+.hero__carousel-dot:hover {
+    background: #fff;
+    opacity: 0.7;
+}
+
+.hero__image {
+    flex-shrink: 0;
+}
+
+.hero__image-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 @media (max-width: 1425px) {
@@ -278,6 +411,7 @@
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     align-self: flex-start;
 }
@@ -291,7 +425,7 @@
     transition: all 0.3s ease;
 }
 
-.unique-operations__all-btn:hover .unique-operations__all-icon img {
+.unique-operations__all-btn:hover .unique-operations__all-icon {
     filter: brightness(0) invert(1);
 }
 
@@ -486,7 +620,7 @@
     color: #fff;
 }
 
-.clinic-services__search-btn:hover .clinic-services__search-icon img {
+.clinic-services__search-btn:hover .clinic-services__search-icon {
     filter: brightness(0) invert(1);
 }
 
@@ -1127,45 +1261,6 @@
 
 .promotions {
     margin: 48px 108px;
-}
-
-.promotions__container {}
-
-.promotions__title {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--color-text);
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.promotions__cards {
-    min-height: 200px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.promotions__card {
-    width: 100%;
-    position: relative;
-    border-radius: 1rem;
-    padding: 45px 0 0 27px;
-    display: flex;
-    margin: 0 0 6px 0;
-}
-
-.promotions__card--discount,
-.promotions__card--cosmetology {
-    background: #B6FEFE;
-    background: linear-gradient(270deg, rgba(182, 254, 254, 1) 0%, rgba(105, 163, 255, 1) 100%);
-    color: var(--color-text);
-}
-
-.promotions__card--all {
-    background: #fff;
-    color: var(--color-text);
-    box-shadow: var(--shadow-card);
 }
 
 .promotions__card-bg--percent,
@@ -2189,29 +2284,12 @@
 }
 
 @media (hover: hover) {
-    .unique-operations__appointment-btn:hover {
-        background: #1F7A84;
-    }
-
     .unique-operations__all-btn:hover {
-        background: #F5F7FA;
-        color: #27929E;
+        background: var(--color-text);
+        color: #fff;
     }
 
     .unique-operations__all-btn:hover .unique-operations__all-icon img {
-        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(162deg) brightness(95%) contrast(101%);
-    }
-
-    .clinic-services__search-btn:hover {
-        background: #27929E;
-        color: white;
-    }
-
-    .clinic-services__search-btn:hover .clinic-services__search-text {
-        color: white;
-    }
-
-    .clinic-services__search-btn:hover .clinic-services__search-icon img {
         filter: brightness(0) invert(1);
     }
 

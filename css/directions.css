@@ -7,14 +7,19 @@
 
 .traumatology-banner__image {
     position: absolute;
-    top: 0;
+    top: 7%;
     right: 0;
     z-index: 1;
 }
 
+.disease-banner__image {
+    top: 15%;
+    right: 7%;
+}
+
 .traumatology-banner__image-bg {
     position: absolute;
-    top: 8%;
+    top: 10%;
     right: 10%;
 
 }
@@ -68,7 +73,6 @@
 }
 
 .traumatology-banner__btn {
-    margin-top: 54px;
     background: #FF4940;
     color: white;
     border: none;
@@ -81,65 +85,55 @@
     border: 1px solid #FF4940;
 }
 
+.traumatology-banner__bottom {
+    margin: 52px 0 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
+.traumatology-banner__info {
+    font-size: 16px;
+    color: #FF4940;
+    font-weight: 600;
+}
+
+.traumatology-banner__caption {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.traumatology-banner__caption span {
+    color: #007691;
+    text-decoration: underline;
+}
 
 .direction {
     margin: 40px 0;
 }
 
-.direction-nav {
+.direction-header__icons {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
-    width: fit-content;
+    justify-content: center;
+    gap: 12px;
 }
 
-.direction-nav__tabs {
+.direction-header__icon {
     display: flex;
-    gap: 0;
-    background: #EDF0F5;
-    border-radius: 20px;
-    width: fit-content;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    align-items: center;
+    gap: 4px;
 }
 
-.direction-nav__tabs::-webkit-scrollbar {
-    display: none;
+.direction-header__container {
+    color: #7C8799;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.direction-nav__tab {
-    padding: 11px 20px;
-    border: none;
-    border-radius: 20px;
-    background: transparent;
-    color: var(--color-text);
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.direction-nav__tab--active {
-    background: #0D3260;
-    color: white;
-}
-
-
-
-.direction-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 60px;
-    margin-top: 48px;
-    max-width: 100%;
-}
 
 .direction-main {
     max-width: 100%;
@@ -177,6 +171,7 @@
     max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    border-radius: 16px;
 }
 
 .direction-services-tabs {
@@ -316,16 +311,19 @@
     }
 }
 
-.direction-tabs {
+.direction-nav {
+    width: fit-content;
+}
+
+.direction-nav_tabs {
     display: flex;
     gap: 16px;
 }
 
-.direction-tab {
+.direction-nav__tab {
     padding: 12px 24px;
     border: none;
     border-radius: 20px;
-    background: #F5F7FA;
     color: var(--color-text);
     font-size: 16px;
     font-weight: 500;
@@ -333,143 +331,14 @@
     transition: all 0.3s ease;
 }
 
-.direction-form {
-    background: #1F757E;
-    background-image: url(../img/main_page/social/banner-2.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    border-radius: 16px;
-    padding: 32px;
-    position: sticky;
-    top: 24px;
-    height: fit-content;
-}
-
-.direction-form__title {
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 24px;
-}
-
-.direction-form__content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.direction-form__field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.direction-form__label {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 400;
-}
-
-.direction-form__input {
-    padding: 12px 16px;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    background: #FFF3;
-    color: #fff;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.direction-form__input::placeholder {
+.direction-nav__tab--active {
+    background: var(--color-text);
     color: #fff;
 }
 
-.direction-form__checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-top: 8px;
-    position: relative;
-}
-
-.direction-form__checkbox-input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.direction-form__checkbox-label {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    color: #fff;
-    line-height: 1.4;
-    cursor: pointer;
-}
-
-.direction-form__checkbox-custom {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    background: transparent;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-    margin-top: 2px;
-}
-
-.direction-form__checkbox-custom::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 3px;
-    width: 6px;
-    height: 10px;
-    border: solid #80D8D0;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.direction-form__checkbox-input:checked~.direction-form__checkbox-label .direction-form__checkbox-custom {
-    background: #fff;
-    border-color: #fff;
-}
-
-.direction-form__checkbox-input:checked~.direction-form__checkbox-label .direction-form__checkbox-custom::after {
-    opacity: 1;
-}
-
-.direction-form__link {
-    color: #80D8D0;
-    text-decoration: none;
-}
-
-.direction-form__submit {
-    padding: 12px 56px;
-    background: white;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 8px;
-}
-
-.direction-form__submit:hover {
-    background: #F5F7FA;
-    transform: translateY(-1px);
-}
 
 @media (max-width: 1425px) {
-    .direction-form {
-        display: none;
-    }
+
 
     .direction-content {
         grid-template-columns: 1fr;
@@ -508,7 +377,6 @@
         font-size: 16px;
     }
 }
-
 
 @media (max-width: 768px) {
     .direction-nav {
@@ -682,46 +550,9 @@
         gap: 20px;
     }
 
-    .direction-services-column:nth-child(2) {
-        display: none;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .direction-services-column:nth-child(2).show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     .direction-services-list li {
         font-size: 14px;
         padding: 10px 0;
-    }
-
-
-    .direction-price__title {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .direction-price__card {
-        padding: 20px;
-    }
-
-    .direction-price__service {
-        margin-right: 0;
-        font-size: 14px;
-    }
-
-    .direction-price__prices {
-        width: 50%;
-        justify-content: space-between;
-    }
-
-    .direction-price__old,
-    .direction-price__current {
-        font-size: 14px;
     }
 
     .direction-illnesses__title {
@@ -831,129 +662,13 @@
     .direction-questions__body p {
         font-size: 14px;
     }
-}
 
-.direction-price {
-    margin-top: 32px;
-}
-
-.direction-price__title {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--color-text);
-    margin-bottom: 24px;
-}
-
-.direction-price__card {
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: var(--shadow-block);
-    padding: 24px;
-}
-
-.direction-price__subtitle {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-text);
-    margin-bottom: 24px;
-}
-
-.direction-price__list {
-    margin-bottom: 24px;
-}
-
-.direction-price__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #F0F0F0;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-.direction-price__item:last-child {
-    border-bottom: none;
-}
-
-@media (max-width: 700px) {
-    .direction-price__item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-        padding: 12px 0;
-    }
-
-    .direction-price__list {
-        margin-bottom: 0;
-    }
-
-    .direction-price__item:nth-child(n+5) {
-        display: none;
-    }
-
-    .direction-price__item:nth-child(4) {
-        border-bottom: none;
-    }
-
-    .direction-price__show-all {
-        display: none !important;
-    }
-
-    .direction-price__subtitle {
-        display: none;
+    .traumatology-banner__info,
+    .traumatology-banner__caption {
+        font-size: 14px;
     }
 }
 
-.direction-price__service {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-text);
-    flex: 1;
-    margin-right: 20px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-}
-
-.direction-price__prices {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.direction-price__new {
-    font-size: 16px;
-    color: #FF4444;
-}
-
-.direction-price__current {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-text);
-}
-
-.direction-price__current--old {
-    text-decoration: line-through;
-}
-
-.direction-price__show-all {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px 20px;
-    border: 1px solid var(--color-text);
-    border-radius: 20px;
-    background: #fff;
-    color: var(--color-text);
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 0 auto;
-}
 
 .direction-illnesses {
     margin-top: 48px;
@@ -1306,6 +1021,8 @@
     max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    padding-bottom: 8px;
+
 }
 
 .direction-doctors__slider {
@@ -1327,10 +1044,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    padding-bottom: 8px;
 }
 
 .social-banner {
@@ -1359,6 +1077,9 @@
     margin-bottom: 48px;
 }
 
+.direction-content__expert {
+    margin: 48px 0;
+}
 
 @media (max-width: 1425px) {
 
@@ -1392,7 +1113,6 @@
     }
 
     .traumatology-banner__btn {
-        margin-top: 32px;
         padding: 12px 32px;
     }
 
@@ -1462,6 +1182,27 @@
     .doctors {
         margin-top: 24px;
     }
+
+    .contact-form__image {
+        display: none;
+    }
+
+    .contact-form__content {
+        flex-direction: column;
+    }
+
+    .contact-form__field {
+        flex-direction: column;
+    }
+
+    .contact-form__input-group {
+        min-width: 100%;
+    }
+
+    .contact-form__subtitle {
+        min-width: 100%;
+    }
+
 }
 
 @media (max-width: 950px) {
@@ -1485,9 +1226,14 @@
         margin-bottom: 12px;
     }
 
+    .traumatology-banner__bottom {
+        margin-top: 36px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .traumatology-banner__btn {
-        margin-top: 24px;
-        padding: 12x 30px;
+        padding: 12px 30px;
         font-size: 12px;
         display: block;
         width: 100%;
@@ -1496,6 +1242,18 @@
     .direction-services-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .direction-services-column:nth-child(2) {
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .direction-services-column:nth-child(2).show {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .direction-services {
@@ -1645,18 +1403,6 @@
         gap: 16px;
     }
 
-    .direction-services-column:nth-child(2) {
-        display: none;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .direction-services-column:nth-child(2).show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     .direction-services-list li {
         font-size: 13px;
         padding: 8px 0;
@@ -1668,15 +1414,6 @@
         padding: 10px 16px;
         font-size: 13px;
         margin-top: 12px;
-    }
-
-    .direction-price__title {
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-
-    .direction-price__card {
-        padding: 16px;
     }
 
     .direction-promotions__title {
@@ -1782,14 +1519,6 @@
 
     .direction-services-list li {
         font-size: 12px;
-    }
-
-    .direction-price__title {
-        font-size: 18px;
-    }
-
-    .direction-price__card {
-        padding: 12px;
     }
 
     .direction-promotions__title {
@@ -1900,4 +1629,353 @@
     .direction-promotions__view-all:hover img {
         filter: none;
     }
+}
+
+
+.direction-nav__container {
+    background: #EDF0F5;
+    border-radius: 16px;
+}
+
+.procedure-nav__container {
+    background: #EDF0F5;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.direction-nav__list,
+.procedure-nav__list {
+    color: #27929E;
+    padding: 0 24px;
+}
+
+.direction-nav__list li,
+.procedure-nav__list li {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 0 10px 0;
+}
+
+.direction-nav__list a,
+.procedure-nav__list a {
+    color: #27929E;
+}
+
+.cryodestruction-content {
+    margin: 32px 0;
+}
+
+.cryodestruction-section {
+    margin-bottom: 24px;
+}
+
+.cryodestruction-section__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 24px 0;
+}
+
+.cryodestruction-section__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+}
+
+.cryodestruction-section__list {
+    list-style: disc;
+    margin-bottom: 24px;
+}
+
+.cryodestruction-section__list li {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+    .cryodestruction-section {
+        margin-bottom: 20px;
+    }
+
+    .cryodestruction-section__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .cryodestruction-section__subtitle {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .cryodestruction-section__list li {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cryodestruction-section {
+        margin-bottom: 16px;
+    }
+
+    .cryodestruction-section__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .cryodestruction-section__subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .cryodestruction-section__list li {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+
+    .direction-nav__list li {
+        font-size: 14px;
+    }
+}
+
+.preparation-content {
+    margin: 32px 0;
+}
+
+.preparation-section {
+    margin-bottom: 24px;
+}
+
+.preparation-section__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.preparation-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.preparation-section__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.preparation-section__image {
+    margin-top: 47px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .preparation-section {
+        margin-bottom: 20px;
+    }
+
+    .preparation-section__title {
+        margin-bottom: 20px;
+    }
+
+    .preparation-section__content {
+        gap: 12px;
+    }
+
+    .preparation-section__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preparation-section {
+        margin-bottom: 16px;
+    }
+
+    .preparation-section__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .preparation-section__content {
+        gap: 10px;
+    }
+
+    .preparation-section__text {
+        font-size: 13px;
+    }
+}
+
+.contact-form-section {
+    margin: 32px 0;
+    background: radial-gradient(circle,
+            #52B8BD 0%,
+            #78D5CD 33%,
+            #229DAC 71%,
+            #146076 100%);
+    border-radius: 16px;
+    position: relative;
+}
+
+.contact-form {
+    padding: 52px 45px 35px 45px;
+}
+
+.contact-form__content {
+    position: relative;
+    display: flex;
+    column-gap: 65px;
+    z-index: 1;
+}
+
+.contact-form__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.contact-form__subtitle {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 32px 0;
+    line-height: 1.4;
+    width: 170px;
+}
+
+.contact-form__field {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 15px;
+}
+
+.contact-form__label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.contact-form__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 240px;
+}
+
+.contact-form__input {
+    padding: 12px 16px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-form__input::placeholder {
+    color: #fff;
+}
+
+.contact-form__submit {
+    margin-top: 30px;
+    padding: 10px 56px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    color: #1F757E;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    height: 40px;
+}
+
+.contact-form__privacy {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.contact-form__link {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.contact-form__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 32px 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    .contact-form__title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .contact-form__subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .contact-form__input-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-form__submit {
+        width: 100%;
+        padding: 14px 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .contact-form__title {
+        font-size: 20px;
+    }
+
+    .contact-form__subtitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form__input {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .contact-form__submit {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    .contact-form__privacy {
+        font-size: 11px;
+    }
+
+
 }

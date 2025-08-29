@@ -3,6 +3,10 @@
     color: var(--color-text);
 }
 
+.blog-card__link:hover {
+    color: var(--color-text);
+}
+
 .blog-card {
     background: #fff;
     border-radius: 16px;
@@ -70,6 +74,10 @@
     position: relative;
 }
 
+.blogs__grid-item {
+    gap: 24px;
+}
+
 @media (max-width: 1425px) {
     .blogs__grid {
         grid-template-columns: 1fr;
@@ -100,27 +108,6 @@
     .blogs__grid {
         gap: 16px;
         margin-top: 24px;
-    }
-
-    .blogs__pagination {
-        margin-top: 32px;
-        gap: 12px;
-    }
-
-    .blogs__pagination-btn {
-        padding: 10px 14px;
-        font-size: 13px;
-    }
-
-    .blogs__pagination-btn--next {
-        width: 36px;
-        height: 36px;
-    }
-
-    .blogs__pagination-page {
-        width: 36px;
-        height: 36px;
-        font-size: 13px;
     }
 
     .blog-card__content {
@@ -160,10 +147,6 @@
 }
 
 @media (max-width: 480px) {
-    .blogs__pagination {
-        justify-content: center;
-    }
-
     .blog-card__text {
         padding: 16px;
     }
@@ -307,57 +290,6 @@
 
 .promotions__button:hover img {
     filter: brightness(0) invert(1);
-}
-
-.blogs__pagination {
-    margin-top: 20px;
-    display: flex;
-    gap: 16px;
-}
-
-.blogs__pagination-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #DAE2EF;
-    border-radius: 20px;
-    padding: 11px 12px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.blogs__pagination-btn--next {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 0;
-    justify-content: center;
-    gap: 0;
-}
-
-.blogs__pagination-pages {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.blogs__pagination-page {
-    width: 36px;
-    height: 36px;
-    border: none;
-    border-radius: 50%;
-    background: #DAE2EF;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.blogs__pagination-page--active {
-    background: #0D3260;
-    color: #fff;
 }
 
 @media (max-width: 1425px) {
