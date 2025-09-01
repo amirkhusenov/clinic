@@ -183,6 +183,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function initializeTabs() {
 
+        const directionNavTabs = document.querySelectorAll('.direction-nav__tab');
+
+        directionNavTabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                directionNavTabs.forEach(t => t.classList.remove('direction-nav__tab--active'));
+
+                this.classList.add('direction-nav__tab--active');
+            });
+        });
+
         const clinicTabs = document.querySelectorAll('.clinic-services__tab');
         const clinicTabContents = document.querySelectorAll('.clinic-services__tab-content');
 
@@ -210,27 +220,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        const directionTabs = document.querySelectorAll('.direction-nav__tab');
-        const directionTabContents = document.querySelectorAll('.direction-tab-content');
-
-        directionTabs.forEach(tab => {
-            tab.addEventListener('click', function () {
-                const targetTab = this.getAttribute('data-tab');
-
-                directionTabs.forEach(t => t.classList.remove('direction-nav__tab--active'));
-                this.classList.add('direction-nav__tab--active');
-
-                directionTabContents.forEach(content => {
-                    content.classList.remove('direction-tab-content--active');
-                });
-
-                const targetContent = document.querySelector(`.direction-tab-content[data-tab="${targetTab}"]`);
-
-                if (targetContent) {
-                    targetContent.classList.add('direction-tab-content--active');
-                }
-            });
-        });
 
         const serviceTabs = document.querySelectorAll('.direction-services-tab');
         const serviceTabContents = document.querySelectorAll('.direction-services-tab-content');
@@ -471,9 +460,14 @@ document.addEventListener('DOMContentLoaded', function () {
             slides[index].classList.add('hero__slide--active');
             dots[index].classList.add('hero__carousel-dot--active');
 
-            const newBg = slides[index].getAttribute('data-bg');
-            if (heroContainer && newBg) {
-                heroContainer.style.background = newBg;
+            const slideImages = document.querySelectorAll('.hero__slide-img');
+            slideImages.forEach(img => {
+                img.style.display = 'none';
+            });
+
+            const currentImage = document.querySelector(`.hero__slide-img[data-slide="${index}"]`);
+            if (currentImage) {
+                currentImage.style.display = 'block';
             }
 
             currentSlide = index;

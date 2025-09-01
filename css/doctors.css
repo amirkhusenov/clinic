@@ -4,11 +4,10 @@
 
 .doctors__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     margin-top: 24px;
 }
-
 
 .appointment-form__field--info {
     display: flex;
@@ -137,53 +136,6 @@
     color: #007a7a;
 }
 
-@media (max-width: 768px) {
-
-    .doctors-list {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .doctors__grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .doctor-card__header {
-        padding: 1rem 1rem 0.75rem;
-    }
-
-    .doctor-card__photo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .doctor-card__name {
-        font-size: 1.125rem;
-    }
-
-    .doctor-card__content {
-        padding: 0 1rem 0.75rem;
-    }
-
-    .doctor-card__footer {
-        padding: 0.75rem 1rem 1rem;
-    }
-
-    .doctor-card__actions {
-        gap: 0.5rem;
-    }
-
-
-    .appointment-form {
-        gap: 20px;
-    }
-
-    .appointment-form__checkbox-text {
-        font-size: 12px;
-    }
-}
-
 
 .doctors-error {
     margin: 95px 0;
@@ -228,6 +180,12 @@
     align-items: center;
 }
 
+@media (max-width: 1376px) {
+    .doctors__grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .doctors-error {
         margin: 50px 0;
@@ -247,6 +205,50 @@
         text-align: center;
         align-items: center;
         width: 100%;
+    }
+
+    .doctors-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .doctors__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .doctor-card__header {
+        padding: 1rem 1rem 0.75rem;
+    }
+
+    .doctor-card__photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .doctor-card__name {
+        font-size: 1.125rem;
+    }
+
+    .doctor-card__content {
+        padding: 0 1rem 0.75rem;
+    }
+
+    .doctor-card__footer {
+        padding: 0.75rem 1rem 1rem;
+    }
+
+    .doctor-card__actions {
+        gap: 0.5rem;
+    }
+
+
+    .appointment-form {
+        gap: 20px;
+    }
+
+    .appointment-form__checkbox-text {
+        font-size: 12px;
     }
 }
 

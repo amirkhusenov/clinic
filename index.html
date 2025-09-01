@@ -400,8 +400,7 @@
                 <div class="hero__content">
                     <div class="hero__text">
                         <div class="hero__slides-container">
-                            <div class="hero__slide hero__slide--active"
-                                data-bg="linear-gradient(90deg, rgba(105, 163, 255, 1) 0%, rgba(59, 232, 242, 1) 100%)">
+                            <div class="hero__slide hero__slide--active" data-slide="0">
                                 <p class="hero__title">Инновационный метод лечения геморроя</p>
                                 <p class="hero__subtitle">Инновационный метод хирургического лечения геморроя с
                                     использованием
@@ -409,60 +408,68 @@
                                 </p>
                             </div>
 
-                            <div class="hero__slide"
-                                data-bg="linear-gradient(90deg, rgba(255, 105, 135, 1) 0%, rgba(255, 204, 102, 1) 100%)">
+                            <div class="hero__slide" data-slide="1">
                                 <p class="hero__title">Современная диагностика КТ и МРТ</p>
                                 <p class="hero__subtitle">Высокоточная диагностика с использованием современного
                                     оборудования
                                     экспертного класса для точной постановки диагноза
                                 </p>
                             </div>
-
-                            <div class="hero__slide"
-                                data-bg="linear-gradient(90deg, rgba(134, 239, 172, 1) 0%, rgba(59, 130, 246, 1) 100%)">
-                                <p class="hero__title">Комфортный стационар с оборудованием</p>
-                                <p class="hero__subtitle">Одно- и двухместные палаты с современным оборудованием
-                                    и круглосуточным наблюдением опытного медперсонала
-                                </p>
-                            </div>
-
-                            <div class="hero__slide"
-                                data-bg="linear-gradient(90deg, rgba(167, 139, 250, 1) 0%, rgba(244, 114, 182, 1) 100%)">
-                                <p class="hero__title">45+ врачей-экспертов с опытом работы</p>
-                                <p class="hero__subtitle">Консультации проводят опытные специалисты, среди которых
-                                    доктора и кандидаты медицинских наук с опытом работы более 10 лет
-                                </p>
-                            </div>
-
-                            <div class="hero__slide"
-                                data-bg="linear-gradient(90deg, rgba(252, 165, 165, 1) 0%, rgba(147, 197, 253, 1) 100%)">
+                            <div class="hero__slide" data-slide="2">
                                 <p class="hero__title">Эндоскопия во сне с использованием анестезии
                                 </p>
                                 <p class="hero__subtitle">Безболезненные эндоскопические исследования под седацией
                                     для максимального комфорта пациента и безболезненной анестезией
                                 </p>
                             </div>
-                        </div>
-
-                        <button class="hero__button">Записаться на приём</button>
-
-                        <div class="hero__carousel">
-                            <button class="hero__carousel-arrow hero__carousel-arrow--left">
-                                <img src="./img/icon/arrow.left-card.svg" alt="Предыдущий слайд">
-                            </button>
-                            <div class="hero__carousel-dots">
-                                <button class="hero__carousel-dot hero__carousel-dot--active" data-slide="0"></button>
-                                <button class="hero__carousel-dot" data-slide="1"></button>
-                                <button class="hero__carousel-dot" data-slide="2"></button>
-                                <button class="hero__carousel-dot" data-slide="3"></button>
-                                <button class="hero__carousel-dot" data-slide="4"></button>
+                            <div class="hero__slide" data-slide="3">
+                                <p class="hero__title">45+ врачей-экспертов с опытом работы</p>
+                                <p class="hero__subtitle">Консультации проводят опытные специалисты, среди которых
+                                    доктора и кандидаты медицинских наук с опытом работы более 10 лет
+                                </p>
                             </div>
-                            <button class="hero__carousel-arrow hero__carousel-arrow--right">
-                                <img src="./img/icon/arrow.right-card.svg" alt="Следующий слайд">
-                            </button>
+                            <div class="hero__slide" data-slide="4">
+                                <p class="hero__title">Гастроскопия со скидкой 20%!
+                                    Только в сентябре!</p>
+                                <p class="hero__subtitle">В сентябре каждый вторник и четверг — скидка 20%
+                                    на гастроскопию.
+                                </p>
+                            </div>
+
+                            <div class="hero__slide" data-slide="5">
+                                <p class="hero__title">Эндоскопия во сне с использованием анестезии
+                                </p>
+                                <p class="hero__subtitle">Безболезненные эндоскопические исследования под седацией
+                                    для максимального комфорта пациента и безболезненной анестезией
+                                </p>
+                            </div>
+                            <button class="hero__button">Записаться на приём</button>
+
+                            <div class="hero__carousel">
+                                <button class="hero__carousel-arrow hero__carousel-arrow--left">
+                                    <img src="./img/icon/arrow.left-card.svg" alt="Предыдущий слайд">
+                                </button>
+                                <div class="hero__carousel-dots">
+                                    <button class="hero__carousel-dot hero__carousel-dot--active"
+                                        data-slide="0"></button>
+                                    <button class="hero__carousel-dot" data-slide="1"></button>
+                                    <button class="hero__carousel-dot" data-slide="2"></button>
+                                    <button class="hero__carousel-dot" data-slide="3"></button>
+                                    <button class="hero__carousel-dot" data-slide="4"></button>
+                                    <button class="hero__carousel-dot" data-slide="5"></button>
+                                </div>
+                                <button class="hero__carousel-arrow hero__carousel-arrow--right">
+                                    <img src="./img/icon/arrow.right-card.svg" alt="Следующий слайд">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <img class="hero__man" src="./img/main_page/hero/hero_man.png" alt="">
+                    <img src="./img/main_page/hero/hero-1.png" alt="" class="hero__slide-img" data-slide="0">
+                    <img src="./img/main_page/hero/hero-2.png" alt="" class="hero__slide-img" data-slide="1">
+                    <img src="./img/main_page/hero/hero-3.png" alt="" class="hero__slide-img" data-slide="2">
+                    <img src="./img/main_page/hero/hero-4.png" alt="" class="hero__slide-img" data-slide="3">
+                    <img src="./img/main_page/hero/hero-5.png" alt="" class="hero__slide-img" data-slide="4">
+                    <img src="./img/main_page/hero/hero-6.png" alt="" class="hero__slide-img" data-slide="5">
                 </div>
             </div>
         </section>

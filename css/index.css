@@ -1689,6 +1689,7 @@ input[type='file'] {
 }
 
 .doctor-education__container {
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -3668,6 +3669,10 @@ details summary.mobile-menu__nav-header svg {
     .info-card__image {
         height: 180px;
     }
+
+    .doctor-education__container {
+        margin-top: 24px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -4352,14 +4357,6 @@ details summary.mobile-menu__nav-header svg {
         color: #27929E;
     }
 
-    .header__cta:hover {
-        background: #1F7A84;
-    }
-
-    .header__nav-link:hover {
-        color: #27929E;
-    }
-
     .header__services-dropdown:hover .header__services-trigger svg {
         transform: rotate(180deg);
     }
@@ -4368,11 +4365,6 @@ details summary.mobile-menu__nav-header svg {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-    }
-
-    .header__mega-menu-all-btn:hover {
-        background: #27929E;
-        color: white;
     }
 
     .header__mega-menu-all-btn:hover span {
@@ -4385,11 +4377,6 @@ details summary.mobile-menu__nav-header svg {
 
     .header__mega-menu-item a:hover {
         color: #27929E;
-    }
-
-    .header__mega-menu-banner-btn:hover {
-        background: #27929E;
-        color: white;
     }
 
     .header__dropdown:hover .header__dropdown-content {

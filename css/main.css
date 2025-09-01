@@ -1,15 +1,18 @@
 .hero {
     margin: 60px 108px 0 108px;
-
     overflow: hidden;
 }
 
 .hero__container {
     position: relative;
     z-index: 1;
-    background: linear-gradient(90deg, rgba(105, 163, 255, 1) 0%, rgba(59, 232, 242, 1) 100%);
+    background: linear-gradient(270deg, #F5FCFF 0%, #9CBEDD 100%);
     border-radius: 16px;
     transition: background 0.8s ease-in-out;
+}
+
+.hero__text {
+    position: relative;
 }
 
 .hero__slides-container {
@@ -17,32 +20,31 @@
 }
 
 .hero__slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease-in-out;
-    z-index: 1;
+    display: none;
 }
 
 .hero__slide--active {
     position: relative;
-    opacity: 1;
-    visibility: visible;
+    display: block;
     z-index: 2;
 }
 
-.hero__man {
+.hero__slide-img {
     position: absolute;
     right: 0;
     bottom: 0;
     object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    height: 100%;
 }
 
+.hero__slide-img:not([data-slide="0"]) {
+    display: none;
+}
+
+
 .hero__content {
-    padding: 0 56px 14px 56px;
+    padding: 9px 56px 14px 56px;
 
 }
 
@@ -187,9 +189,10 @@
     }
 }
 
-@media (max-width: 375px) {
-    .hero__man {
+@media (max-width: 480px) {
+    .hero__slide-img {
         opacity: 0.3;
+        border-radius: 0 !important;
     }
 }
 
