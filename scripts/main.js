@@ -770,6 +770,20 @@ document.addEventListener('DOMContentLoaded', function () {
             showPage(1);
         });
     }
+    function toggleShowAll(button) {
+        const category = button.closest('.mobile-menu__submenu-category');
+        if (category) {
+            category.classList.toggle('show-all');
+
+            if (category.classList.contains('show-all')) {
+                button.textContent = 'Скрыть';
+            } else {
+                button.textContent = 'Смотреть все';
+            }
+        }
+    }
+
+    window.toggleShowAll = toggleShowAll;
 
 
     initializeTabs();
@@ -787,4 +801,5 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeIllnessesShowAll();
     initializeHandbookAlphabet();
     initializeUniversalPagination();
+    toggleShowAll();
 });

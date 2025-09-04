@@ -992,6 +992,7 @@ input[type='file'] {
 }
 
 .custom-select.active .custom-select__dropdown {
+    padding: 20px;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -1008,7 +1009,6 @@ input[type='file'] {
 }
 
 .custom-select__options {
-    padding: 20px;
     max-height: 200px;
     overflow-y: auto;
 }
@@ -1036,6 +1036,7 @@ input[type='file'] {
 
 .custom-select__options::-webkit-scrollbar {
     width: 5px;
+    position: absolute;
 }
 
 .custom-select__options::-webkit-scrollbar-track {
@@ -1052,8 +1053,6 @@ input[type='file'] {
     display: flex;
     gap: 4px;
 }
-
-
 
 .breadcrumb__item,
 .breadcrumb__item a {
@@ -1169,7 +1168,7 @@ input[type='file'] {
 .doctor-card__btn--primary {
     background: #FF4940;
     color: #fff;
-    padding: 14px 34px;
+    padding: 14px 10px;
     border: 1px solid #FF4940;
     transition: all 0.3s ease;
 }
@@ -1448,6 +1447,10 @@ input[type='file'] {
     color: var(--color-text);
     text-align: center;
     margin-bottom: 32px;
+}
+
+.licenses__title--left {
+    text-align: left;
 }
 
 .licenses__grid {
@@ -2261,7 +2264,9 @@ input[type='file'] {
     border-bottom: 1px solid #f3f4f6;
     text-decoration: none;
     color: inherit;
+    font-weight: 600;
 }
+
 
 .mobile-menu__nav-item:last-child {
     border-bottom: none;
@@ -2304,10 +2309,11 @@ details summary.mobile-menu__nav-header svg {
 .mobile-menu__nav-text {
     font-size: 1rem;
     color: #0D3260;
+    transition: color 0.2s;
 }
 
-.mobile-menu__nav-text--green {
-    color: #22c55e;
+.mobile-menu__nav-text:hover {
+    color: #27929E;
 }
 
 .mobile-menu__nav-item--bold .mobile-menu__nav-text {
@@ -2347,11 +2353,12 @@ details summary.mobile-menu__nav-header svg {
 
 .mobile-menu__submenu-item {
     display: block;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
     color: #0D3260;
     text-decoration: none;
     font-size: 0.875rem;
     border-bottom: 1px solid #DAE2EF;
+    font-weight: 400;
 }
 
 .mobile-menu__actions {
@@ -2711,7 +2718,7 @@ details summary.mobile-menu__nav-header svg {
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 20%;
+    max-width: 22%;
     margin: 0 auto 0 auto;
 }
 
@@ -2775,8 +2782,8 @@ details summary.mobile-menu__nav-header svg {
 
 .direction-content {
     display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 60px;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
     margin-top: 48px;
     max-width: 100%;
 }
@@ -4074,9 +4081,13 @@ details summary.mobile-menu__nav-header svg {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 535px) {
     .gallery__pagination {
         max-width: 90%;
+    }
+
+    .breadcrumb__items {
+        font-size: 12px;
     }
 }
 
@@ -4131,10 +4142,6 @@ details summary.mobile-menu__nav-header svg {
     .doctors-filter__submit--mobile img {
         width: 15px;
         height: 14px;
-    }
-
-    .breadcrumb__items {
-        font-size: 12px;
     }
 
     .doctor-card__price {
@@ -4279,6 +4286,10 @@ details summary.mobile-menu__nav-header svg {
 }
 
 @media (max-width: 375px) {
+    .review-card__content p {
+        font-size: 11px;
+    }
+
     .footer__columns {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
@@ -4395,10 +4406,6 @@ details summary.mobile-menu__nav-header svg {
 
     .header__accessibility:hover {
         background: #F5F7FA;
-    }
-
-    .header-contact-block__appointment-btn:hover {
-        background: #1F7A84;
     }
 
     .custom-select__header:hover {

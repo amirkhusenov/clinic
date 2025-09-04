@@ -1,31 +1,24 @@
+.breadcrumb__items-mobile {
+    display: none;
+}
+
 .traumatology-banner {
-    background: linear-gradient(to right, #69a3ff, #54bfff, #62d6ff, #89ebff, #b6fefe);
+    background: linear-gradient(to right, #9cbedd, #b0cee5, #c6deed, #ddedf6, #f5fcff);
     border-radius: 16px;
     position: relative;
     overflow: hidden;
 }
 
 .traumatology-banner__image {
+    height: 100%;
     position: absolute;
-    top: 7%;
+    top: 0;
     right: 0;
     z-index: 1;
 }
 
-.disease-banner__image {
-    top: 15%;
-    right: 7%;
-}
-
-.traumatology-banner__image-bg {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-
-}
 
 .traumatology-banner__content {
-    padding: 60px 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +28,7 @@
 }
 
 .traumatology-banner__text {
+    padding: 60px 65px;
     flex: 1;
 }
 
@@ -96,6 +90,53 @@
     font-size: 16px;
     color: #FF4940;
     font-weight: 600;
+}
+
+.mobile-menu__submenu-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    cursor: pointer;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.mobile-menu__submenu-category-header:hover span {
+    color: #27929E;
+}
+
+.mobile-menu__submenu-category-header svg {
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu__submenu-category[open] .mobile-menu__submenu-category-header svg {
+    transform: rotate(180deg);
+}
+
+.mobile-menu__submenu-category-content {
+    padding: 8px 0;
+}
+
+.mobile-menu__submenu-category-content .mobile-menu__submenu-item:nth-child(n+6) {
+    display: none;
+}
+
+.mobile-menu__show-all-btn {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    color: #0D3260;
+    text-decoration: none;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #DAE2EF;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+}
+
+.mobile-menu__submenu-category.show-all .mobile-menu__submenu-category-content .mobile-menu__submenu-item:nth-child(n+6) {
+    display: block;
 }
 
 .traumatology-banner__caption {
@@ -315,7 +356,7 @@
     width: fit-content;
     background: #EDF0F5;
     border-radius: 20px;
-    padding: 12px 0;
+    padding: 11px 0;
 }
 
 .direction-nav_tabs {
@@ -324,11 +365,11 @@
 }
 
 .direction-nav__tab {
-    padding: 12px 24px;
+    padding: 12px 20px;
     border: none;
     border-radius: 20px;
     color: var(--color-text);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -344,9 +385,13 @@
     color: #fff;
 }
 
+@media (max-width: 1440px) {
+    .direction-content {
+        gap: 10px;
+    }
+}
 
 @media (max-width: 1425px) {
-
 
     .direction-content {
         grid-template-columns: 1fr;
@@ -378,9 +423,99 @@
     .direction-description {
         font-size: 16px;
     }
+
+    .traumatology-banner__content {
+        padding: 28px 24px;
+
+    }
+
+    .traumatology-banner__title {
+        font-size: 26px;
+    }
+
+    .traumatology-banner__btn {
+        padding: 12px 32px;
+    }
+
+    .direction-title,
+    .direction-services-title {
+        font-size: 32px;
+    }
+
+    .direction-description {
+        font-size: 16px;
+    }
+
+    .direction-services {
+        padding: 20px 24px 28px 16px;
+    }
+
+    .direction-services-tabs {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+
+    .direction-services-grid {
+        gap: 24px;
+    }
+
+    .direction-promotions__title {
+        font-size: 32px;
+    }
+
+    .direction-illnesses {
+        margin-top: 24px;
+    }
+
+    .direction-illnesses__title {
+        font-size: 24px;
+    }
+
+    .direction-questions__title {
+        font-size: 32px;
+    }
+
+    .direction-doctors__header {
+        font-size: 32px;
+    }
+
+    .doctors__grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .useful-info__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .doctors {
+        margin-top: 24px;
+    }
+
+    .contact-form__image {
+        display: none;
+    }
+
+    .contact-form__content {
+        flex-direction: column;
+    }
+
+    .contact-form__field {
+        flex-direction: column;
+    }
+
+    .contact-form__input-group {
+        min-width: 100%;
+    }
+
+    .contact-form__subtitle {
+        min-width: 100%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 690px) {
     .direction-nav {
         justify-content: flex-start;
         overflow-x: auto;
@@ -391,6 +526,14 @@
 
     .direction-nav::-webkit-scrollbar {
         display: none;
+    }
+
+    .direction-nav {
+        padding: 10px 0;
+    }
+
+    .direction-nav__tab {
+        padding: 12px 20px;
     }
 
     .direction-nav__tabs {
@@ -460,6 +603,16 @@
 }
 
 @media (max-width: 480px) {
+    .breadcrumb__items {
+        display: none;
+    }
+
+    .breadcrumb__items-mobile {
+        display: flex;
+        gap: 4px;
+        font-size: 12px;
+    }
+
     .direction-nav.container {
         margin: 0;
     }
@@ -473,10 +626,6 @@
         gap: 20px;
     }
 
-    .direction-title,
-    .direction-services-title {
-        font-size: 20px;
-    }
 
     .direction-description {
         font-size: 13px;
@@ -646,6 +795,10 @@
     .direction-questions__body li,
     .direction-questions__body p {
         font-size: 14px;
+    }
+
+    .procedure-nav {
+        margin-top: 14px;
     }
 
     .traumatology-banner__info,
@@ -1004,7 +1157,7 @@
 
 .doctors__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 24px;
     max-width: 100%;
@@ -1063,7 +1216,12 @@
 }
 
 .licenses {
-    margin-bottom: 48px;
+    margin: 30px 0 48px 0;
+}
+
+.licenses__grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 }
 
 .direction-content__expert {
@@ -1089,99 +1247,6 @@
         grid-template-columns: 1fr;
         gap: 40px;
     }
-}
-
-@media (max-width: 1024px) {
-    .traumatology-banner__content {
-        padding: 28px 24px;
-
-    }
-
-    .traumatology-banner__title {
-        font-size: 26px;
-    }
-
-    .traumatology-banner__btn {
-        padding: 12px 32px;
-    }
-
-    .direction-title,
-    .direction-services-title {
-        font-size: 32px;
-    }
-
-    .direction-description {
-        font-size: 16px;
-    }
-
-    .direction-services {
-        padding: 20px 24px 28px 16px;
-    }
-
-    .direction-services-tabs {
-        flex-wrap: wrap;
-        gap: 4px;
-    }
-
-
-    .direction-services-grid {
-        gap: 24px;
-    }
-
-    .direction-promotions__title {
-        font-size: 32px;
-    }
-
-    .direction-illnesses {
-        margin-top: 24px;
-    }
-
-    .direction-illnesses__title {
-        font-size: 24px;
-    }
-
-    .direction-questions__title {
-        font-size: 32px;
-    }
-
-    .direction-doctors__header {
-        font-size: 32px;
-    }
-
-    .doctors__grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
-
-    .useful-info__grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .doctors {
-        margin-top: 24px;
-    }
-
-    .contact-form__image {
-        display: none;
-    }
-
-    .contact-form__content {
-        flex-direction: column;
-    }
-
-    .contact-form__field {
-        flex-direction: column;
-    }
-
-    .contact-form__input-group {
-        min-width: 100%;
-    }
-
-    .contact-form__subtitle {
-        min-width: 100%;
-    }
-
 }
 
 @media (max-width: 950px) {
@@ -1349,10 +1414,6 @@
         gap: 20px;
     }
 
-    .direction-title,
-    .direction-services-title {
-        font-size: 20px;
-    }
 
     .direction-description {
         font-size: 13px;
@@ -1462,12 +1523,6 @@
 
     .traumatology-banner__feature {
         font-size: 11px;
-    }
-
-
-    .direction-title,
-    .direction-services-title {
-        font-size: 18px;
     }
 
     .direction-description {
@@ -1611,10 +1666,13 @@
     border-radius: 16px;
 }
 
+.procedure-nav {
+    margin-top: 24px;
+}
+
 .procedure-nav__container {
     background: #EDF0F5;
     border-radius: 16px;
-    width: fit-content;
     padding: 20px;
 }
 
@@ -1661,7 +1719,7 @@
 }
 
 .cryodestruction-section__list {
-    list-style: disc;
+    list-style: disc !important;
     margin-bottom: 24px;
 }
 
@@ -1687,7 +1745,8 @@
         margin-bottom: 12px;
     }
 
-    .cryodestruction-section__list li {
+    .cryodestruction-section__list li,
+    .cryodestruction-section__text {
         font-size: 14px;
         padding: 6px 0;
     }
@@ -1708,7 +1767,8 @@
         margin-bottom: 10px;
     }
 
-    .cryodestruction-section__list li {
+    .cryodestruction-section__list li,
+    .cryodestruction-section__text {
         font-size: 13px;
         padding: 5px 0;
     }

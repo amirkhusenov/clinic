@@ -189,11 +189,11 @@
 
 .promotions__card {
     width: 100%;
+    height: 200px;
     position: relative;
     border-radius: 1rem;
     padding: 45px 0 83px 27px;
     display: flex;
-    margin: 0 0 6px 0;
 }
 
 .promotions__card--discount,
