@@ -1,5 +1,15 @@
-.breadcrumb__items-mobile {
-    display: none;
+.breadcrumb__items {
+    display: flex;
+}
+
+.breadcrumb__items-top {
+    display: flex;
+    gap: 4px;
+}
+
+.breadcrumb__items-bottom {
+    display: flex;
+    gap: 4px;
 }
 
 .traumatology-banner {
@@ -424,7 +434,7 @@
         font-size: 16px;
     }
 
-    .traumatology-banner__content {
+    .traumatology-banner__text {
         padding: 28px 24px;
 
     }
@@ -604,13 +614,7 @@
 
 @media (max-width: 480px) {
     .breadcrumb__items {
-        display: none;
-    }
-
-    .breadcrumb__items-mobile {
-        display: flex;
-        gap: 4px;
-        font-size: 12px;
+        flex-direction: column;
     }
 
     .direction-nav.container {
@@ -1235,7 +1239,7 @@
         display: none;
     }
 
-    .traumatology-banner__content {
+    .traumatology-banner__text {
         padding: 40px 40px;
     }
 
@@ -1256,7 +1260,7 @@
 }
 
 @media (max-width: 856px) {
-    .traumatology-banner__content {
+    .traumatology-banner__text {
         padding: 24px 20px;
     }
 
@@ -1513,7 +1517,7 @@
 }
 
 @media (max-width: 360px) {
-    .traumatology-banner__content {
+    .traumatology-banner__text {
         padding: 12px 8px;
     }
 

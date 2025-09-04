@@ -115,6 +115,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     640: { perPage: 1, gap: '24px' }
                 }
             },
+            '.doctor-videos__slider.splide': {
+                perPage: 3,
+                gap: '32px',
+                pagination: true,
+                arrows: true,
+                breakpoints: {
+                    1024: { perPage: 2, gap: '24px' },
+                    768: { perPage: 1, gap: '16px' },
+                    640: { perPage: 1, gap: '24px' }
+                }
+            },
 
         };
 

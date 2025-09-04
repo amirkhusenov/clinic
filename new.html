@@ -296,29 +296,144 @@
                         </svg>
                     </summary>
                     <div class="mobile-menu__submenu">
-                        <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
-                        <a href="#" class="mobile-menu__submenu-item">Гинекология</a>
-                        <a href="#" class="mobile-menu__submenu-item">Неврология</a>
-                        <a href="#" class="mobile-menu__submenu-item">Терапия</a>
-                        <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и ортопедия</a>
-                        <a href="#" class="mobile-menu__submenu-item">Урология</a>
-                        <a href="#" class="mobile-menu__submenu-item">Смотреть все</a>
+                        <details class="mobile-menu__submenu-category">
+                            <summary class="mobile-menu__submenu-category-header">
+                                <span>Направления</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </summary>
+                            <div class="mobile-menu__submenu-category-content">
+                                <a href="#" class="mobile-menu__submenu-item">Акушерство и гинекология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Анестезиология и реаниматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гастроэнтерология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гепатология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Герниология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гирудотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Дерматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Иглорефлексотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Кардиология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Косметология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Мануальная терапия и остеопатия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Массаж</a>
+                                <a href="#" class="mobile-menu__submenu-item">Неврология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Нейрохирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
+                                <a href="#" class="mobile-menu__submenu-item">Отоларингология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Проктология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Процедурный кабинет</a>
+                                <a href="#" class="mobile-menu__submenu-item">Реабилитация</a>
+                                <a href="#" class="mobile-menu__submenu-item">Терапия</a>
+                                <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и
+                                    ортопедия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Урология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Физиотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Флебология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Хирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Эндокринология</a>
+                                <button class="mobile-menu__show-all-btn" onclick="toggleShowAll(this)">Смотреть
+                                    все</button>
+                            </div>
+                        </details>
+
+                        <details class="mobile-menu__submenu-category">
+                            <summary class="mobile-menu__submenu-category-header">
+                                <span>Диагностика</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </summary>
+                            <div class="mobile-menu__submenu-category-content">
+                                <a href="#" class="mobile-menu__submenu-item">Акушерство и гинекология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Анестезиология и реаниматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гастроэнтерология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гепатология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Герниология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гирудотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Дерматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Иглорефлексотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Кардиология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Косметология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Мануальная терапия и остеопатия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Массаж</a>
+                                <a href="#" class="mobile-menu__submenu-item">Неврология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Нейрохирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
+                                <a href="#" class="mobile-menu__submenu-item">Отоларингология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Проктология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Процедурный кабинет</a>
+                                <a href="#" class="mobile-menu__submenu-item">Реабилитация</a>
+                                <a href="#" class="mobile-menu__submenu-item">Терапия</a>
+                                <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и
+                                    ортопедия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Урология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Физиотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Флебология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Хирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Эндокринология</a>
+                                <button class="mobile-menu__show-all-btn" onclick="toggleShowAll(this)">Смотреть
+                                    все</button>
+                            </div>
+                        </details>
+
+                        <details class="mobile-menu__submenu-category">
+                            <summary class="mobile-menu__submenu-category-header">
+                                <span>Операции</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </summary>
+                            <div class="mobile-menu__submenu-category-content">
+                                <a href="#" class="mobile-menu__submenu-item">Акушерство и гинекология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Анестезиология и реаниматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гастроэнтерология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гепатология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Герниология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гирудотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Дерматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Иглорефлексотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Кардиология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Косметология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Мануальная терапия и остеопатия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Массаж</a>
+                                <a href="#" class="mobile-menu__submenu-item">Неврология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Нейрохирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
+                                <a href="#" class="mobile-menu__submenu-item">Отоларингология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Проктология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Процедурный кабинет</a>
+                                <a href="#" class="mobile-menu__submenu-item">Реабилитация</a>
+                                <a href="#" class="mobile-menu__submenu-item">Терапия</a>
+                                <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и
+                                    ортопедия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Урология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Физиотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Флебология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Хирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Эндокринология</a>
+                                <button class="mobile-menu__show-all-btn" onclick="toggleShowAll(this)">Смотреть
+                                    все</button>
+                            </div>
+                        </details>
                     </div>
                 </details>
-
-                <a href="./promotions.html" class="mobile-menu__nav-item">
-                    <span class="mobile-menu__nav-text">Программы и акции</span>
-                </a>
 
                 <a href="./doctors.html" class="mobile-menu__nav-item">
                     <span class="mobile-menu__nav-text">Врачи</span>
                 </a>
 
+                <a href="./promotions.html" class="mobile-menu__nav-item">
+                    <span class="mobile-menu__nav-text">Программы и акции</span>
+                </a>
+
                 <a href="./price.html" class="mobile-menu__nav-item">
                     <span class="mobile-menu__nav-text">Цена</span>
-                </a>
-                <a href="./contacts.html" class="mobile-menu__nav-item">
-                    <span class="mobile-menu__nav-text">Контакты</span>
                 </a>
 
                 <details class="mobile-menu__nav-item">
@@ -353,6 +468,9 @@
                         <a href="./handbook.html" class="mobile-menu__submenu-item">Справочник</a>
                     </div>
                 </details>
+                <a href="./contacts.html" class="mobile-menu__nav-item">
+                    <span class="mobile-menu__nav-text">Контакты</span>
+                </a>
 
             </nav>
 
@@ -385,7 +503,7 @@
             </div>
 
             <div class="mobile-menu__accessibility">
-                <img src="./img/icon/eye.svg" alt="">
+                <img src="./img/icon/eye-blue.svg" alt="">
                 <span>Версия для слабовидящих</span>
             </div>
         </div>

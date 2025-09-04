@@ -1071,6 +1071,7 @@ input[type='file'] {
     font-weight: 600;
     color: var(--color-text);
     margin-bottom: 30px;
+    grid-column: 2;
 
 }
 
@@ -1082,8 +1083,6 @@ input[type='file'] {
     grid-column: 3;
     justify-self: end;
 }
-
-
 
 .doctor-card {
     background: #fff;
@@ -1242,7 +1241,6 @@ input[type='file'] {
 }
 
 
-
 .doctors .splide__pagination {
     display: flex;
     gap: 12px;
@@ -1287,6 +1285,7 @@ input[type='file'] {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     margin-bottom: 32px;
+    align-items: end;
 }
 
 .reviews__title {
@@ -1434,8 +1433,6 @@ input[type='file'] {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .licenses__container {
     max-width: 100%;
@@ -2222,7 +2219,6 @@ input[type='file'] {
     border: none;
     color: #374151;
     cursor: pointer;
-    padding: 0.5rem;
 }
 
 .mobile-menu__close svg {
@@ -3032,7 +3028,7 @@ details summary.mobile-menu__nav-header svg {
 
 .review-form__type-btn {
     flex: 1;
-    padding: 12px 16px;
+    padding: 12px 12px;
     border-radius: 20px;
     color: var(--color-text);
     font-size: 14px;

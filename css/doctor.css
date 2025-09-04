@@ -123,8 +123,6 @@
     margin: 32px 0;
 }
 
-
-
 .doctor-about__title {
     font-size: 28px;
     font-weight: 600;
@@ -170,6 +168,11 @@
 .doctor-about__services span {
     color: #27929E;
     text-decoration: underline;
+}
+
+
+.doctors__title {
+    margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
@@ -364,6 +367,10 @@
     gap: 24px;
 }
 
+.doctor-videos__slider {
+    display: none;
+}
+
 .doctor-video-card {
     background: #fff;
     border-radius: 16px;
@@ -371,10 +378,6 @@
     box-shadow: var(--shadow-card);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-}
-
-.doctor-video-card:hover {
-    transform: translateY(-4px);
 }
 
 .doctor-video-card__image {
@@ -388,10 +391,6 @@
     transition: transform 0.3s ease;
 }
 
-.doctor-video-card:hover .doctor-video-card__image img {
-    transform: scale(1.05);
-}
-
 .doctor-video-card__play-btn {
     position: absolute;
     top: 50%;
@@ -401,14 +400,65 @@
     z-index: 2;
 }
 
-
-
 .doctor-video-card__title {
     padding: 24px 24px 30px 24px;
     font-size: 16px;
     font-weight: 600;
     color: var(--color-text);
     line-height: 1.4;
+}
+
+.doctor-videos__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 45%;
+    margin: 10px auto 0 auto;
+}
+
+.doctor-videos .splide__pagination {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    position: static;
+}
+
+.doctor-videos .splide__pagination__page {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #D1D5DB;
+    background: transparent;
+    opacity: 1;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.doctor-videos .splide__track {
+    overflow: hidden;
+}
+
+.doctor-videos .splide__list {
+    overflow: visible;
+}
+
+.doctor-videos .splide__slide {
+    padding: 0 0 14px 0;
+    margin: 0 -8px;
+}
+
+.doctor-videos .splide__pagination__page.is-active {
+    background: #7C8799;
+    border-color: #7C8799;
+}
+
+.doctor-videos .splide__arrow {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1200px) {
@@ -430,11 +480,29 @@
 }
 
 @media (max-width: 768px) {
-    .doctor-videos {
+    .doctor-videos__grid {
         display: none;
+    }
+
+    .doctor-videos__slider {
+        display: block;
     }
 }
 
+@media (max-width: 580px) {
+    .doctor-videos__pagination {
+        max-width: 60%;
+    }
+
+    .doctors__title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .doctor-video-card__title {
+        font-size: 14px;
+    }
+}
 
 .doctors__button-load {
     margin: 32px auto 0 auto;
@@ -620,16 +688,6 @@
     .doctor-videos__all-link:hover {
         color: #27929E;
     }
-
-    .doctor-video-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    }
-
-    .doctor-video-card:hover .doctor-video-card__image img {
-        transform: scale(1.05);
-    }
-
 
     .doctors__button-load:hover .doctors__button-load-icon {
         filter: brightness(0) invert(1);
