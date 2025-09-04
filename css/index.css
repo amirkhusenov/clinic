@@ -1689,7 +1689,6 @@ input[type='file'] {
 }
 
 .doctor-education__container {
-    margin-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -2355,6 +2354,53 @@ details summary.mobile-menu__nav-header svg {
     font-size: 0.875rem;
     border-bottom: 1px solid #DAE2EF;
     font-weight: 400;
+}
+
+.mobile-menu__submenu-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    cursor: pointer;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.mobile-menu__submenu-category-header:hover span {
+    color: #27929E;
+}
+
+.mobile-menu__submenu-category-header svg {
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu__submenu-category[open] .mobile-menu__submenu-category-header svg {
+    transform: rotate(180deg);
+}
+
+.mobile-menu__submenu-category-content {
+    padding: 8px 0;
+}
+
+.mobile-menu__submenu-category-content .mobile-menu__submenu-item:nth-child(n+6) {
+    display: none;
+}
+
+.mobile-menu__show-all-btn {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    color: #0D3260;
+    text-decoration: none;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #DAE2EF;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+}
+
+.mobile-menu__submenu-category.show-all .mobile-menu__submenu-category-content .mobile-menu__submenu-item:nth-child(n+6) {
+    display: block;
 }
 
 .mobile-menu__actions {
