@@ -517,13 +517,15 @@
         <nav class="container">
             <nav class="breadcrumb">
                 <ul class="breadcrumb__items">
-                    <li class="breadcrumb__item"><a href="/">Главная</a></li>
-                    <span class="breadcrumb__item">/</span>
-                    <li class="breadcrumb__item">Услуги</li>
-                    <span class="breadcrumb__item">/</span>
-                    <li class="breadcrumb__item">Направления</li>
-                    <span class="breadcrumb__item">/</span>
-                    <li class="breadcrumb__item">Травматология и ортопедия</li>
+                    <div class="breadcrumb__items-top">
+                        <li class="breadcrumb__item"><a href="/">Главная</a></li>
+                        <span class="breadcrumb__item">/</span>
+                        <li class="breadcrumb__item">Услуги</li>
+                        <span class="breadcrumb__item">/</span>
+                        <li class="breadcrumb__item">Направления</li>
+                        <span class="breadcrumb__item">/</span>
+                        <li class="breadcrumb__item">Травматология и ортопедия</li>
+                    </div>
                 </ul>
             </nav>
         </nav>
@@ -560,21 +562,20 @@
                         </ul>
                         <button class="traumatology-banner__btn">Записаться на приём к ортопеду</button>
                     </div>
-                    <img src="./img/directions_page/crutches.png" alt="Костляли" class="traumatology-banner__image">
-                    <img src="./img/directions_page/heart.svg" alt=" Костляли" class="traumatology-banner__image-bg">
+                    <img src="./img/directions_page/hero-banner.png" alt="" class="traumatology-banner__image">
                 </div>
             </div>
         </section>
         <section class="direction-nav container">
             <nav class="direction-nav__container">
                 <div class="direction-nav__tabs">
-                    <button class="direction-nav__tab direction-nav__tab--active" data-tab="about">О
-                        направлении</button>
-                    <button class="direction-nav__tab" data-tab="services">Услуги</button>
-                    <button class="direction-nav__tab" data-tab="prices">Цены</button>
-                    <button class="direction-nav__tab" data-tab="treatment">Что мы лечим</button>
-                    <button class="direction-nav__tab" data-tab="promotions">Акции</button>
-                    <button class="direction-nav__tab" data-tab="reviews">Отзывы</button>
+                    <a href="#" class="direction-nav__tab direction-nav__tab--active" data-tab="about">О
+                        направлении</a>
+                    <a href="#services" class="direction-nav__tab" data-tab="services">Услуги</a>
+                    <a href="#prices" class="direction-nav__tab" data-tab="prices">Цены</a>
+                    <a href="#illnesses" class="direction-nav__tab" data-tab="treatment">Что мы лечим</a>
+                    <a href="#promotions" class="direction-nav__tab" data-tab="promotions">Акции</a>
+                    <a href="#reviews" class="direction-nav__tab" data-tab="reviews">Отзывы</a>
                 </div>
             </nav>
         </section>
@@ -651,7 +652,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="direction-services">
+                        <div class="direction-services" id="services">
                             <h2 class="direction-services-title">Травматология и ортопедия: наши услуги</h2>
 
                             <div class="direction-services-tabs">
@@ -758,7 +759,7 @@
                                 <span>Показать все</span>
                             </button>
                         </div>
-                        <div class="direction-price">
+                        <div class="direction-price" id="prices">
                             <h2 class="direction-price__title">Стоимость услуг</h2>
 
                             <div class="direction-price__card">
@@ -815,7 +816,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="direction-illnesses">
+                        <div class="direction-illnesses" id="illnesses">
                             <h2 class="direction-illnesses__title">Болезни, которые мы лечим</h2>
 
                             <div class="direction-illnesses__grid">
@@ -869,7 +870,7 @@
                                 <span>Показать все</span>
                             </button>
                         </div>
-                        <div class="direction-promotions">
+                        <div class="direction-promotions" id="promotions">
                             <div class="direction-promotions__header">
                                 <h2 class="direction-promotions__title">Акции</h2>
                                 <button class="direction-promotions__view-all">
@@ -1383,7 +1384,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="reviews">
+                        <div class="reviews" id="reviews">
                             <div class="reviews__container">
                                 <div class="reviews__header">
                                     <h2 class="reviews__title">Отзывы</h2>
@@ -1610,6 +1611,60 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="licenses">
+                            <div class="licenses__container">
+                                <p class="licenses__title licenses__title--left">Лицензии</p>
+
+                                <div class="licenses__grid">
+                                    <div class="license-card">
+                                        <div class="license-card__image">
+                                            <img src="./img/main_page/licenses/license.png"
+                                                alt="Лицензия на медицинскую деятельность">
+                                        </div>
+                                    </div>
+                                    <div class="license-card">
+                                        <div class="license-card__image">
+                                            <img src="./img/main_page/licenses/license.png"
+                                                alt="Лицензия на медицинскую деятельность">
+                                        </div>
+                                    </div>
+                                    <div class="license-card">
+                                        <div class="license-card__image">
+                                            <img src="./img/main_page/licenses/license.png"
+                                                alt="Лицензия на медицинскую деятельность">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="licenses__slider splide">
+                                    <div class="splide__track">
+                                        <div class="splide__list">
+                                            <div class="license-card splide__slide">
+                                                <div class="license-card__image">
+                                                    <img src="./img/main_page/licenses/license.png"
+                                                        alt="Лицензия на медицинскую деятельность">
+                                                </div>
+                                            </div>
+                                            <div class="license-card splide__slide">
+                                                <div class="license-card__image">
+                                                    <img src="./img/main_page/licenses/license.png"
+                                                        alt="Лицензия на медицинскую деятельность">
+                                                </div>
+                                            </div>
+                                            <div class="license-card splide__slide">
+                                                <div class="license-card__image">
+                                                    <img src="./img/main_page/licenses/license.png"
+                                                        alt="Лицензия на медицинскую деятельность">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-carousel-progress">
+                                        <div class="my-carousel-progress-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="direction-form">
                         <p class="direction-form__title">Записаться на прием</p>
@@ -1635,57 +1690,6 @@
                             </div>
                             <button type="submit" class="direction-form__submit">Отправить заявку</button>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="licenses">
-            <div class="licenses__container">
-                <p class="licenses__title">Лицензии</p>
-
-                <div class="licenses__grid">
-                    <div class="license-card">
-                        <div class="license-card__image">
-                            <img src="./img/main_page/licenses/license.png" alt="Лицензия на медицинскую деятельность">
-                        </div>
-                    </div>
-                    <div class="license-card">
-                        <div class="license-card__image">
-                            <img src="./img/main_page/licenses/license.png" alt="Лицензия на медицинскую деятельность">
-                        </div>
-                    </div>
-                    <div class="license-card">
-                        <div class="license-card__image">
-                            <img src="./img/main_page/licenses/license.png" alt="Лицензия на медицинскую деятельность">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="licenses__slider splide">
-                    <div class="splide__track">
-                        <div class="splide__list">
-                            <div class="license-card splide__slide">
-                                <div class="license-card__image">
-                                    <img src="./img/main_page/licenses/license.png"
-                                        alt="Лицензия на медицинскую деятельность">
-                                </div>
-                            </div>
-                            <div class="license-card splide__slide">
-                                <div class="license-card__image">
-                                    <img src="./img/main_page/licenses/license.png"
-                                        alt="Лицензия на медицинскую деятельность">
-                                </div>
-                            </div>
-                            <div class="license-card splide__slide">
-                                <div class="license-card__image">
-                                    <img src="./img/main_page/licenses/license.png"
-                                        alt="Лицензия на медицинскую деятельность">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-carousel-progress">
-                        <div class="my-carousel-progress-bar"></div>
                     </div>
                 </div>
             </div>

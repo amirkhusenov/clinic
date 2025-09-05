@@ -959,6 +959,10 @@
     z-index: 2;
 }
 
+.doctor-education {
+    margin-top: 48px;
+}
+
 .direction-expert {
     margin-top: 24px;
 }
@@ -1935,6 +1939,10 @@
     .contact-form__submit {
         width: 100%;
         padding: 14px 24px;
+    }
+
+    .doctor-education {
+        margin-top: 24px;
     }
 
 }
