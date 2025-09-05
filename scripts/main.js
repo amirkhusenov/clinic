@@ -796,6 +796,95 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.toggleShowAll = toggleShowAll;
 
+    function initializePhotoGallery() {
+        const photoModal = document.getElementById('photoModal');
+        const photoModalOverlay = document.getElementById('photoModalOverlay');
+        const photoModalClose = document.getElementById('photoModalClose');
+        const photoModalPrev = document.getElementById('photoModalPrev');
+        const photoModalNext = document.getElementById('photoModalNext');
+        const photoModalImage = document.getElementById('photoModalImage');
+
+        const photoCards = document.querySelectorAll('.photo-card');
+        const photos = Array.from(photoCards).map(card => {
+            const img = card.querySelector('img');
+            return {
+                src: img.src,
+                alt: img.alt
+            };
+        });
+
+        let currentPhotoIndex = 0;
+
+        photoCards.forEach((card, index) => {
+            card.addEventListener('click', function () {
+                openPhotoModal(index);
+            });
+        });
+
+        function openPhotoModal(index) {
+            currentPhotoIndex = index;
+            updatePhotoModal();
+            photoModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhotoModal() {
+            photoModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function updatePhotoModal() {
+            const currentPhoto = photos[currentPhotoIndex];
+            photoModalImage.src = currentPhoto.src;
+            photoModalImage.alt = currentPhoto.alt;
+        }
+
+        function showNextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            updatePhotoModal();
+        }
+
+        function showPrevPhoto() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+            updatePhotoModal();
+        }
+
+        if (photoModalClose) {
+            photoModalClose.addEventListener('click', closePhotoModal);
+        }
+
+        if (photoModalOverlay) {
+            photoModalOverlay.addEventListener('click', function (e) {
+                if (e.target === photoModalOverlay) {
+                    closePhotoModal();
+                }
+            });
+        }
+
+        if (photoModalPrev) {
+            photoModalPrev.addEventListener('click', showPrevPhoto);
+        }
+
+        if (photoModalNext) {
+            photoModalNext.addEventListener('click', showNextPhoto);
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (photoModal.classList.contains('active')) {
+                switch (e.key) {
+                    case 'Escape':
+                        closePhotoModal();
+                        break;
+                    case 'ArrowLeft':
+                        showPrevPhoto();
+                        break;
+                    case 'ArrowRight':
+                        showNextPhoto();
+                        break;
+                }
+            }
+        });
+    }
 
     initializeTabs();
     initializeShowMoreButtons();
@@ -812,5 +901,6 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeIllnessesShowAll();
     initializeHandbookAlphabet();
     initializeUniversalPagination();
+    initializePhotoGallery();
     toggleShowAll();
 });
