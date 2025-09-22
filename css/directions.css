@@ -1,0 +1,1979 @@
+.breadcrumb__items {
+    display: flex;
+}
+
+.breadcrumb__items-top {
+    display: flex;
+    gap: 4px;
+}
+
+.breadcrumb__items-bottom {
+    display: flex;
+    gap: 4px;
+}
+
+.traumatology-banner {
+    background: linear-gradient(to right, #9cbedd, #b0cee5, #c6deed, #ddedf6, #f5fcff);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.traumatology-banner__image {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.traumatology-banner__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.traumatology-banner__text {
+    padding: 60px 65px;
+    flex: 1;
+}
+
+.traumatology-banner__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.traumatology-banner__features {
+    list-style: none;
+}
+
+.traumatology-banner__check {
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.traumatology-banner__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.traumatology-banner__check {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.traumatology-banner__btn {
+    background: #FF4940;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 41px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #FF4940;
+}
+
+.traumatology-banner__bottom {
+    margin: 52px 0 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.traumatology-banner__info {
+    font-size: 16px;
+    color: #FF4940;
+    font-weight: 600;
+}
+
+.traumatology-banner__caption {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.traumatology-banner__caption span {
+    color: #007691;
+    text-decoration: underline;
+}
+
+.direction {
+    margin: 40px 0;
+}
+
+.direction-header__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.direction-header__icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.direction-header__container {
+    color: #7C8799;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.direction-main {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.direction-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 24px;
+}
+
+.direction-description {
+    white-space: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+.direction-services-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 32px;
+}
+
+.direction-services {
+    background: #fff;
+    box-shadow: var(--shadow-block);
+    padding: 29px 40px 44px 24px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.direction-services-tabs {
+    border-radius: 20px;
+    width: fit-content;
+    background: #EDF0F5;
+    display: flex;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.direction-services-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.direction-services-tab {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.direction-services-tab--active {
+    background: #1F757E;
+    color: white;
+}
+
+
+.direction-services-content {
+    margin-bottom: 20px;
+}
+
+.direction-services-tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.direction-services-tab-content--active {
+    display: block;
+}
+
+.direction-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.direction-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.direction-services-list li {
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    color: var(--color-text);
+}
+
+.direction-services-list li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.direction-services-list li a:hover {
+    color: #27929E;
+}
+
+.direction-services-show-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 20px;
+    border: 1px solid var(--color-text);
+    border-radius: 30px;
+    background: white;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.direction-services-show-all:hover {
+    background: var(--color-text);
+    color: white;
+}
+
+.direction-services-show-all:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+.direction-tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.direction-tab-content--active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.direction-nav {
+    width: fit-content;
+    background: #EDF0F5;
+    border-radius: 20px;
+    padding: 11px 0;
+}
+
+.direction-nav_tabs {
+    display: flex;
+    gap: 16px;
+}
+
+.direction-nav__tab {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.direction-nav__tab:hover {
+    background: #DAE2EF;
+    color: var(--color-text);
+}
+
+.direction-nav__tab--active {
+    background: var(--color-text);
+    color: #fff;
+}
+
+@media (max-width: 1440px) {
+    .direction-content {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1425px) {
+
+    .direction-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .direction-services {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin: 14px 14px 14px 14px;
+    }
+
+    .direction-nav__tabs {
+        flex-wrap: wrap;
+    }
+
+    .direction-title,
+    .direction-services-title {
+        font-size: 32px;
+    }
+
+    .direction-description {
+        font-size: 16px;
+    }
+
+    .traumatology-banner__text {
+        padding: 28px 24px;
+
+    }
+
+    .traumatology-banner__title {
+        font-size: 26px;
+    }
+
+    .traumatology-banner__btn {
+        padding: 12px 32px;
+    }
+
+    .direction-title,
+    .direction-services-title {
+        font-size: 32px;
+    }
+
+    .direction-description {
+        font-size: 16px;
+    }
+
+    .direction-services {
+        padding: 20px 24px 28px 16px;
+    }
+
+    .direction-services-tabs {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+
+    .direction-services-grid {
+        gap: 24px;
+    }
+
+    .direction-promotions__title {
+        font-size: 32px;
+    }
+
+    .direction-illnesses {
+        margin-top: 24px;
+    }
+
+    .direction-illnesses__title {
+        font-size: 24px;
+    }
+
+    .direction-questions__title {
+        font-size: 32px;
+    }
+
+    .direction-doctors__header {
+        font-size: 32px;
+    }
+
+    .doctors__grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .useful-info__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .doctors {
+        margin-top: 24px;
+    }
+
+    .contact-form__image {
+        display: none;
+    }
+
+    .contact-form__content {
+        flex-direction: column;
+    }
+
+    .contact-form__field {
+        flex-direction: column;
+    }
+
+    .contact-form__input-group {
+        min-width: 100%;
+    }
+
+    .contact-form__subtitle {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .direction-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        width: auto;
+    }
+
+    .direction-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .direction-nav {
+        padding: 10px 0;
+    }
+
+    .direction-nav__tab {
+        padding: 12px 20px;
+    }
+
+    .direction-nav__tabs {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap;
+        width: max-content;
+    }
+
+    .direction-nav__tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .direction-content {
+        margin-top: 32px;
+        gap: 24px;
+    }
+
+    .direction-title,
+    .direction-services-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .direction-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .direction-tabs {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .direction-tab {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .direction-nav__tabs {
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .direction-nav__tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .direction-services-tabs {
+        gap: 2px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .direction-services-tabs::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrumb__items {
+        flex-direction: column;
+    }
+
+    .direction-nav.container {
+        margin: 0;
+    }
+
+    .direction-nav {
+        border-radius: 0;
+    }
+
+    .direction-content {
+        margin-top: 24px;
+        gap: 20px;
+    }
+
+
+    .direction-description {
+        font-size: 13px;
+    }
+
+    .direction-nav__tabs {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        border-radius: 0;
+    }
+
+    .direction-nav__tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .direction-nav__tab {
+        border-radius: 0;
+    }
+
+    .direction-tabs {
+        gap: 8px;
+    }
+
+    .direction-tab {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .direction-services-tabs {
+        flex-wrap: nowrap;
+        gap: 4px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .direction-services-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .direction-services-tab {
+        padding: 11px 14px;
+        font-size: 11px;
+    }
+
+    .direction-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .direction-services-list li {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .direction-illnesses__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .direction-illnesses__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .direction-illnesses__list li {
+        padding: 6px 0;
+    }
+
+    .direction-illnesses__list li a {
+        font-size: 14px;
+    }
+
+
+    .direction-promotions__title {
+        font-size: 20px;
+    }
+
+    .direction-promotions__view-all {
+        align-self: flex-end;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .direction-promotions__card {
+        padding: 20px;
+        min-height: 160px;
+    }
+
+    .direction-promotions__card-title {
+        font-size: 18px;
+    }
+
+    .direction-promotions__card-subtitle {
+        font-size: 14px;
+    }
+
+    .direction-promotions__image {
+        width: 80px;
+    }
+
+    .direction-promotions__arrow {
+        width: 28px;
+        height: 28px;
+        bottom: 12px;
+        right: 12px;
+    }
+
+
+    .direction-expert {
+        margin-top: 24px;
+    }
+
+    .direction-expert__title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .direction-expert__content {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .direction-expert__photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .direction-expert__name {
+        font-size: 16px;
+    }
+
+    .direction-expert__specialization {
+        font-size: 13px;
+    }
+
+    .direction-questions__title {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .direction-questions__card {
+        padding: 20px;
+    }
+
+    .direction-questions__header {
+        padding: 16px 0;
+    }
+
+    .direction-questions__body {
+        padding: 0 0 16px 0;
+    }
+
+    .direction-questions__body h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .direction-questions__body li,
+    .direction-questions__body p {
+        font-size: 14px;
+    }
+
+    .procedure-nav {
+        margin-top: 14px;
+    }
+
+    .traumatology-banner__info,
+    .traumatology-banner__caption {
+        font-size: 14px;
+    }
+}
+
+
+.direction-illnesses {
+    margin-top: 48px;
+}
+
+.direction-illnesses__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 32px;
+}
+
+.direction-illnesses__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.direction-illnesses__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.direction-illnesses__list li {
+    padding: 8px 0;
+}
+
+.direction-illnesses__list li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.direction-illnesses__list li a:hover {
+    color: #27929E;
+}
+
+.direction-illnesses__show-all {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 1px solid var(--color-text);
+    border-radius: 30px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.direction-illnesses__show-all:hover {
+    background: var(--color-text);
+    color: white;
+}
+
+.direction-illnesses__show-all:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.direction-illnesses__column:nth-child(2) {
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.direction-illnesses__column:nth-child(2).show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.direction-promotions {
+    margin-top: 32px;
+}
+
+.direction-promotions__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.direction-promotions__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.direction-promotions__view-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 39px;
+    border: 1px solid #27929E;
+    border-radius: 30px;
+    background: transparent;
+    color: #27929E;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.direction-promotions__view-all:hover {
+    background: #27929E;
+    color: white;
+}
+
+.direction-promotions__view-all:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+.direction-promotions__view-all--mobile {
+    display: none;
+}
+
+.direction-promotions__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.direction-promotions__card {
+    position: relative;
+    background: linear-gradient(to right, #69a3ff, #54bfff, #62d6ff, #89ebff, #b6fefe);
+    border-radius: 20px;
+    padding: 24px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.direction-promotions__label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #FF4444;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.direction-promotions__content {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.direction-promotions__card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.direction-promotions__card-subtitle {
+    font-size: 16px;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.direction-promotions__image {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+
+.direction-promotions__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.direction-promotions__arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 2;
+}
+
+.doctor-education {
+    margin-top: 48px;
+}
+
+.direction-expert {
+    margin-top: 24px;
+}
+
+.direction-expert__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0 0 20px 0;
+}
+
+.direction-expert__content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.direction-expert__photo {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+}
+
+.direction-expert__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.direction-expert__info {
+    flex: 1;
+}
+
+.direction-expert__name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #27929E;
+    margin: 0 0 8px 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.direction-expert__specialization {
+    font-size: 14px;
+    color: #7C8799;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.direction-questions {
+    margin-top: 48px;
+}
+
+.direction-questions__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 32px;
+}
+
+.direction-questions__card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-block);
+    padding: 0 36px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.direction-questions__item {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.direction-questions__item:last-child {
+    border-bottom: none;
+}
+
+.direction-questions__item summary {
+    list-style: none;
+}
+
+.direction-questions__item summary::-webkit-details-marker {
+    display: none;
+}
+
+.direction-questions__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.direction-questions__question {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.direction-questions__toggle {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.direction-questions__item[open] .direction-questions__toggle {
+    transform: rotate(180deg);
+}
+
+.direction-questions__body {
+    padding: 0 0 24px 0;
+}
+
+.direction-questions__body h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 16px 0;
+}
+
+.direction-questions__body ul {
+    margin: 0 0 16px 0;
+    padding-left: 20px;
+}
+
+.direction-questions__body li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.direction-questions__body p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.doctors {
+    margin-top: 48px;
+}
+
+.direction-doctors__header {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 32px;
+}
+
+.doctors__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-bottom: 8px;
+
+}
+
+.direction-doctors__slider {
+    display: none;
+}
+
+.reviews {
+    margin-top: 48px;
+}
+
+.reviews__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.useful-info__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-bottom: 8px;
+}
+
+.social-banner {
+    margin: 20px 0;
+}
+
+.social-banner__phone {
+    display: none;
+}
+
+.gallery {
+    margin: 0;
+    margin-top: 48px;
+}
+
+.gallery__title {
+    text-align: left;
+    ;
+}
+
+.gallery__pagination {
+    margin-top: 20px;
+}
+
+.licenses {
+    margin: 30px 0 48px 0;
+}
+
+.licenses__grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.direction-content__expert {
+    margin: 48px 0;
+}
+
+@media (max-width: 1425px) {
+
+    .traumatology-banner__image-bg,
+    .traumatology-banner__image {
+        display: none;
+    }
+
+    .traumatology-banner__text {
+        padding: 40px 40px;
+    }
+
+    .traumatology-banner__title {
+        font-size: 32px;
+    }
+
+    .direction-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 950px) {
+    .doctors__pagination {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 856px) {
+    .traumatology-banner__text {
+        padding: 24px 20px;
+    }
+
+    .traumatology-banner__title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .traumatology-banner__feature {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .traumatology-banner__bottom {
+        margin-top: 36px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .traumatology-banner__btn {
+        padding: 12px 30px;
+        font-size: 12px;
+        display: block;
+        width: 100%;
+    }
+
+    .direction-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .direction-services-column:nth-child(2) {
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .direction-services-column:nth-child(2).show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .direction-services {
+        padding: 16px 20px 24px 12px;
+    }
+
+    .direction-services-tabs {
+        margin-bottom: 20px;
+    }
+
+    .direction-services-show-all {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .direction-articles {
+        display: none;
+    }
+
+    .direction-promotions__header {
+        margin-bottom: 14px;
+    }
+
+    .direction-promotions__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .direction-promotions__card {
+        padding: 16px;
+        min-height: 160px;
+    }
+
+    .direction-promotions__card-title {
+        font-size: 20px;
+    }
+
+    .direction-promotions__card-subtitle {
+        font-size: 14px;
+    }
+
+    .direction-promotions__view-all {
+        display: none;
+    }
+
+    .direction-promotions__view-all--mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .direction-illnesses__title {
+        margin-bottom: 18px;
+    }
+
+    .direction-illnesses__grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .direction-illnesses__column:nth-child(2) {
+        display: none;
+    }
+
+    .direction-illnesses__show-all {
+        display: flex;
+    }
+
+    .direction-questions {
+        margin-top: 24px;
+    }
+
+    .direction-questions__card {
+        padding: 0 24px;
+    }
+
+    .direction-questions__header {
+        padding: 20px 0;
+    }
+
+    .doctors__grid {
+        display: none;
+    }
+
+    .direction-doctors__slider {
+        display: block;
+    }
+
+    .doctors__button {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .doctors__pagination {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .traumatology-banner {
+        border-radius: 0;
+    }
+
+    .traumatology-banner.container {
+        margin: 0;
+    }
+
+    .direction-content {
+        margin-top: 24px;
+        gap: 20px;
+    }
+
+
+    .direction-description {
+        font-size: 13px;
+    }
+
+    .direction-tabs {
+        gap: 8px;
+    }
+
+    .direction-tab {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .direction-services {
+        padding: 12px 12px 16px 8px;
+    }
+
+    .direction-services-tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .direction-services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .direction-services-list li {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    .direction-services-show-all {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 16px;
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    .direction-promotions__title {
+        font-size: 18px;
+    }
+
+    .direction-promotions__card {
+        padding: 12px;
+        min-height: 120px;
+    }
+
+    .direction-promotions__card-title {
+        font-size: 14px;
+    }
+
+    .direction-promotions__card-subtitle {
+        font-size: 12px;
+    }
+
+    .direction-questions__title {
+        font-size: 18px;
+    }
+
+    .direction-doctors__header {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .doctors__grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .reviews {
+        margin-top: 24px;
+    }
+
+    .reviews__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        margin-top: 24px;
+    }
+
+    .licenses {
+        margin-bottom: 24px;
+    }
+
+    .doctors__pagination {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 360px) {
+    .traumatology-banner__text {
+        padding: 12px 8px;
+    }
+
+    .traumatology-banner__title {
+        font-size: 18px;
+    }
+
+    .traumatology-banner__feature {
+        font-size: 11px;
+    }
+
+    .direction-description {
+        font-size: 12px;
+    }
+
+    .direction-tab {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .direction-form {
+        padding: 16px;
+    }
+
+    .direction-form__title {
+        font-size: 16px;
+    }
+
+    .direction-services {
+        padding: 10px 10px 12px 6px;
+    }
+
+    .direction-services-list li {
+        font-size: 12px;
+    }
+
+    .direction-promotions__title {
+        font-size: 18px;
+    }
+
+    .direction-promotions__card {
+        padding: 12px;
+        min-height: 120px;
+    }
+
+    .direction-promotions__card-title {
+        font-size: 14px;
+    }
+
+    .direction-promotions__card-subtitle {
+        font-size: 12px;
+    }
+
+    .direction-questions__title {
+        font-size: 18px;
+    }
+
+    .direction-doctors__header {
+        font-size: 18px;
+    }
+}
+
+@media (hover: hover) {
+    .direction-services-list li a:hover {
+        color: #27929E;
+    }
+
+    .direction-services-show-all:hover {
+        background: var(--color-text);
+        color: white;
+    }
+
+    .direction-services-show-all:hover img {
+        filter: brightness(0) invert(1);
+    }
+
+    .direction-form__submit:hover {
+        background: #F5F7FA;
+        transform: translateY(-1px);
+    }
+
+    .direction-illnesses__list li a:hover {
+        color: #27929E;
+    }
+
+    .direction-illnesses__show-all:hover {
+        background: var(--color-text);
+        color: white;
+    }
+
+    .direction-illnesses__show-all:hover img {
+        filter: brightness(0) invert(1);
+    }
+
+    .direction-promotions__view-all:hover {
+        background: #27929E;
+        color: white;
+    }
+
+    .direction-promotions__view-all:hover img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media (hover: none) {
+    .direction-services-list li a:hover {
+        color: inherit;
+    }
+
+    .direction-services-show-all:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .direction-services-show-all:hover img {
+        filter: none;
+    }
+
+    .direction-form__submit:hover {
+        background: inherit;
+        transform: none;
+    }
+
+    .direction-illnesses__list li a:hover {
+        color: inherit;
+    }
+
+    .direction-illnesses__show-all:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .direction-illnesses__show-all:hover img {
+        filter: none;
+    }
+
+    .direction-promotions__view-all:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .direction-promotions__view-all:hover img {
+        filter: none;
+    }
+}
+
+
+.direction-nav__container {
+    background: #EDF0F5;
+    border-radius: 16px;
+}
+
+.procedure-nav {
+    margin-top: 24px;
+}
+
+.procedure-nav__container {
+    background: #EDF0F5;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.direction-nav__list,
+.procedure-nav__list {
+    color: #27929E;
+    padding: 0 24px;
+}
+
+.direction-nav__list li,
+.procedure-nav__list li {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 0 10px 0;
+}
+
+.direction-nav__list a,
+.procedure-nav__list a {
+    color: #27929E;
+}
+
+.cryodestruction-content {
+    margin: 32px 0;
+}
+
+.cryodestruction-section {
+    margin-bottom: 24px;
+}
+
+.cryodestruction-section__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 24px 0;
+}
+
+.cryodestruction-section__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+}
+
+.cryodestruction-section__list {
+    list-style: disc !important;
+    margin-bottom: 24px;
+}
+
+.cryodestruction-section__list li {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+    .cryodestruction-section {
+        margin-bottom: 20px;
+    }
+
+    .cryodestruction-section__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .cryodestruction-section__subtitle {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .cryodestruction-section__list li,
+    .cryodestruction-section__text {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cryodestruction-section {
+        margin-bottom: 16px;
+    }
+
+    .cryodestruction-section__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .cryodestruction-section__subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .cryodestruction-section__list li,
+    .cryodestruction-section__text {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+
+    .direction-nav__list li {
+        font-size: 14px;
+    }
+}
+
+.preparation-content {
+    margin: 32px 0;
+}
+
+.preparation-section {
+    margin-bottom: 24px;
+}
+
+.preparation-section__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.preparation-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.preparation-section__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.preparation-section__image {
+    margin-top: 47px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .preparation-section {
+        margin-bottom: 20px;
+    }
+
+    .preparation-section__title {
+        margin-bottom: 20px;
+    }
+
+    .preparation-section__content {
+        gap: 12px;
+    }
+
+    .preparation-section__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preparation-section {
+        margin-bottom: 16px;
+    }
+
+    .preparation-section__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .preparation-section__content {
+        gap: 10px;
+    }
+
+    .preparation-section__text {
+        font-size: 13px;
+    }
+}
+
+.contact-form-section {
+    margin: 32px 0;
+    background: radial-gradient(circle,
+            #52B8BD 0%,
+            #78D5CD 33%,
+            #229DAC 71%,
+            #146076 100%);
+    border-radius: 16px;
+    position: relative;
+}
+
+.contact-form {
+    padding: 52px 45px 35px 45px;
+}
+
+.contact-form__content {
+    position: relative;
+    display: flex;
+    column-gap: 65px;
+    z-index: 1;
+}
+
+.contact-form__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.contact-form__subtitle {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 32px 0;
+    line-height: 1.4;
+    width: 170px;
+}
+
+.contact-form__field {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 15px;
+}
+
+.contact-form__label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.contact-form__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 240px;
+}
+
+.contact-form__input {
+    padding: 12px 16px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-form__input::placeholder {
+    color: #fff;
+}
+
+.contact-form__submit {
+    margin-top: 30px;
+    padding: 10px 56px;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    color: #1F757E;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    height: 40px;
+}
+
+.contact-form__privacy {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.contact-form__link {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.contact-form__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 32px 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    .contact-form__title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .contact-form__subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .contact-form__input-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-form__submit {
+        width: 100%;
+        padding: 14px 24px;
+    }
+
+    .doctor-education {
+        margin-top: 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .contact-form__title {
+        font-size: 20px;
+    }
+
+    .contact-form__subtitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form__input {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .contact-form__submit {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    .contact-form__privacy {
+        font-size: 11px;
+    }
+
+
+}

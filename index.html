@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиника №1 - Многопрофильный медицинский центр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/main_page/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/main_page/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/main_page/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/main_page/favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__top-content">
+                    <a href="/" class="header__branding">
+                        <div class="header__logo">
+                            <img src="./img/icon/logo.svg"
+                                alt="Клиника №1 – многопрофильный медицинский центр в Москве">
+                        </div>
+
+                        <div class="header__branding-text">
+                            <p class="header__title">Клиника №1</p>
+                            <p class="header__subtitle">Многопрофильный медицинский центр</p>
+                        </div>
+                    </a>
+                    <div class="header__info">
+                        <div class="header__info-item">
+                            <img src="./img/icon/location.svg" alt="">
+                            <div class="header__info-text">
+                                <div>г. Москва, ул. Краснодарская,</div>
+                                <div>дом. 52, корп. 2</div>
+                            </div>
+                        </div>
+
+                        <div class="header__info-item">
+                            <img src="./img/icon/calendar.svg" alt="">
+                            <div class="header__info-text">
+                                <div>Пн-Сб: 8:00-20:00</div>
+                                <div>Вс: 9:00-20:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__contact">
+                        <div class="header__messaging">
+                            <a href="#" class="header__messaging-link header__messaging-link--telegram">
+                                <img src="./img/icon/telegram.svg" alt="">
+                            </a>
+                            <a href="#" class="header__messaging-link header__messaging-link--whatsapp">
+                                <img src="./img/icon/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="header__phone">
+                            <div class="header__phone-number">+7 (495) 023-13-59</div>
+                            <a href="#" class="header__phone-callback">Перезвоните мне</a>
+                        </div>
+
+                        <button class="header__cta">
+                            Запись на приём
+                        </button>
+                    </div>
+
+                    <div class="header__mobile-header">
+                        <div class="header__mobile-header-top">
+                            <div class="header__mobile-icons">
+                                <a href="#" class="header__mobile-icon header__mobile-icon--whatsapp">
+                                    <img src="./img/icon/whatsapp.svg" alt="">
+                                </a>
+                                <a href="tel:+74950231359" class="header__mobile-icon header__mobile-icon--phone">
+                                    <img src="./img/icon/phone.svg" alt="">
+                                </a>
+                            </div>
+                            <button class="header__mobile-menu" id="mobileMenuBtn">
+                                <img src="./img/icon/open-menu.svg" alt="Меню" class="header__mobile-menu-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="header__bottom-content">
+                    <nav class="header__nav">
+                        <div class="header__services-dropdown">
+                            <button class="header__nav-link header__services-trigger">
+                                <span>Услуги</span>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="header__mega-menu">
+                                <div class="header__mega-menu-header">
+                                    <div class="header__mega-menu-tabs">
+                                        <button class="header__mega-menu-tab header__mega-menu-tab--active"
+                                            data-tab="directions">Направления</button>
+                                        <button class="header__mega-menu-tab"
+                                            data-tab="diagnostics">Диагностика</button>
+                                        <button class="header__mega-menu-tab" data-tab="inpatient">Стационар</button>
+                                    </div>
+                                    <button class="header__mega-menu-all-btn">
+                                        <span>Все услуги</span>
+                                        <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="header__mega-menu-content">
+                                    <div class="header__mega-menu-columns">
+                                        <div class="header__mega-menu-column">
+                                            <ul class="header__mega-menu-list">
+                                                <li class="header__mega-menu-item"><a href="#">Акушерство и
+                                                        гинекология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Анестезиология и
+                                                        реаниматология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Гастроэнтерология</a>
+                                                </li>
+                                                <li class="header__mega-menu-item"><a href="#">Гепатология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Герниология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Гирудотерапия</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Дерматология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Иглорефлексотерапия</a>
+                                                </li>
+                                                <li class="header__mega-menu-item"><a href="#">Кардиология</a></li>
+                                                <li class="header__mega-menu-item"><a
+                                                        href="./tomograph.html">Компьютерный томограф</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Косметология</a></li>
+                                                <li class="header__mega-menu-item"><a
+                                                        href="./disease.html">Криодеструкция эрозии</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__mega-menu-column">
+                                            <ul class="header__mega-menu-list">
+                                                <li class="header__mega-menu-item"><a href="#">Мануальная терапия и
+                                                        остеопатия</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Массаж</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Неврология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Нейрохирургия</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Общая практика</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Отоларингология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Проктология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Процедурный кабинет</a>
+                                                </li>
+                                                <li class="header__mega-menu-item"><a href="#">Реабилитация</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Терапия</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__mega-menu-column">
+                                            <ul class="header__mega-menu-list">
+                                                <li class="header__mega-menu-item"><a
+                                                        href="./directions.html">Травматология и
+                                                        ортопедия</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Урология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Физиотерапия</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Флебология</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Хирургия</a></li>
+                                                <li class="header__mega-menu-item"><a href="#">Эндокринология</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__mega-menu-banner">
+                                        <div class="header__mega-menu-banner-content">
+                                            <p class="header__mega-menu-banner-title">Есть жалобы
+                                                на<br>состояние<br>здоровья?</p>
+                                            <p class="header__mega-menu-banner-text">Бесплатная консультация<br>врача
+                                                общей практики по<br>вопросам диагностики и<br>лечения</p>
+                                            <button class="header__mega-menu-banner-btn">Записаться на приём</button>
+                                        </div>
+                                        <div class="header__mega-menu-banner-image">
+                                            <img src="./img/main_page/services/service-banner.png"
+                                                alt="Медицинский баннер">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__dropdown">
+                            <div class="header__nav-link">
+                                <span>О клинике</span>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="header__dropdown-content">
+                                <a href="./news.html" class="header__dropdown-item">Новости</a>
+                                <a href="./legal.html" class="header__dropdown-item">Правовая информация</a>
+                                <a href="./vacancies.html" class="header__dropdown-item">Вакансии</a>
+                                <a href="./video.html" class="header__dropdown-item">Видео</a>
+                                <a href="./photo-gallery.html" class="header__dropdown-item">Галерея</a>
+                                <a href="./reviews.html" class="header__dropdown-item">Отзывы</a>
+                                <a href="./services.html" class="header__dropdown-item">Все услуги</a>
+                            </div>
+                        </div>
+                        <a href="./promotions.html" class="header__nav-link">
+                            <span>Программы и акции</span>
+                        </a>
+                        <a href="./doctors.html" class="header__nav-link">
+                            <span>Врачи</span>
+                        </a>
+                        <a href="./price.html" class="header__nav-link">
+                            <span>Цены</span>
+                        </a>
+                        <a href="./contacts.html" class="header__nav-link">
+                            <span>Контакты</span>
+                        </a>
+                        <div class="header__dropdown">
+                            <div class="header__nav-link">
+                                <span>Пациентам</span>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="header__dropdown-content">
+                                <a href="./blogs.html" class="header__dropdown-item">Блог</a>
+                                <a href="./handbook.html" class="header__dropdown-item">Справочник</a>
+                            </div>
+                        </div>
+                        <div class="header__overlay"></div>
+                    </nav>
+
+                    <div class="header__utilities">
+                        <div class="header__search">
+                            <input type="text" placeholder="Поиск по сайту" class="header__search-input">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.0004 19.9999L15.9504 15.9499M15.9504 15.9499C16.6004 15.2998 17.116 14.5281 17.4678 13.6788C17.8196 12.8295 18.0007 11.9192 18.0007 10.9999C18.0007 10.0806 17.8196 9.17027 17.4678 8.32095C17.116 7.47163 16.6004 6.69991 15.9504 6.04987C15.3003 5.39983 14.5286 4.88418 13.6793 4.53238C12.83 4.18058 11.9197 3.99951 11.0004 3.99951C10.0811 3.99951 9.17076 4.18058 8.32144 4.53238C7.47211 4.88418 6.7004 5.39983 6.05036 6.04987C4.73754 7.36269 4 9.14326 4 10.9999C4 12.8565 4.73754 14.637 6.05036 15.9499C7.36318 17.2627 9.14375 18.0002 11.0004 18.0002C12.857 18.0002 14.6375 17.2627 15.9504 15.9499Z"
+                                    stroke="#0D3260" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <button class="header__accessibility">
+                            <img src="./img/icon/eye.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__header">
+                <div class="mobile-menu__branding">
+                    <div class="mobile-menu__logo">
+                        <img src="./img/icon/logo.svg" alt="logo">
+                    </div>
+                    <div class="mobile-menu__title">Клиника №1</div>
+                </div>
+                <button class="mobile-menu__close" id="mobileMenuClose">
+                    <img src="./img/icon/close-menu.svg" alt="">
+                </button>
+            </div>
+
+            <div class="mobile-menu__search">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                        stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <input type="text" placeholder="Найти..." class="mobile-menu__search-input">
+            </div>
+
+            <nav class="mobile-menu__nav">
+                <details class="mobile-menu__nav-item">
+                    <summary class="mobile-menu__nav-header">
+                        <span class="mobile-menu__nav-text mobile-menu__nav-text--activate">Услуги</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </summary>
+                    <div class="mobile-menu__submenu">
+                        <details class="mobile-menu__submenu-category">
+                            <summary class="mobile-menu__submenu-category-header">
+                                <span>Направления</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </summary>
+                            <div class="mobile-menu__submenu-category-content">
+                                <a href="#" class="mobile-menu__submenu-item">Акушерство и гинекология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Анестезиология и реаниматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гастроэнтерология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гепатология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Герниология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гирудотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Дерматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Иглорефлексотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Кардиология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Косметология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Мануальная терапия и остеопатия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Массаж</a>
+                                <a href="#" class="mobile-menu__submenu-item">Неврология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Нейрохирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
+                                <a href="#" class="mobile-menu__submenu-item">Отоларингология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Проктология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Процедурный кабинет</a>
+                                <a href="#" class="mobile-menu__submenu-item">Реабилитация</a>
+                                <a href="#" class="mobile-menu__submenu-item">Терапия</a>
+                                <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и
+                                    ортопедия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Урология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Физиотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Флебология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Хирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Эндокринология</a>
+                                <button class="mobile-menu__show-all-btn" onclick="toggleShowAll(this)">Смотреть
+                                    все</button>
+                            </div>
+                        </details>
+
+                        <details class="mobile-menu__submenu-category">
+                            <summary class="mobile-menu__submenu-category-header">
+                                <span>Диагностика</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </summary>
+                            <div class="mobile-menu__submenu-category-content">
+                                <a href="#" class="mobile-menu__submenu-item">Акушерство и гинекология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Анестезиология и реаниматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гастроэнтерология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гепатология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Герниология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гирудотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Дерматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Иглорефлексотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Кардиология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Косметология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Мануальная терапия и остеопатия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Массаж</a>
+                                <a href="#" class="mobile-menu__submenu-item">Неврология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Нейрохирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
+                                <a href="#" class="mobile-menu__submenu-item">Отоларингология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Проктология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Процедурный кабинет</a>
+                                <a href="#" class="mobile-menu__submenu-item">Реабилитация</a>
+                                <a href="#" class="mobile-menu__submenu-item">Терапия</a>
+                                <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и
+                                    ортопедия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Урология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Физиотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Флебология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Хирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Эндокринология</a>
+                                <button class="mobile-menu__show-all-btn" onclick="toggleShowAll(this)">Смотреть
+                                    все</button>
+                            </div>
+                        </details>
+
+                        <details class="mobile-menu__submenu-category">
+                            <summary class="mobile-menu__submenu-category-header">
+                                <span>Операции</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </summary>
+                            <div class="mobile-menu__submenu-category-content">
+                                <a href="#" class="mobile-menu__submenu-item">Акушерство и гинекология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Анестезиология и реаниматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гастроэнтерология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гепатология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Герниология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Гирудотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Дерматология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Иглорефлексотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Кардиология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Косметология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Мануальная терапия и остеопатия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Массаж</a>
+                                <a href="#" class="mobile-menu__submenu-item">Неврология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Нейрохирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Общая практика</a>
+                                <a href="#" class="mobile-menu__submenu-item">Отоларингология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Проктология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Процедурный кабинет</a>
+                                <a href="#" class="mobile-menu__submenu-item">Реабилитация</a>
+                                <a href="#" class="mobile-menu__submenu-item">Терапия</a>
+                                <a href="./directions.html" class="mobile-menu__submenu-item">Травматология и
+                                    ортопедия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Урология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Физиотерапия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Флебология</a>
+                                <a href="#" class="mobile-menu__submenu-item">Хирургия</a>
+                                <a href="#" class="mobile-menu__submenu-item">Эндокринология</a>
+                                <button class="mobile-menu__show-all-btn" onclick="toggleShowAll(this)">Смотреть
+                                    все</button>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <a href="./doctors.html" class="mobile-menu__nav-item">
+                    <span class="mobile-menu__nav-text">Врачи</span>
+                </a>
+
+                <a href="./promotions.html" class="mobile-menu__nav-item">
+                    <span class="mobile-menu__nav-text">Программы и акции</span>
+                </a>
+
+                <a href="./price.html" class="mobile-menu__nav-item">
+                    <span class="mobile-menu__nav-text">Цена</span>
+                </a>
+
+                <details class="mobile-menu__nav-item">
+                    <summary class="mobile-menu__nav-header">
+                        <span class="mobile-menu__nav-text">О клинике</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </summary>
+                    <div class="mobile-menu__submenu">
+                        <a href="./news.html" class="mobile-menu__submenu-item">Новости</a>
+                        <a href="./legal.html" class="mobile-menu__submenu-item">Правовая информация</a>
+                        <a href="./vacancies.html" class="mobile-menu__submenu-item">Вакансии</a>
+                        <a href="./video.html" class="mobile-menu__submenu-item">Видео</a>
+                        <a href="./photo-gallery.html" class="mobile-menu__submenu-item">Галерея</a>
+                        <a href="./reviews.html" class="mobile-menu__submenu-item">Отзывы</a>
+                        <a href="./services.html" class="mobile-menu__submenu-item">Все услуги</a>
+                    </div>
+                </details>
+
+                <details class="mobile-menu__nav-item">
+                    <summary class="mobile-menu__nav-header">
+                        <span class="mobile-menu__nav-text">Пациентам</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </summary>
+                    <div class="mobile-menu__submenu">
+                        <a href="./blogs.html" class="mobile-menu__submenu-item">Блог</a>
+                        <a href="./handbook.html" class="mobile-menu__submenu-item">Справочник</a>
+                    </div>
+                </details>
+                <a href="./contacts.html" class="mobile-menu__nav-item">
+                    <span class="mobile-menu__nav-text">Контакты</span>
+                </a>
+
+            </nav>
+
+            <div class="mobile-menu__actions">
+                <button class="mobile-menu__cta mobile-menu__cta--primary">Записаться на приём</button>
+                <button class="mobile-menu__cta mobile-menu__cta--secondary">Перезвоните мне</button>
+            </div>
+
+            <div class="mobile-menu__contact">
+                <div class="mobile-menu__phone">+7 (495) 023-13-59</div>
+                <div class="mobile-menu__social">
+                    <a href="#" class="mobile-menu__social-link">
+                        <img src="./img/icon/telegram.svg" alt="">
+                    </a>
+                    <a href="#" class="mobile-menu__social-link">
+                        <img src="./img/icon/whatsapp.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobile-menu__info">
+                <div class="mobile-menu__info-item">
+                    <div class="mobile-menu__info-label">Адрес:</div>
+                    <div class="mobile-menu__info-text">г. Москва, ул. Краснодарская, дом. 52, корп. 2</div>
+                </div>
+                <div class="mobile-menu__info-item">
+                    <div class="mobile-menu__info-label">Режим работы:</div>
+                    <div class="mobile-menu__info-text">пн-сб: 08:00 - 20:00, вс: 09:00 - 20:00</div>
+                </div>
+            </div>
+
+            <div class="mobile-menu__accessibility">
+                <img src="./img/icon/eye-blue.svg" alt="">
+                <span>Версия для слабовидящих</span>
+            </div>
+        </div>
+        <div class="header-contact-block">
+            <div class="header-contact-block__container">
+                <div class="header-contact-block__phone">+7 (495) 023-13-59</div>
+                <button class="header-contact-block__appointment-btn">Запись на приём</button>
+            </div>
+        </div>
+        <div class="appointment-modal" id="appointmentModal">
+            <div class="appointment-modal__overlay" id="appointmentModalOverlay"></div>
+            <div class="appointment-modal__content">
+                <div class="appointment-modal__header">
+                    <h3 class="appointment-modal__title">Запись на приём</h3>
+                    <button class="appointment-modal__close" id="appointmentModalClose">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <form class="appointment-modal__form" id="appointmentForm">
+                    <div class="appointment-modal__field">
+                        <label for="appointmentName" class="appointment-modal__label">Имя</label>
+                        <input type="text" id="appointmentName" name="name" class="appointment-modal__input"
+                            placeholder="Введите ваше имя" required>
+                    </div>
+
+                    <div class="appointment-modal__field">
+                        <label for="appointmentPhone" class="appointment-modal__label">Телефон</label>
+                        <input type="tel" id="appointmentPhone" name="phone" class="appointment-modal__input"
+                            placeholder="+7 (_ _ _) _ _ _-_ -_ _" required>
+                    </div>
+
+                    <div class="appointment-modal__actions">
+
+                        <button type="submit"
+                            class="appointment-modal__btn appointment-modal__btn--primary">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <div class="hero__slides-container">
+                            <div class="hero__slide hero__slide--active" data-slide="0">
+                                <p class="hero__title">Инновационный метод лечения геморроя</p>
+                                <p class="hero__subtitle">Инновационный метод хирургического лечения геморроя с
+                                    использованием
+                                    современной электрохирургической установки
+                                </p>
+                            </div>
+
+                            <div class="hero__slide" data-slide="1">
+                                <p class="hero__title">Современная диагностика КТ и МРТ</p>
+                                <p class="hero__subtitle">Высокоточная диагностика с использованием современного
+                                    оборудования
+                                    экспертного класса для точной постановки диагноза
+                                </p>
+                            </div>
+                            <div class="hero__slide" data-slide="2">
+                                <p class="hero__title">Эндоскопия во сне с использованием анестезии
+                                </p>
+                                <p class="hero__subtitle">Безболезненные эндоскопические исследования под седацией
+                                    для максимального комфорта пациента и безболезненной анестезией
+                                </p>
+                            </div>
+                            <div class="hero__slide" data-slide="3">
+                                <p class="hero__title">45+ врачей-экспертов с опытом работы</p>
+                                <p class="hero__subtitle">Консультации проводят опытные специалисты, среди которых
+                                    доктора и кандидаты медицинских наук с опытом работы более 10 лет
+                                </p>
+                            </div>
+                            <div class="hero__slide" data-slide="4">
+                                <p class="hero__title">Гастроскопия со скидкой 20%!
+                                    Только в сентябре!</p>
+                                <p class="hero__subtitle">В сентябре каждый вторник и четверг — скидка 20%
+                                    на гастроскопию.
+                                </p>
+                            </div>
+
+                            <div class="hero__slide" data-slide="5">
+                                <p class="hero__title">Эндоскопия во сне с использованием анестезии
+                                </p>
+                                <p class="hero__subtitle">Безболезненные эндоскопические исследования под седацией
+                                    для максимального комфорта пациента и безболезненной анестезией
+                                </p>
+                            </div>
+                            <div class="hero__buttons">
+                                <button class="hero__button">Записаться на приём</button>
+
+                                <div class="hero__carousel">
+                                    <button class="hero__carousel-arrow hero__carousel-arrow--left">
+                                        <img src="./img/icon/arrow.left-card.svg" alt="Предыдущий слайд">
+                                    </button>
+                                    <div class="hero__carousel-dots">
+                                        <button class="hero__carousel-dot hero__carousel-dot--active"
+                                            data-slide="0"></button>
+                                        <button class="hero__carousel-dot" data-slide="1"></button>
+                                        <button class="hero__carousel-dot" data-slide="2"></button>
+                                        <button class="hero__carousel-dot" data-slide="3"></button>
+                                        <button class="hero__carousel-dot" data-slide="4"></button>
+                                        <button class="hero__carousel-dot" data-slide="5"></button>
+                                    </div>
+                                    <button class="hero__carousel-arrow hero__carousel-arrow--right">
+                                        <img src="./img/icon/arrow.right-card.svg" alt="Следующий слайд">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/main_page/hero/hero-1.png" alt="" class="hero__slide-img" data-slide="0">
+                    <img src="./img/main_page/hero/hero-2.png" alt="" class="hero__slide-img" data-slide="1">
+                    <img src="./img/main_page/hero/hero-3.png" alt="" class="hero__slide-img" data-slide="2">
+                    <img src="./img/main_page/hero/hero-4.png" alt="" class="hero__slide-img" data-slide="3">
+                    <img src="./img/main_page/hero/hero-5.png" alt="" class="hero__slide-img" data-slide="4">
+                    <img src="./img/main_page/hero/hero-6.png" alt="" class="hero__slide-img" data-slide="5">
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__container">
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__background">
+                            <div class="service-card__content">
+                                <p class="service-card__title">Поликлиника</p>
+                                <p class="service-card__description">Точная диагностика и консультации опытных
+                                    специалистов
+                                </p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="./img/icon/arrow.down-card.svg" alt="">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__background">
+                            <div class="service-card__content">
+                                <p class="service-card__title">Стационар</p>
+                                <p class="service-card__description">Круглосуточное лечение и уход под наблюдением
+                                    врачей
+                                </p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="./img/icon/arrow.down-card.svg" alt="">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__background">
+                            <div class="service-card__content">
+                                <p class="service-card__title">Программы</p>
+                                <p class="service-card__description">Годовой доступ к врачам и современной диагностике
+                                </p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="./img/icon/arrow.down-card.svg" alt="">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__content service-card__content--doctor">
+                            <div>
+                                <p class="service-card__title">Выбрать врача</p>
+                                <p class="service-card__description--doctor">Записаться на консультацию к специалисту
+                                    без
+                                    очередей и в удобное время</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="./img/icon/arrow.down-card.svg" alt="">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="unique-operations">
+            <div class="unique-operations__container">
+                <h2 class="unique-operations__title">Уникальные операции</h2>
+                <div class="unique-operations__card">
+                    <div class="unique-operations__left">
+                        <div class="unique-operations__doctor">
+                            <img src="./img/main_page/unique/unique_man.png" alt="Доктор Багиров"
+                                class="unique-operations__doctor-img">
+                            <div class="unique-operations__doctor-info">
+                                <p class="unique-operations__doctor-name">Багиров Акшин Беюкович</p>
+                                <p class="unique-operations__doctor-title">Травматолог-ортопед. Доктор медицинских наук
+                                </p>
+                                <p class="unique-operations__doctor-description">Современные методики для эстетики и
+                                    здоровья, разработанные профессором Багировым Акшином Беюковичем</p>
+                                <button class="unique-operations__appointment-btn">Записаться на прием</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unique-operations__right">
+                        <ul class="unique-operations__list">
+                            <li class="unique-operations__item">
+                                <div class="unique-operations__item-icon">
+                                    <img src="./img/icon/list.svg" alt="">
+                                </div>
+                                <span class="unique-operations__item-text">Удлинение нижних конечностей (увеличение
+                                    роста)</span>
+                            </li>
+                            <li class="unique-operations__item">
+                                <div class="unique-operations__item-icon">
+                                    <img src="./img/icon/list.svg" alt="">
+                                </div>
+                                <span class="unique-operations__item-text">Операции по исправлению кривизны ног</span>
+                            </li>
+                            <li class="unique-operations__item">
+                                <div class="unique-operations__item-icon">
+                                    <img src="./img/icon/list.svg" alt="">
+                                </div>
+                                <span class="unique-operations__item-text">Операции по исправлению кривизны ног</span>
+                            </li>
+                        </ul>
+                        <button class="unique-operations__all-btn">
+                            <span class="unique-operations__all-text">Все операции</span>
+                            <img class="unique-operations__all-icon" src="./img/icon/arrow.right-btn.svg" alt="Стрелка">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clinic-services">
+            <div class="clinic-services__container">
+                <h2 class="clinic-services__title">Услуги нашей клиники</h2>
+                <div class="clinic-services__bg">
+                    <div class="clinic-services__navigation">
+                        <div class="clinic-services__tabs">
+                            <button class="clinic-services__tab clinic-services__tab--active"
+                                data-tab="directions">Направления</button>
+                            <button class="clinic-services__tab" data-tab="consultations">Консультации</button>
+                            <button class="clinic-services__tab" data-tab="diagnostics">Диагностика</button>
+                            <button class="clinic-services__tab" data-tab="inpatient">Стационар</button>
+                        </div>
+                        <button class="clinic-services__search-btn">
+                            <span class="clinic-services__search-text">Все услуги</span>
+                            <img class="clinic-services__search-icon" src="./img/icon/arrow.right-btn.svg" alt="Поиск">
+                        </button>
+                    </div>
+                    <div class="clinic-features__main">
+                        <div class="clinic-services__tab-content" id="directions" style="display: block;">
+                            <div class="clinic-services__list">
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Акушерство и гинекология</li>
+                                        <li class="clinic-services__service">Анализы</li>
+                                        <li class="clinic-services__service">Анестезиология и реаниматология</li>
+                                        <li class="clinic-services__service">Гастроэнтерология</li>
+                                        <li class="clinic-services__service">Гепатология</li>
+                                        <li class="clinic-services__service">Герниология</li>
+                                        <li class="clinic-services__service">Гирудотерапия</li>
+                                        <li class="clinic-services__service">Дерматология</li>
+                                        <li class="clinic-services__service">Иглорефлексотерапия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Кардиология</li>
+                                        <li class="clinic-services__service">Косметология</li>
+                                        <li class="clinic-services__service">КТ</li>
+                                        <li class="clinic-services__service">МРТ</li>
+                                        <li class="clinic-services__service">Мануальная терапия и остеопатия</li>
+                                        <li class="clinic-services__service">Массаж</li>
+                                        <li class="clinic-services__service">Неврология</li>
+                                        <li class="clinic-services__service">Нейрохирургия</li>
+                                        <li class="clinic-services__service">Общая практика</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Отоларингология</li>
+                                        <li class="clinic-services__service">Проктология</li>
+                                        <li class="clinic-services__service">Процедурный кабинет</li>
+                                        <li class="clinic-services__service">Реабилитация</li>
+                                        <li class="clinic-services__service">Рентген</li>
+                                        <li class="clinic-services__service">Терапевтический стационар</li>
+                                        <li class="clinic-services__service">Терапия</li>
+                                        <li class="clinic-services__service">Травматология и ортопедия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">УЗИ</li>
+                                        <li class="clinic-services__service">Урология</li>
+                                        <li class="clinic-services__service">Физиотерапия</li>
+                                        <li class="clinic-services__service">Флебология</li>
+                                        <li class="clinic-services__service">Функциональная диагностика</li>
+                                        <li class="clinic-services__service">Хирургический стационар</li>
+                                        <li class="clinic-services__service">Хирургия</li>
+                                        <li class="clinic-services__service">Эндокринология</li>
+                                        <li class="clinic-services__service">Эндоскопия</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="clinic-services__search-btn clinic-services__search-btn--mobile">
+                                <span class="clinic-services__search-text">Показать еще</span>
+                                <span class="clinic-services__search-icon">
+                                    <img src="./img/icon/arrow.right-btn.svg" alt="Поиск">
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="clinic-services__tab-content" id="consultations" style="display: none;">
+                            <div class="clinic-services__list">
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Акушерство и гинекология</li>
+                                        <li class="clinic-services__service">Анализы</li>
+                                        <li class="clinic-services__service">Анестезиология и реаниматология</li>
+                                        <li class="clinic-services__service">Гастроэнтерология</li>
+                                        <li class="clinic-services__service">Гепатология</li>
+                                        <li class="clinic-services__service">Герниология</li>
+                                        <li class="clinic-services__service">Гирудотерапия</li>
+                                        <li class="clinic-services__service">Дерматология</li>
+                                        <li class="clinic-services__service">Иглорефлексотерапия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Кардиология</li>
+                                        <li class="clinic-services__service">Косметология</li>
+                                        <li class="clinic-services__service">КТ</li>
+                                        <li class="clinic-services__service">МРТ</li>
+                                        <li class="clinic-services__service">Мануальная терапия и остеопатия</li>
+                                        <li class="clinic-services__service">Массаж</li>
+                                        <li class="clinic-services__service">Неврология</li>
+                                        <li class="clinic-services__service">Нейрохирургия</li>
+                                        <li class="clinic-services__service">Общая практика</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Отоларингология</li>
+                                        <li class="clinic-services__service">Проктология</li>
+                                        <li class="clinic-services__service">Процедурный кабинет</li>
+                                        <li class="clinic-services__service">Реабилитация</li>
+                                        <li class="clinic-services__service">Рентген</li>
+                                        <li class="clinic-services__service">Терапевтический стационар</li>
+                                        <li class="clinic-services__service">Терапия</li>
+                                        <li class="clinic-services__service">Травматология и ортопедия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">УЗИ</li>
+                                        <li class="clinic-services__service">Урология</li>
+                                        <li class="clinic-services__service">Физиотерапия</li>
+                                        <li class="clinic-services__service">Флебология</li>
+                                        <li class="clinic-services__service">Функциональная диагностика</li>
+                                        <li class="clinic-services__service">Хирургический стационар</li>
+                                        <li class="clinic-services__service">Хирургия</li>
+                                        <li class="clinic-services__service">Эндокринология</li>
+                                        <li class="clinic-services__service">Эндоскопия</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="clinic-services__search-btn clinic-services__search-btn--mobile">
+                                <span class="clinic-services__search-text">Показать еще</span>
+                                <span class="clinic-services__search-icon">
+                                    <img src="./img/icon/arrow.right-btn.svg" alt="Поиск">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="clinic-services__tab-content" id="diagnostics" style="display: none;">
+                            <div class="clinic-services__list">
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Акушерство и гинекология</li>
+                                        <li class="clinic-services__service">Анализы</li>
+                                        <li class="clinic-services__service">Анестезиология и реаниматология</li>
+                                        <li class="clinic-services__service">Гастроэнтерология</li>
+                                        <li class="clinic-services__service">Гепатология</li>
+                                        <li class="clinic-services__service">Герниология</li>
+                                        <li class="clinic-services__service">Гирудотерапия</li>
+                                        <li class="clinic-services__service">Дерматология</li>
+                                        <li class="clinic-services__service">Иглорефлексотерапия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Кардиология</li>
+                                        <li class="clinic-services__service">Косметология</li>
+                                        <li class="clinic-services__service">КТ</li>
+                                        <li class="clinic-services__service">МРТ</li>
+                                        <li class="clinic-services__service">Мануальная терапия и остеопатия</li>
+                                        <li class="clinic-services__service">Массаж</li>
+                                        <li class="clinic-services__service">Неврология</li>
+                                        <li class="clinic-services__service">Нейрохирургия</li>
+                                        <li class="clinic-services__service">Общая практика</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Отоларингология</li>
+                                        <li class="clinic-services__service">Проктология</li>
+                                        <li class="clinic-services__service">Процедурный кабинет</li>
+                                        <li class="clinic-services__service">Реабилитация</li>
+                                        <li class="clinic-services__service">Рентген</li>
+                                        <li class="clinic-services__service">Терапевтический стационар</li>
+                                        <li class="clinic-services__service">Терапия</li>
+                                        <li class="clinic-services__service">Травматология и ортопедия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">УЗИ</li>
+                                        <li class="clinic-services__service">Урология</li>
+                                        <li class="clinic-services__service">Физиотерапия</li>
+                                        <li class="clinic-services__service">Флебология</li>
+                                        <li class="clinic-services__service">Функциональная диагностика</li>
+                                        <li class="clinic-services__service">Хирургический стационар</li>
+                                        <li class="clinic-services__service">Хирургия</li>
+                                        <li class="clinic-services__service">Эндокринология</li>
+                                        <li class="clinic-services__service">Эндоскопия</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="clinic-services__search-btn clinic-services__search-btn--mobile">
+                                <span class="clinic-services__search-text">Показать еще</span>
+                                <span class="clinic-services__search-icon">
+                                    <img src="./img/icon/arrow.right-btn.svg" alt="Поиск">
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="clinic-services__tab-content" id="inpatient" style="display: none;">
+                            <div class="clinic-services__list">
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Акушерство и гинекология</li>
+                                        <li class="clinic-services__service">Анализы</li>
+                                        <li class="clinic-services__service">Анестезиология и реаниматология</li>
+                                        <li class="clinic-services__service">Гастроэнтерология</li>
+                                        <li class="clinic-services__service">Гепатология</li>
+                                        <li class="clinic-services__service">Герниология</li>
+                                        <li class="clinic-services__service">Гирудотерапия</li>
+                                        <li class="clinic-services__service">Дерматология</li>
+                                        <li class="clinic-services__service">Иглорефлексотерапия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Кардиология</li>
+                                        <li class="clinic-services__service">Косметология</li>
+                                        <li class="clinic-services__service">КТ</li>
+                                        <li class="clinic-services__service">МРТ</li>
+                                        <li class="clinic-services__service">Мануальная терапия и остеопатия</li>
+                                        <li class="clinic-services__service">Массаж</li>
+                                        <li class="clinic-services__service">Неврология</li>
+                                        <li class="clinic-services__service">Нейрохирургия</li>
+                                        <li class="clinic-services__service">Общая практика</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">Кардиология</li>
+                                        <li class="clinic-services__service">Отоларингология</li>
+                                        <li class="clinic-services__service">Проктология</li>
+                                        <li class="clinic-services__service">Процедурный кабинет</li>
+                                        <li class="clinic-services__service">Реабилитация</li>
+                                        <li class="clinic-services__service">Рентген</li>
+                                        <li class="clinic-services__service">Терапевтический стационар</li>
+                                        <li class="clinic-services__service">Терапия</li>
+                                        <li class="clinic-services__service">Травматология и ортопедия</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-services__column">
+                                    <ul class="clinic-services__services">
+                                        <li class="clinic-services__service">УЗИ</li>
+                                        <li class="clinic-services__service">Урология</li>
+                                        <li class="clinic-services__service">Физиотерапия</li>
+                                        <li class="clinic-services__service">Флебология</li>
+                                        <li class="clinic-services__service">Функциональная диагностика</li>
+                                        <li class="clinic-services__service">Хирургический стационар</li>
+                                        <li class="clinic-services__service">Хирургия</li>
+                                        <li class="clinic-services__service">Эндокринология</li>
+                                        <li class="clinic-services__service">Эндоскопия</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="clinic-services__search-btn clinic-services__search-btn--mobile">
+                                <span class="clinic-services__search-text">Показать еще</span>
+                                <span class="clinic-services__search-icon">
+                                    <img src="./img/icon/arrow.right-btn.svg" alt="Поиск">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="clinic-services__cards">
+                            <div class="service-feature-card service-feature-card--diagnostics">
+                                <div class="service-feature-card__content">
+                                    <p class="service-feature-card__title">Диагностика</p>
+                                    <ul class="service-feature-card__list">
+                                        <li class="service-feature-card__item"><a href="#!">КТ</a></li>
+                                        <li class="service-feature-card__item"><a href="#!">МРТ</a></li>
+                                        <li class="service-feature-card__item"><a href="#!">УЗИ</a></li>
+                                        <li class="service-feature-card__item"><a href="#!">Анализы</a></li>
+                                    </ul>
+                                </div>
+                                <img src="./img/main_page/equipment/mri-machine.png" alt="">
+                            </div>
+
+                            <div class="service-feature-card service-feature-card--endoscopy">
+                                <div class="service-feature-card__content">
+                                    <p class="service-feature-card__title">Эндоскопия во сне</p>
+                                    <ul class="service-feature-card__list">
+                                        <li class="service-feature-card__item service-feature-card__item--white">
+                                            <a href="#!">Гастроскопия</a>
+                                        </li>
+                                        <li class="service-feature-card__item service-feature-card__item--white">
+                                            <a href="#!">Колоноскопия</a>
+                                        </li>
+                                        <li class="service-feature-card__item service-feature-card__item--white">
+                                            <a href="#!">Ректороманоскопия</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img class="star star--1" src="./img/main_page/hero/big_star.png" alt="">
+                                <img class="star star--2" src="./img/main_page/hero/small_star.png" alt="">
+                                <img class="star star--3" src="./img/main_page/hero/big_star.png" alt="">
+                                <img src="./img/main_page/hero/cloud.png" alt="">
+                            </div>
+
+                            <div class="service-feature-card service-feature-card--operations">
+                                <div class="service-feature-card__content">
+                                    <p class="service-feature-card__title">Операции</p>
+                                    <div class="service-feature-card__columns">
+                                        <ul class="service-feature-card__list">
+                                            <li class="service-feature-card__item service-feature-card__item--white"><a
+                                                    href="#!">Артроскопия
+                                                    сустава</a></li>
+                                            <li class="service-feature-card__item service-feature-card__item--white"><a
+                                                    href="#!">Эндопротезирование</a>
+                                            </li>
+                                            <li class="service-feature-card__item service-feature-card__item--white"><a
+                                                    href="#!">Лечение заболеваний
+                                                    и повреждений
+                                                    стопы</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="service-feature-card__list">
+                                            <li class="service-feature-card__item service-feature-card__item--white">
+                                                <a href="#!">Лечение геморроя аппаратом
+                                                    LigaSure</a>
+                                            </li>
+                                            <li class="service-feature-card__item service-feature-card__item--white"><a
+                                                    href="#!">Радиочастотная абляция
+                                                    (РЧА)
+                                                    варикоза</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="./img/main_page/equipment/lamp.png" alt="">
+                            </div>
+
+                            <div class="service-feature-card service-feature-card--physiotherapy">
+                                <div class="service-feature-card__content">
+                                    <p class="service-feature-card__title">Физиотерапия и реабилитация</p>
+                                    <div class="service-feature-card__columns">
+                                        <ul class="service-feature-card__list">
+                                            <li class="service-feature-card__item"><a href="#!">
+                                                    Мануальная терапия <br> и
+                                                    остеопатия
+                                                </a>
+                                            </li>
+                                            <li class="service-feature-card__item"><a href="#!">
+                                                    Иглорефлексотерапия
+                                                </a>
+                                            </li>
+                                            <li class="service-feature-card__item"><a href="#!">
+                                                    Массаж
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="service-feature-card__list">
+                                            <li class="service-feature-card__item"><a href="#!">
+                                                    Реабилитация
+                                                </a>
+                                            </li>
+                                            <li class="service-feature-card__item"><a href="#!">
+                                                    Гирудотерапия
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="./img/main_page/equipment/treadmil.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clinic-features">
+            <div class="clinic-features__container">
+                <div class="clinic-features__header">
+                    <h1 class="clinic-features__title">Клиника №1 – многопрофильный медицинский центр <br> с научным
+                        подходом:</h1>
+                </div>
+                <div class="clinic-features__columns">
+                    <div class="clinic-features__column1">
+                        <div class="clinic-features__card clinic-features__card--white">
+                            <p class="clinic-features__card-title">Современные операционные</p>
+                            <p class="clinic-features__card-description">Проведение малотравматичных <br>операций с
+                                применением эндовидеооборудования и УЗИ- <br> контролем</p>
+                            <div class="clinic-features__card-arrow">
+                                <img src="./img/icon/arrow.down-right-green.svg" alt="Подробнее">
+                            </div>
+                        </div>
+                        <div class="clinic-features__card clinic-features__card--teal">
+                            <p class="clinic-features__card-title">Клиника №1 - лидер <br>в эндопротезировании</p>
+                            <div class="clinic-features__card-arrow">
+                                <img src="./img/icon/arrow.down-card.svg" alt="Подробнее">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clinic-features__column2">
+                        <div class="clinic-features__card clinic-features__card--top">
+                            <p class="clinic-features__card-title">Комфортный <br> стационар</p>
+                            <div class="clinic-features__card-arrow">
+                                <img src="./img/icon/arrow.down-right-green.svg" alt="Подробнее">
+                            </div>
+                        </div>
+                        <div class="clinic-features__card clinic-features__card--white">
+                            <p class="clinic-features__card-title">Оборудование <br>экспертного класса</p>
+                            <p class="clinic-features__card-description">Высокое качество диагностики и <br> лечения,
+                                безопасность и точность <br> процедур</p>
+                            <div class="clinic-features__card-arrow">
+                                <img src="./img/icon/arrow.down-right-green.svg" alt="Подробнее">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clinic-features__column3">
+                        <div class="clinic-features__card clinic-features__card--teal">
+                            <p class="clinic-features__card-title">45+ врачей-экспертов <br>в одном здании</p>
+                            <p class="clinic-features__card-description">Консультации проводят опытные специалисты,
+                                среди
+                                которых доктора и кандидаты медицинских наук, а также врачи высшей и первой категории
+                            </p>
+                            <div class="clinic-features__card-arrow">
+                                <img src="./img/icon/arrow.down-card.svg" alt="Подробнее">
+                            </div>
+                        </div>
+                        <div class="clinic-features__card clinic-features__card--white">
+                            <p class="clinic-features__card-title">Реабилитация после <br>травм и операций</p>
+                            <div class="clinic-features__card-arrow">
+                                <img src="./img/icon/arrow.down-right-green.svg" alt="Подробнее">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promotions">
+            <div class="promotions__container">
+                <h2 class="promotions__title">Акции и программы</h2>
+                <div class="promotions__cards">
+                    <div class="promotions__card promotions__card--discount">
+                        <div class="promotions__card-bg--percent">
+                            <div class="promotions__card-content">
+                                <p class="promotions__card-title">Скидка 15%</p>
+                                <p class="promotions__card-description">на прием врача проктолога</p>
+                                <div class="promotions__arrow-icon">
+                                    <img src="./img/icon/arrow.down-card.svg" alt="Подробнее">
+                                </div>
+                            </div>
+                            <div class="promotions__card-badge">
+                                <span>До 6 мая</span>
+                            </div>
+                            <img class="promotions__card-percent" src="./img/main_page/promotions/percent.png"
+                                alt="Подробнее">
+                        </div>
+                    </div>
+
+                    <div class="promotions__card promotions__card--cosmetology">
+                        <div class="promotions__card-bg--cosmetology">
+                            <div class="promotions__card-content">
+                                <p class="promotions__card-title">Аппаратная <br> косметология</p>
+                                <p class="promotions__card-description">по скидке до 10%</p>
+                                <div class="promotions__arrow-icon">
+                                    <img src="./img/icon/arrow.down-card.svg" alt="Подробнее">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promotions__card-badge">
+                            <span>До 6 мая</span>
+                        </div>
+                        <img class="promotions__card-cosmetology" src="./img/main_page/promotions/cosmetology.png"
+                            alt="">
+                    </div>
+
+                    <div class="promotions__card promotions__card--all">
+                        <div class="promotions__card-content">
+                            <p class="promotions__card-title">Смотреть все акции нашей клиники</p>
+                            <button class="promotions__button">
+                                <span>Смотреть все</span>
+                                <img class="promotions__button-icon" src="./img/icon/arrow.right.circle-green.svg"
+                                    alt="Стрелка">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotions__slider splide">
+
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="promotions__card promotions__card--discount splide__slide">
+                                <div class="promotions__card-bg--percent">
+                                    <div class="promotions__card-content">
+                                        <p class="promotions__card-title">Скидка 15%</p>
+                                        <p class="promotions__card-description">на прием врача проктолога</p>
+                                        <div class="promotions__arrow-icon">
+                                            <img src="./img/icon/arrow.down-card.svg" alt="Подробнее">
+                                        </div>
+                                    </div>
+                                    <div class="promotions__card-badge">
+                                        <span>До 6 мая</span>
+                                    </div>
+                                    <img class="promotions__card-percent" src="./img/main_page/promotions/percent.png"
+                                        alt="Подробнее">
+                                </div>
+                            </div>
+
+                            <div class="promotions__card promotions__card--cosmetology splide__slide">
+                                <div class="promotions__card-bg--cosmetology">
+                                    <div class="promotions__card-content">
+                                        <p class="promotions__card-title">Аппаратная <br> косметология</p>
+                                        <p class="promotions__card-description">по скидке до 10%</p>
+                                        <div class="promotions__arrow-icon">
+                                            <img src="./img/icon/arrow.down-card.svg" alt="Подробнее">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="promotions__card-badge">
+                                    <span>До 6 мая</span>
+                                </div>
+                                <img class="promotions__card-cosmetology"
+                                    src="./img/main_page/promotions/cosmetology.png" alt="">
+                            </div>
+
+                            <div class="promotions__card promotions__card--all splide__slide">
+                                <div class="promotions__card-content">
+                                    <p class="promotions__card-title">Смотреть все акции нашей клиники</p>
+                                    <button class="promotions__button">
+                                        <span>Смотреть все</span>
+                                        <img class="promotions__button-icon"
+                                            src="./img/icon/arrow.right.circle-green.svg" alt="Стрелка">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promotions__pagination">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./img/icon/arrow.left-gray.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./img/icon/arrow.right-gray.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="splide__pagination"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="doctors">
+            <div class="doctors__container">
+                <div class="doctors__header">
+                    <h2 class="doctors__title">Врачи медицинского центра Клиника №1</h2>
+                    <a href="./doctors.html" class="doctors__all-link">Все врачи</a>
+                </div>
+
+                <section class="doctors__slider splide" aria-label="Врачи клиники">
+                    <div class="splide__track track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="doctor-card">
+                                    <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png" alt="">
+                                    <div class="doctor-card__content">
+                                        <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                        <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                        <p class="doctor-card__category">Врач высшей категории</p>
+                                        <p class="doctor-card__specialty">Генеральный директор клиники, главный врач.
+                                            Акушер-гинеколог-эндокринолог.</p>
+                                        <div class="doctor-card__price">
+                                            <p class="doctor-card__price-title">Первичная <br> консультация:</p>
+                                            <p class="doctor-card__price-value">3500 ₽</p>
+                                        </div>
+                                        <div class="doctor-card__buttons">
+                                            <button class="doctor-card__btn doctor-card__btn--primary">Записаться на
+                                                приём</button>
+                                            <a href="./doctor.html"
+                                                class="doctor-card__btn doctor-card__btn--secondary">
+                                                <span>Подробнее</span>
+                                                <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="doctor-card">
+                                    <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png" alt="">
+                                    <div class="doctor-card__content">
+                                        <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                        <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                        <p class="doctor-card__category">Врач высшей категории</p>
+                                        <p class="doctor-card__specialty">Генеральный директор клиники, главный врач.
+                                            Акушер-гинеколог-эндокринолог.</p>
+                                        <div class="doctor-card__price">
+                                            <p class="doctor-card__price-title">Первичная <br> консультация:</p>
+                                            <p class="doctor-card__price-value">3500 ₽</p>
+                                        </div>
+                                        <div class="doctor-card__buttons">
+                                            <button class="doctor-card__btn doctor-card__btn--primary">Записаться на
+                                                приём</button>
+                                            <a href="./doctor.html"
+                                                class="doctor-card__btn doctor-card__btn--secondary">
+                                                <span>Подробнее</span>
+                                                <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="doctor-card">
+                                    <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png" alt="">
+                                    <div class="doctor-card__content">
+                                        <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                        <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                        <p class="doctor-card__category">Врач высшей категории</p>
+                                        <p class="doctor-card__specialty">Генеральный директор клиники, главный врач.
+                                            Акушер-гинеколог-эндокринолог.</p>
+                                        <div class="doctor-card__price">
+                                            <p class="doctor-card__price-title">Первичная <br> консультация:</p>
+                                            <p class="doctor-card__price-value">3500 ₽</p>
+                                        </div>
+                                        <div class="doctor-card__buttons">
+                                            <button class="doctor-card__btn doctor-card__btn--primary">Записаться на
+                                                приём</button>
+                                            <a href="./doctor.html"
+                                                class="doctor-card__btn doctor-card__btn--secondary">
+                                                <span>Подробнее</span>
+                                                <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="doctor-card">
+                                    <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png" alt="">
+                                    <div class="doctor-card__content">
+                                        <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                        <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                        <p class="doctor-card__category">Врач высшей категории</p>
+                                        <p class="doctor-card__specialty">Генеральный директор клиники, главный врач.
+                                            Акушер-гинеколог-эндокринолог.</p>
+                                        <div class="doctor-card__price">
+                                            <p class="doctor-card__price-title">Первичная <br> консультация:</p>
+                                            <p class="doctor-card__price-value">3500 ₽</p>
+                                        </div>
+                                        <div class="doctor-card__buttons">
+                                            <button class="doctor-card__btn doctor-card__btn--primary">Записаться на
+                                                приём</button>
+                                            <a href="./doctor.html"
+                                                class="doctor-card__btn doctor-card__btn--secondary">
+                                                <span>Подробнее</span>
+                                                <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="doctor-card">
+                                    <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png" alt="">
+                                    <div class="doctor-card__content">
+                                        <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                        <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                        <p class="doctor-card__category">Врач высшей категории</p>
+                                        <p class="doctor-card__specialty">Генеральный директор клиники, главный врач.
+                                            Акушер-гинеколог-эндокринолог.</p>
+                                        <div class="doctor-card__price">
+                                            <p class="doctor-card__price-title">Первичная <br> консультация:</p>
+                                            <p class="doctor-card__price-value">3500 ₽</p>
+                                        </div>
+                                        <div class="doctor-card__buttons">
+                                            <button class="doctor-card__btn doctor-card__btn--primary">Записаться на
+                                                приём</button>
+                                            <a href="./doctor.html"
+                                                class="doctor-card__btn doctor-card__btn--secondary">
+                                                <span>Подробнее</span>
+                                                <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="doctor-card">
+                                    <img class="doctor-card__img" src="./img/main_page/doctors/doctor.png" alt="">
+                                    <div class="doctor-card__content">
+                                        <p class="doctor-card__name">Бунтова Елена Степановна</p>
+                                        <p class="doctor-card__experience">Стаж: 29 лет</p>
+                                        <p class="doctor-card__category">Врач высшей категории</p>
+                                        <p class="doctor-card__specialty">Генеральный директор клиники, главный врач.
+                                            Акушер-гинеколог-эндокринолог.</p>
+                                        <div class="doctor-card__price">
+                                            <p class="doctor-card__price-title">Первичная <br> консультация:</p>
+                                            <p class="doctor-card__price-value">3500 ₽</p>
+                                        </div>
+                                        <div class="doctor-card__buttons">
+                                            <button class="doctor-card__btn doctor-card__btn--primary">Записаться на
+                                                приём</button>
+                                            <a href="./doctor.html"
+                                                class="doctor-card__btn doctor-card__btn--secondary">
+                                                <span>Подробнее</span>
+                                                <img src="./img/icon/arrow.right-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="doctors__pagination">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./img/icon/arrow.left-gray.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./img/icon/arrow.right-gray.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="splide__pagination"></ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery__container">
+                <h2 class="gallery__title">Фотографии Клиники №1</h2>
+
+                <section class="gallery__slider splide" aria-label="Фотографии клиники">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="gallery__item">
+                                    <img src="./img/main_page/gallery/clinic_photo-1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="gallery__item">
+                                    <img src="./img/main_page/gallery/clinic_photo-2.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="gallery__item">
+                                    <img src="./img/main_page/gallery/clinic_photo-1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="gallery__item">
+                                    <img src="./img/main_page/gallery/clinic_photo-2.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="gallery__item">
+                                    <img src="./img/main_page/gallery/clinic_photo-1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="gallery__item">
+                                    <img src="./img/main_page/gallery/clinic_photo-2.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery__pagination">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./img/icon/arrow.left-gray.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./img/icon/arrow.right-gray.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="splide__pagination"></ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="useful-info">
+            <div class="useful-info__container">
+                <h2 class="useful-info__title">Полезная информация</h2>
+
+                <div class="useful-info__grid">
+                    <a href="#" class="info-card">
+                        <div class="info-card__image">
+                            <img src="./img/main_page/info/info-1.png" alt="">
+                        </div>
+                        <div class="info-card__content">
+                            <div class="info-card__date">2 августа, 2024</div>
+                            <p class="info-card__title">Заголовок: 5 советов для тех, кто пропустил онлайн-прием</p>
+                            <p class="info-card__description">Представьте: вы записались на онлайн-консультацию врача,
+                                но по какой-то причине</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="info-card">
+                        <div class="info-card__image">
+                            <img src="./img/main_page/info/info-2.png" alt="">
+                        </div>
+                        <div class="info-card__content">
+                            <div class="info-card__date">2 августа, 2024</div>
+                            <p class="info-card__title">Заголовок: 5 советов для тех, кто пропустил онлайн-прием</p>
+                            <p class="info-card__description">Представьте: вы записались на онлайн-консультацию врача,
+                                но по какой-то причине</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="info-card">
+                        <div class="info-card__image">
+                            <img src="./img/main_page/info/info-3.png" alt="">
+                        </div>
+                        <div class="info-card__content">
+                            <div class="info-card__date">2 августа, 2024</div>
+                            <p class="info-card__title">Заголовок: 5 советов для тех, кто пропустил онлайн-прием</p>
+                            <p class="info-card__description">Представьте: вы записались на онлайн-консультацию врача,
+                                но по какой-то причине</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="useful-info__slider splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <a href="#" class="info-card splide__slide">
+                                <div class="info-card__image">
+                                    <img src="./img/main_page/info/info-1.png" alt="">
+                                </div>
+                                <div class="info-card__content">
+                                    <div class="info-card__date">2 августа, 2024</div>
+                                    <p class="info-card__title">Заголовок: 5 советов для тех, кто пропустил
+                                        онлайн-прием</p>
+                                    <p class="info-card__description">Представьте: вы записались на онлайн-консультацию
+                                        врача,
+                                        но по какой-то причине</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="info-card splide__slide">
+                                <div class="info-card__image">
+                                    <img src="./img/main_page/info/info-2.png" alt="">
+                                </div>
+                                <div class="info-card__content">
+                                    <div class="info-card__date">2 августа, 2024</div>
+                                    <p class="info-card__title">Заголовок: 5 советов для тех, кто пропустил
+                                        онлайн-прием</p>
+                                    <p class="info-card__description">Представьте: вы записались на онлайн-консультацию
+                                        врача,
+                                        но по какой-то причине</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="info-card splide__slide">
+                                <div class="info-card__image">
+                                    <img src="./img/main_page/info/info-3.png" alt="">
+                                </div>
+                                <div class="info-card__content">
+                                    <div class="info-card__date">2 августа, 2024</div>
+                                    <p class="info-card__title">Заголовок: 5 советов для тех, кто пропустил
+                                        онлайн-прием</p>
+                                    <p class="info-card__description">Представьте: вы записались на онлайн-консультацию
+                                        врача,
+                                        но по какой-то причине</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="useful-info__pagination">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./img/icon/arrow.left-gray.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./img/icon/arrow.right-gray.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="splide__pagination"></ul>
+                    </div>
+                </div>
+
+                <div class="useful-info__footer">
+                    <a href="./news.html" class="useful-info__view-all">
+                        <span>Смотреть все</span>
+                        <img src="./img/icon/arrow.right.circle-green.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="about-clinic">
+            <h2 class="about-clinic__title">О Клинике №1</h2>
+            <div class="about-clinic__container">
+                <div class="about-clinic__content">
+                    <div class="about-clinic__left">
+                        <div class="about-clinic__doctor">
+                            <div class="about-clinic__doctor-image">
+                                <img src="./img/main_page/about/about_clinic.png" alt="Бунтова Елена Степановна">
+                            </div>
+                            <div class="about-clinic__doctor-info">
+                                <div class="about-clinic__doctor-name">С уважением, <br>Бунтова Елена Степановна</div>
+                                <div class="about-clinic__doctor-position">
+                                    Генеральный директор, главный врач.<br>
+                                    Акушер-гинеколог- эндокринолог
+                                </div>
+                                <div class="about-clinic__signature">
+                                    <img src="./img/main_page/about/signature.png" alt="Подпись">
+                                </div>
+                            </div>
+                            <div class="about-clinic__additional-text" id="additional-text-mobile">
+                                <p>Наша клиника оснащена передовым медицинским оборудованием и современными
+                                    технологиями, которые позволяют проводить точную диагностику и эффективное
+                                    лечение различных заболеваний. Мы постоянно совершенствуем наши методы лечения и
+                                    внедряем инновационные подходы в медицинской практике.</p>
+                            </div>
+                            <button class="about-clinic__read-more about-clinic__read-more--mobile"
+                                id="read-more-btn-mobile">
+                                Читать больше
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class=" about-clinic__right">
+                        <div class="about-clinic__header">
+                            <p class="about-clinic__subtitle">Дорогие друзья!</p>
+                        </div>
+
+                        <div class="about-clinic__text">
+                            <p>Наш многопрофильный медицинский центр предоставляет широкий спектр амбулаторных и
+                                стационарных медицинских услуг, направленных на сохранение и укрепление вашего
+                                здоровья.
+                            </p>
+                        </div>
+
+                        <div class="about-clinic__features">
+                            <div class="about-clinic__feature-title">«Клиника №1» – это:</div>
+
+                            <div class="about-clinic__features-grid">
+                                <div class="about-clinic__feature">
+                                    <div class="about-clinic__feature-icon">
+                                        <img src="./img/icon/check_mark.svg" alt="">
+                                    </div>
+                                    <div class="about-clinic__feature-text">
+                                        Команда профессионалов, состоящая из опытных врачей различных
+                                        специальностей,
+                                        медицинских сестер, реабилитологов и администраторов, готовых оказать
+                                        вам
+                                        квалифицированную медицинскую помощь и поддержку в <br> максимально
+                                        короткие
+                                        сроки.
+                                    </div>
+                                </div>
+
+                                <div class="about-clinic__feature">
+                                    <div class="about-clinic__feature-icon">
+                                        <img src="./img/icon/check_mark.svg" alt="">
+                                    </div>
+                                    <div class="about-clinic__feature-text">
+                                        Амбулаторное и стационарное лечение. Проводятся современные
+                                        высокотехнологичные
+                                        операции с последующей реабилитацией, направленной на полное
+                                        восстановление
+                                        здоровья.
+                                    </div>
+                                </div>
+
+                                <div class="about-clinic__feature">
+                                    <div class="about-clinic__feature-icon">
+                                        <img src="./img/icon/check_mark.svg" alt="">
+                                    </div>
+                                    <div class="about-clinic__feature-text">
+                                        Самое современное оборудование для ранней <br>диагностики и выявления
+                                        заболеваний.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-clinic__footer-text">
+                            <p>Мы надеемся, что каждый из вас будет чувствовать себя комфортно и уверенно в
+                                процессе
+                                лечения и реабилитации.</p>
+                        </div>
+
+                        <p class="about-clinic__additional-text" id="additional-text">
+                            Наша клиника оснащена передовым медицинским оборудованием и современными
+                            технологиями, которые позволяют проводить точную диагностику и эффективное
+                            лечение различных заболеваний. Мы постоянно совершенствуем наши методы лечения и
+                            внедряем инновационные подходы в медицинской практике.</p>
+
+                        <button class="about-clinic__read-more" id="read-more-btn">
+                            Читать больше
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social-banner">
+            <div class="social-banner__container">
+                <div class="social-banner__content">
+                    <div class="social-banner__left">
+                        <p class="social-banner__title">Подписывайтесь на нас<br>в социальных сетях</p>
+                        <div class="social-banner__icons">
+                            <a href="#" class="social-banner__icon">
+                                <img src="./img/icon/vk_ad.svg" alt="VKontakte">
+                            </a>
+                            <a href="#" class="social-banner__icon">
+                                <img src="./img/icon/Yandex_ad.svg" alt="Яндекс">
+                            </a>
+                            <a href="#" class="social-banner__icon">
+                                <img src="./img/icon/Rutube_ad.svg" alt="RuTube">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="social-banner__phone" src="./img/main_page/social/banner.png"
+                        alt="Телефон с приложением">
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__container">
+                <div class="reviews__header">
+                    <h2 class="reviews__title">Отзывы наших пациентов</h2>
+                    <a href="./reviews.html" class="reviews__all-link">Все отзывы</a>
+                </div>
+
+                <section class="reviews__slider splide" aria-label="Отзывы пациентов">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__name">Иван П.</div>
+                                        <div class="review-card__date">12 апреля 2024</div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>октября 2023 г. по настоящее время — обучение в магистратуре (заочная форма
+                                            обучения) в Федеральном государственном бюджетном образовательном учреждении
+                                            высшего образования Российская академия народного хозяйства при Президенте
+                                            при Президенте высшего образования</p>
+                                    </div>
+                                    <div class="review-card__footer">
+                                        <span class="review-card__doctor">Отзыв о враче: </span>
+                                        <a href="#" class="review-card__doctor-link">Бунтова Елена Степановна</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="review-card">
+                                    <div class="review-card__header-video">
+                                        <div class="review-card__header-text">
+                                            <div class="review-card__name">Людмина И.</div>
+                                            <div class="review-card__date">12 апреля 2024</div>
+                                        </div>
+                                        <div class="review-card__video-badge">
+                                            <img src="./img/icon/video.svg" alt="">
+                                            <span class="review-card__video-badge-text">Видео-отзыв</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>октября 2023 г. по настоящее время — обучение в магистратуре (заочная форма
+                                            обучения) в Федеральном государственном бюджетном образовательном учреждении
+                                            высшего образования Российская академия народного хозяйства при Президенте
+                                            при Президенте высшего образования</p>
+                                    </div>
+                                    <div class="review-card__footer">
+                                        <span class="review-card__doctor">Отзыв о враче: </span>
+                                        <a href="#" class="review-card__doctor-link">Бунтова Елена Степановна</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__name">Сергей Ж.</div>
+                                        <div class="review-card__date">12 апреля 2024</div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>октября 2023 г. по настоящее время — обучение в магистратуре (заочная форма
+                                            обучения)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__name">Мария С.</div>
+                                        <div class="review-card__date">10 апреля 2024</div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>Очень довольна обслуживанием в клинике. Врачи профессиональные, оборудование
+                                            современное. Рекомендую всем!</p>
+                                    </div>
+                                    <div class="review-card__footer">
+                                        <span class="review-card__doctor">Отзыв о враче: </span>
+                                        <a href="#" class="review-card__doctor-link">Бунтова Елена Степановна</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviews__pagination">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./img/icon/arrow.left-gray.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./img/icon/arrow.right-gray.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="splide__pagination"></ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="licenses">
+            <div class="licenses__container">
+                <p class="licenses__title">Лицензии</p>
+
+                <div class="licenses__grid">
+                    <div class="license-card">
+                        <div class="license-card__image">
+                            <img src="./img/main_page/licenses/license.png" alt="Лицензия на медицинскую деятельность">
+                        </div>
+                    </div>
+                    <div class="license-card">
+                        <div class="license-card__image">
+                            <img src="./img/main_page/licenses/license.png" alt="Лицензия на медицинскую деятельность">
+                        </div>
+                    </div>
+                    <div class="license-card">
+                        <div class="license-card__image">
+                            <img src="./img/main_page/licenses/license.png" alt="Лицензия на медицинскую деятельность">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="licenses__slider splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="license-card splide__slide">
+                                <div class="license-card__image">
+                                    <img src="./img/main_page/licenses/license.png"
+                                        alt="Лицензия на медицинскую деятельность">
+                                </div>
+                            </div>
+                            <div class="license-card splide__slide">
+                                <div class="license-card__image">
+                                    <img src="./img/main_page/licenses/license.png"
+                                        alt="Лицензия на медицинскую деятельность">
+                                </div>
+                            </div>
+                            <div class="license-card splide__slide">
+                                <div class="license-card__image">
+                                    <img src="./img/main_page/licenses/license.png"
+                                        alt="Лицензия на медицинскую деятельность">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-carousel-progress">
+                        <div class="my-carousel-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ratings">
+            <div class="ratings__container">
+                <h2 class="ratings__title">Независимые рейтинги</h2>
+
+                <div class="ratings__grid">
+                    <div class="rating-card">
+                        <div class="rating-card__logo">
+                            <img src="./img/icon/Yandex_rating.svg" alt="Яндекс">
+                        </div>
+                        <div class="rating-card__stars">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                        </div>
+                        <div class="rating-card__reviews">183 отзывов</div>
+                    </div>
+
+                    <div class="rating-card">
+                        <div class="rating-card__logo">
+                            <img src="./img/icon/prodoctov.svg" alt="ПроДокторов">
+                        </div>
+                        <div class="rating-card__stars">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                        </div>
+                        <div class="rating-card__reviews">183 отзывов</div>
+                    </div>
+
+                    <div class="rating-card">
+                        <div class="rating-card__logo">
+                            <img src="./img/icon/2gis.svg" alt="2ГИС">
+                        </div>
+                        <div class="rating-card__stars">
+                            <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                            <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                            <img src="./img/icon/list-gray.svg" alt="4 звезды" class="rating-card__star">
+                        </div>
+                        <div class="rating-card__reviews">183 отзывов</div>
+                    </div>
+                </div>
+
+                <div class="ratings__slider splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="rating-card splide__slide">
+                                <div class="rating-card__logo">
+                                    <img src="./img/icon/Yandex_rating.svg" alt="Яндекс">
+                                </div>
+                                <div class="rating-card__stars">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                </div>
+                                <div class="rating-card__reviews">183 отзывов</div>
+                            </div>
+
+                            <div class="rating-card splide__slide">
+                                <div class="rating-card__logo">
+                                    <img src="./img/icon/prodoctov.svg" alt="ПроДокторов">
+                                </div>
+                                <div class="rating-card__stars">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="5 звезд" class="rating-card__star">
+                                </div>
+                                <div class="rating-card__reviews">183 отзывов</div>
+                            </div>
+
+                            <div class="rating-card splide__slide">
+                                <div class="rating-card__logo">
+                                    <img src="./img/icon/2gis.svg" alt="2ГИС">
+                                </div>
+                                <div class="rating-card__stars">
+                                    <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                                    <img src="./img/icon/list.svg" alt="4 звезды" class="rating-card__star">
+                                    <img src="./img/icon/list-gray.svg" alt="4 звезды" class="rating-card__star">
+                                </div>
+                                <div class="rating-card__reviews">183 отзывов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ratings__pagination">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./img/icon/arrow.left-gray.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./img/icon/arrow.right-gray.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="splide__pagination"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="map__container">
+                <p class="map__title">Контакты нашей клиники</p>
+                <div class="map__content">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A68b7c44b211b8b9f8d778d6f743f8972b792a9e019acbf098380044cbbde1f4f&amp;source=constructor"
+                        frameborder="0"></iframe>
+                    <div class="map__overlay">
+                        <div class="map__placeholder-content">
+                            <button class="map__open-btn" id="openMapBtn">
+                                Открыть карту с контактами
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-modal" id="mapModal">
+                <div class="map-modal__overlay" id="mapOverlay">
+                    <div class="map-modal__content">
+                        <div class="map-modal__iframe">
+                            <button class="map-modal__close" id="closeMapBtn">
+                                <img src="./img/icon/close-menu.svg" alt="Закрыть">
+                            </button>
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A68b7c44b211b8b9f8d778d6f743f8972b792a9e019acbf098380044cbbde1f4f&amp;source=constructor"
+                                width="100%" height="100%" frameborder="0">
+                            </iframe>
+                            <div class="iframe-overlay"></div>
+                        </div>
+                        <div class="map-modal__info">
+                            <div class="clinic-info">
+                                <div class="clinic-info__header">
+                                    <p class="clinic-info__name">Клиника №1</p>
+                                </div>
+                                <div class="clinic-info__contact">
+                                    <a href="tel:+74952600067" class="clinic-info__phone">+7 (495) 260 00 67</a>
+                                </div>
+                                <div class="clinic-info-messengers">
+                                    <img src="./img/icon/telegram.svg" alt="">
+                                    <img src="./img/icon/whatsapp.svg" alt="">
+                                </div>
+                                <div class="clinic-info__address">
+                                    <p>г. Москва, м. Люблино, ул. Красноярская, 52 к.2</p>
+                                    <p class="clinic-info__metro"><span class="circle"></span> м. Люблино</p>
+                                </div>
+                                <div class="clinic-info__hours">
+                                    <p>пн—сб: 08:00—20:00</p>
+                                    <p>вс: 09:00—20:00</p>
+                                </div>
+                                <button class="clinic-info__route-btn">
+                                    Проложить маршрут
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__columns">
+                    <div class="footer__column">
+                        <p class="footer__title">Услуги и направления</p>
+                        <ul class="footer__list">
+                            <li><a href="./promotions.html" class="footer__link--bold">Программы и акции</a></li>
+                            <li><a href="./doctors.html" class="footer__link--bold">Врачи</a></li>
+                            <li><a href="./price.html" class="footer__link--bold">Цены</a></li>
+                            <li><a href="./contacts.html" class="footer__link--bold">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__title">О клинике</p>
+                        <ul class="footer__list">
+                            <li><a href="./legal-info.html" class="footer__link">Правовая информация</a></li>
+                            <li><a href="./reviews.html" class="footer__link">Отзывы</a></li>
+                            <li><a href="./news.html" class="footer__link">Новости</a></li>
+                            <li><a href="./vacancies.html" class="footer__link">Вакансии</a></li>
+                            <li><a href="./video.html" class="footer__link">Видео</a></li>
+                            <li><a href="./photo-gallery.html" class="footer__link">Фотогалерея</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <div class="footer-top">
+                            <p class="footer__title">Пациентам</p>
+                            <ul class="footer__list">
+                                <li><a href="./handbook.html" class="footer__link">Справочник болезней</a>
+                                </li>
+                                <li><a href="./blogs.html" class="footer__link">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__payment">
+                            <span class="footer__payment-title">Мы принимаем</span>
+                            <div class="footer__payment-methods">
+                                <img src="./img/icon/mir.svg" alt="МИР" class="footer__payment-icon">
+                                <img src="./img/icon/visa.svg" alt="VISA" class="footer__payment-icon">
+                                <img src="./img/icon/mc.svg" alt="Mastercard" class="footer__payment-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <div class="footer-top">
+                            <p class="footer__title">Клиника №1</p>
+                            <div class="footer__contact">
+                                <div class="footer__contact-item">
+                                    <span>ООО «Клиника Научной Медицины» г. Москва, м. Люблино, ул. Краснодарская, 52
+                                        к.2</span>
+                                </div>
+                                <div class="footer__contact-item">
+                                    <img src="./img/icon/phone-footer.svg" alt="" class="footer__icon">
+                                    <a href="tel:+74952600067" class="footer__link">+7 (495) 260 00 67</a>
+                                </div>
+                                <div class="footer__contact-item">
+                                    <img src="./img/icon/mail.svg" alt="" class="footer__icon">
+                                    <a href="mailto:info@clinicanomer1.ru"
+                                        class="footer__link">info@clinicanomer1.ru</a>
+                                </div>
+                                <div class="footer__contact-item">
+                                    <img src="./img/icon/time.svg" alt="" class="footer__icon">
+                                    <span>пн-сб: 08:00 - 20:00, вс: 09:00 - 20:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/icon/vk.svg" alt="VKontakte" class="footer__social-icon">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/icon/Yandex.svg" alt="Отзывы" class="footer__social-icon">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/icon/Rutube.svg" alt="R" class="footer__social-icon">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/icon/tg-footer.svg" alt="Youtube" class="footer__social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__container--mobile">
+            <div class="footer__content">
+                <div class="footer__columns">
+                    <div class="footer__column">
+                        <p class="footer__title">О клинике</p>
+                        <ul class="footer__list">
+                            <li><a href="./legal.html" class="footer__link">Правовая информация</a></li>
+                            <li><a href="./reviews.html" class="footer__link">Отзывы</a></li>
+                            <li><a href="./news.html" class="footer__link">Новости</a></li>
+                            <li><a href="./vacancies.html" class="footer__link">Вакансии</a></li>
+                            <li><a href="./video.html" class="footer__link">Видео</a></li>
+                            <li><a href="./photo-gallery.html" class="footer__link">Фотогалерея</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__title">Пациентам</p>
+                        <ul class="footer__list">
+                            <li><a href="./handbook.html" class="footer__link">Справочник болезней</a></li>
+                            <li><a href="./blogs.html" class="footer__link">Блог</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <ul class="footer__list">
+                            <li><a href="./directions.html" class="footer__link">Услуги и направления</a></li>
+                            <li><a href="./promotions.html" class="footer__link">Программы и акции</a></li>
+                            <li><a href="./doctors.html" class="footer__link">Врачи</a></li>
+                            <li><a href="./price.html" class="footer__link">Цены</a></li>
+                            <li><a href="./contacts.html" class="footer__link">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__title">Клиника №1</p>
+                        <div class="footer__contact">
+                            <div class="footer__contact-item">
+                                <span>ООО «Клиника Научной Медицины»</span>
+                            </div>
+                            <div class="footer__contact-item">
+                                <span>г. Москва, м. Люблино, ул. Краснодарская, 52 к.2</span>
+                            </div>
+                            <div class="footer__contact-item">
+                                <img src="./img/icon/phone-footer.svg" alt="" class="footer__icon">
+                                <a href="tel:+74952600067" class="footer__link">+7 (495) 260 00 67</a>
+                            </div>
+                            <div class="footer__contact-item">
+                                <img src="./img/icon/mail.svg" alt="" class="footer__icon">
+                                <a href="mailto:info@clinicanomer1.ru" class="footer__link">info@clinicanomer1.ru</a>
+                            </div>
+                            <div class="footer__contact-item">
+                                <img src="./img/icon/time.svg" alt="" class="footer__icon">
+                                <span>пн-сб: 08:00 - 20:00, вс: 09:00 - 20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__social-section">
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <img src="./img/icon/vk.svg" alt="VKontakte" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="./img/icon/Yandex.svg" alt="Отзывы" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="./img/icon/Rutube.svg" alt="R" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="./img/icon/tg-footer.svg" alt="Telegram" class="footer__social-icon">
+                        </a>
+                    </div>
+                    <div class="footer__license">
+                        <div class="footer__license-text">Лицензия</div>
+                        <div class="footer__license-number">№ ЛО41-01137-77/00343464</div>
+                    </div>
+                </div>
+
+                <div class="footer__payment-section">
+                    <span class="footer__payment-title">Мы принимаем</span>
+                    <div class="footer__payment-methods">
+                        <img src="./img/icon/mir.svg" alt="МИР" class="footer__payment-icon">
+                        <img src="./img/icon/visa.svg" alt="VISA" class="footer__payment-icon">
+                        <img src="./img/icon/mc.svg" alt="Mastercard" class="footer__payment-icon">
+                    </div>
+                </div>
+
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__divider"></div>
+        <div class="footer__disclaimer">
+            Имеются противопоказания. Необходимо проконсультироваться со специалистом
+        </div>
+    </footer>
+
+</body>
+
+</html>

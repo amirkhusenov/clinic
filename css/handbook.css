@@ -1,0 +1,184 @@
+.services-title {
+    font-size: 40px;
+    font-weight: 600;
+    flex: 2;
+}
+
+.doctors-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.doctors-filter__field {
+    flex: 1;
+}
+
+.doctors-filter__search {
+    flex: 1;
+}
+
+.handbook-alphabet {
+    display: flex;
+    background: #EDF0F5;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.alphabet-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 7px;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.alphabet-letter--all {
+    width: fit-content;
+    padding: 12px 20px;
+}
+
+.alphabet-letter:hover {
+    background: #DAE2EF;
+    border-color: #DAE2EF;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.alphabet-letter.active {
+    background: #0D3260;
+    border-color: #0D3260;
+    color: #fff;
+}
+
+.handbook-content {
+    margin-top: 24px;
+}
+
+.handbook-content p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #0D3260;
+    margin-bottom: 24px;
+}
+
+.handbook-diseases {
+    display: grid;
+    gap: 24px;
+}
+
+.disease-item {
+    padding: 8px 0;
+}
+
+.handbook-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.doctors-filter__search--mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .handbook-content-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctors-filter__search--mobile {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #7C8799;
+        border-radius: 24px;
+        flex: 2;
+        width: 100%;
+        position: relative;
+        margin-top: 14px;
+    }
+
+    .doctors-filter__search {
+        display: none;
+    }
+
+    .doctors-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .doctors-filter__field {
+        width: 100%;
+        margin-top: 14px;
+    }
+
+    .services-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .handbook-alphabet {
+        gap: 6px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap;
+        width: 100%;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        background: #EDF0F5;
+    }
+
+    .handbook-alphabet::-webkit-scrollbar {
+        display: none;
+    }
+
+    .alphabet-letter {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .handbook-alphabet {
+        gap: 4px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap;
+        width: calc(100% + 28px);
+        margin-left: -14px;
+        margin-right: -14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        background: #EDF0F5;
+        border-radius: 0;
+    }
+
+    .handbook-alphabet::-webkit-scrollbar {
+        display: none;
+    }
+
+    .alphabet-letter {
+        flex-shrink: 0;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .handbook-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

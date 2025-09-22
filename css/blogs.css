@@ -1,0 +1,371 @@
+.blog-card__link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.blog-card__link:hover {
+    color: var(--color-text);
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+}
+
+.blog-card__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card__text {
+    flex: 2;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news__content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%;
+}
+
+.news__content-text p {
+    line-height: 1.8;
+}
+
+.blog-card__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.news__content-data {
+    font-size: 12px;
+    color: #7C8799;
+}
+
+.blog-card__description {
+    font-size: 16px;
+    color: #7C8799;
+    margin-bottom: 24px;
+}
+
+.blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #7C8799;
+}
+
+.blog-card__views,
+.blog-card__time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.blog-card__image {
+    padding: 24px;
+    position: relative;
+}
+
+.blogs__grid-item {
+    gap: 24px;
+}
+
+@media (max-width: 1425px) {
+    .blogs__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .blog-card__text {
+        padding: 24px;
+    }
+
+    .blog-card__title {
+        font-size: 20px;
+    }
+
+    .blog-card__description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blogs__grid-item {
+        gap: 14px;
+    }
+
+    .blogs__grid {
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .blog-card__content {
+        flex-direction: column-reverse;
+    }
+
+    .blog-card__text {
+        padding: 20px;
+    }
+
+    .blog-card__title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .blog-card__description {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .blog-card__meta {
+        gap: 16px;
+        font-size: 12px;
+    }
+
+    .blog-card__image {
+        padding: 0;
+        width: 100%;
+    }
+
+    .blog-card__image img {
+        object-fit: cover;
+        height: 160px;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-card__text {
+        padding: 16px;
+    }
+
+    .blog-card__title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .blog-card__description {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .blog-card__meta {
+        gap: 12px;
+        font-size: 11px;
+        flex-wrap: wrap;
+    }
+
+}
+
+.licenses__container {
+    margin-bottom: 48px;
+}
+
+.promotions__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.promotions__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.promotions__card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 1rem;
+    padding: 45px 0 83px 27px;
+    display: flex;
+}
+
+.promotions__card--discount,
+.promotions__card--cosmetology {
+    background: #B6FEFE;
+    background: linear-gradient(270deg, rgba(182, 254, 254, 1) 0%, rgba(105, 163, 255, 1) 100%);
+    color: var(--color-text);
+}
+
+.promotions__card--all {
+    background: #fff;
+    color: var(--color-text);
+    box-shadow: var(--shadow-card);
+}
+
+.promotions__card-bg--percent,
+.promotions__card--cosmetology {
+    z-index: 1;
+}
+
+.promotions__card-percent {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.promotions__card-cosmetology {
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+}
+
+.promotions__card-content,
+.promotions__card-cosmetology {
+    z-index: 1;
+}
+
+.promotions__card-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.promotions__card-description {
+    padding-top: 10px;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+.promotions__arrow-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.promotions__card-percent,
+.promotions__card-cosmetology {
+    z-index: -1;
+}
+
+.promotions__card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #FF4940;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.promotions__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #fff;
+    border: 2px solid #27929E;
+    color: #27929E;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.promotions__button:hover {
+    background: #27929E;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.promotions__button:hover img {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1425px) {
+    .blogs__grid-promotion {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotions {
+        padding: 0;
+        margin: 24px 20px;
+    }
+
+    .promotions__pagination {
+        max-width: 30%;
+    }
+
+    .promotions__container {
+        padding: 0;
+    }
+
+    .promotions__title {
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+
+    .promotions__cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .promotions__card {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+
+    .promotions__percent-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .promotions__cosmetology-icon {
+        width: 50px;
+        height: 60px;
+    }
+}
+
+.social-banner {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .social-banner {
+        display: block;
+    }
+}
+
+@media (hover: hover) {
+    .promotions__button:hover {
+        background: #27929E;
+        color: #fff;
+    }
+
+    .promotions__button:hover img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media (hover: none) {
+    .promotions__button:hover {
+        background: inherit;
+        color: inherit;
+    }
+
+    .promotions__button:hover img {
+        filter: none;
+    }
+}

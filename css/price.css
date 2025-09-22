@@ -1,0 +1,40 @@
+.price__title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.doctor-education__container {
+    gap: 12px;
+}
+
+.doctor-education__body {
+    margin-top: 0;
+}
+
+.direction-price {
+    margin-top: 0;
+}
+
+.direction-price__card {
+    padding: 20px 0 0 0;
+}
+
+.direction-price__list {
+    margin-bottom: 0;
+}
+
+.direction-price__subtitle {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .direction-content {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 756px) {
+    .price__title span {
+        display: none;
+    }
+}

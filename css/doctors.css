@@ -1,0 +1,275 @@
+.doctors {
+    margin-top: 24px;
+}
+
+.doctors__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.appointment-form__field--info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.appointment-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.appointment-form__field--actions {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.appointment-form__input {
+    padding: 10px 14px;
+    border: 1px solid var(--color-text);
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.appointment-form__input:focus {
+    border-color: #80D8D0;
+}
+
+.appointment-form__input::placeholder {
+    color: var(--color-text);
+}
+
+.appointment-form__field--checkbox {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.appointment-form__checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.appointment-form__checkbox {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.appointment-form__checkbox-custom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-text);
+    border-radius: 4px;
+    background: #fff;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.appointment-form__checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid #80D8D0;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.appointment-form__checkbox:checked+.appointment-form__checkbox-custom {
+    background: #007a7a;
+    border-color: #007a7a;
+}
+
+.appointment-form__checkbox:checked+.appointment-form__checkbox-custom::after {
+    opacity: 1;
+}
+
+.appointment-form__checkbox-text {
+    font-size: 14px;
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+.appointment-form__link {
+    color: #80D8D0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.appointment-form__submit {
+    background: #007a7a;
+    color: #fff;
+    border-radius: 30px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #007a7a;
+    transition: background-color 0.3s ease;
+    width: 167px;
+}
+
+.appointment-form__submit:hover {
+    background: transparent;
+    border: 1px solid #007a7a;
+    color: #007a7a;
+}
+
+
+.doctors-error {
+    margin: 95px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctors-error__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctors-error__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #27929E;
+    width: 330px;
+}
+
+.error-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-404__title {
+    font-size: 96px;
+    color: #27929E;
+    font-weight: 600;
+}
+
+.error-404__description {
+    font-size: 32px;
+    color: #27929E;
+    font-weight: 600;
+}
+
+.error-404__container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1376px) {
+    .doctors__grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .doctors-error {
+        margin: 50px 0;
+    }
+
+    .doctors-error__image {
+        display: none;
+    }
+
+    .error-404__image {
+        display: none;
+    }
+
+    .error-404__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .doctors-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .doctors__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .doctor-card__header {
+        padding: 1rem 1rem 0.75rem;
+    }
+
+    .doctor-card__photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .doctor-card__name {
+        font-size: 1.125rem;
+    }
+
+    .doctor-card__content {
+        padding: 0 1rem 0.75rem;
+    }
+
+    .doctor-card__footer {
+        padding: 0.75rem 1rem 1rem;
+    }
+
+    .doctor-card__actions {
+        gap: 0.5rem;
+    }
+
+
+    .appointment-form {
+        gap: 20px;
+    }
+
+    .appointment-form__checkbox-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctors-error {
+        margin: 24px 0;
+    }
+}
+
+@media (hover: hover) {
+    .appointment-form__submit:hover {
+        background: transparent;
+        border: 1px solid #007a7a;
+        color: #007a7a;
+    }
+}
+
+@media (hover: none) {
+    .appointment-form__submit:hover {
+        background: inherit;
+        border: inherit;
+        color: inherit;
+    }
+}
